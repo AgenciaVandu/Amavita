@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Amavita Caucel</title>
 
-    <link href="{{ asset('css/style.css') }}" rel="stylesheet" >
+    <link href="{{asset('css/style.css') }}" rel="stylesheet">
 
     <!--Bootstrap 4.6-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
@@ -15,7 +15,7 @@
 <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #EE7768">
     <div class="container">
         <a class="navbar-brand" href="#">
-            <img src="/docs/4.6/assets/brand/bootstrap-solid.svg" width="30" height="30" alt="">
+            <img src="{{ asset('img/amavita-logo.svg')}}" width="200" alt="logotipo Amavita Caucel">
           </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -44,7 +44,7 @@
 
 
 <body>
-    
+
     @yield('content')
 
 
