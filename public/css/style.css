@@ -5,3 +5,11 @@
 body {
     background-color: #fcf7ef !important;
 }
+
+.bg-overlay {
+    background-image: url(/img/amavita-header-1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}

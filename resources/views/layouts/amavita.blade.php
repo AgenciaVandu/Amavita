@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 </head>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-nav">
+<nav class="navbar navbar-expand-lg navbar-dark bg-nav fixed-top">
     <div class="container">
         <a class="navbar-brand" href="#">
             <img src="{{ asset('img/amavita-logo.svg')}}" width="200" alt="logotipo Amavita Caucel">
