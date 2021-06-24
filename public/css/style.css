@@ -1,5 +1,66 @@
+@font-face {
+    font-family: 'Hurme-bold';
+    src: url("../fonts/HurmeGeometricSans4-bold.otf");
+    font-style: normal;
+    font-weight: bold;
+    }
+
+@font-face {
+    font-family: 'Hurme-regular';
+    src: url("../fonts/HurmeGeometricSans4.otf");
+    font-style: normal;
+    font-weight: 300;
+    }
+
+@font-face {
+    font-family: 'Hurme-light';
+    src: url("../fonts/HurmeGeometricSans4-light.otf");
+    font-style: normal;
+    font-weight: 200;
+    }
+    
+
+@font-face {
+    font-family: 'Hurme-semibold';
+    src: url("../fonts/HurmeGeometricSans4-SemiBold.otf");
+    font-style: normal;
+    font-weight: 500;
+    }
+
+.hurmebold {
+    font-family: 'Hurme-bold' !important;
+    font-style: normal;
+    font-weight: bold;
+    color: #0f3e67;
+    
+}
+
+.hurmeregular {
+    font-family: 'Hurme-regular';
+    font-weight: 300;
+    color: #0f3e67;
+    
+}
+
+.hurme-semibold {
+    font-family: 'Hurme-semibold';
+    font-weight: 3500;
+    color: #0f3e67;
+    
+}
+
+.nav-item {
+    font-size: 20px !important;
+    padding-right: 25px;
+    
+    
+}
 .bg-nav {
     background-color: #EE7768 !important;
+}
+
+.patron {
+    background-image: url(/img/nav.svg);
 }
 
 body {
@@ -12,4 +73,104 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     min-height: 570px;
+}
+#ama-vivir-en-caucel {
+    padding-top: 60px;
+} @media (max-width:500px){
+    #ama-vivir-en-caucel {
+        padding-top: 0px;
+    }
+}
+.ama-vivir {
+    background-image: url(/img/fondo-intro.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 10px -25px;
+    padding-bottom: 30px;
+} @media (max-width:500px) {
+    .ama-vivir {
+        background-position: 10px 25px;
+    }
+    .contenido-beneficios {
+        text-align: center;
+    }
+}
+
+.titular{
+    padding-top: 10px;
+    padding-bottom: 20x;
+    text-align: center;
+} 
+
+.hight-lights {
+text-align: center;
+}
+
+#modelos {
+    background-image: url(/img/fondo-modelos-1.png);
+    background-position: 450px 510px;
+    background-repeat: no-repeat;
+} 
+.especificaciones {
+    padding-left: 26px;
+}
+
+.bg-beneficios {
+    background-image: url(/img/fondo-beneficios-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0px -16px;
+    padding-bottom: 45px;
+    padding-top:68px;
+}
+
+.bg-contacto {
+    background-image: url(/img/fondo-contacto.png);
+    background-repeat: no-repeat;
+    background-position: 430px -20px;
+}
+.beneficio {
+    padding-top: 37px;
+}
+
+.beneficios-ico {
+    text-align: right;
+} @media (max-width: 500px){
+    .beneficios-ico {
+        text-align: center;
+    }
+}
+
+.sinpadding {
+    padding-right: 3px !important;
+    padding-left: 3px !important;
+} 
+
+
+footer {
+    background-color: #0e3e68;
+}
+.contenido-footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.bg-footer {
+    background-image: url(/img/footer.png);
+}
+
+#contactanos {
+    padding-bottom: 90px;
+}
+
+.footer-txt {
+    line-height: 30px;
+}
+
+.casitas {
+    text-align: right;
+} @media (max-width:500px){
+    .casitas {
+        text-align: left !important;
+    }
 }
