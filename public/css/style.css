@@ -28,7 +28,7 @@
     }
 
 .hurmebold {
-    font-family: 'Hurme-bold' !important;
+    font-family: 'Hurme-bold';
     font-style: normal;
     font-weight: bold;
     color: #0f3e67;
@@ -50,11 +50,9 @@
 }
 
 .nav-item {
-    font-size: 20px !important;
+    font-size: 20px;
     padding-right: 25px;
-    
-    
-}
+} 
 .bg-nav {
     background-color: #EE7768 !important;
 }
@@ -141,10 +139,7 @@ text-align: center;
     }
 }
 
-.sinpadding {
-    padding-right: 3px !important;
-    padding-left: 3px !important;
-} 
+
 
 
 footer {

@@ -28,7 +28,7 @@
           <a class="nav-link" href="#ama-vivir-en-caucel">Desarrollos <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item active hurmeregular">
-          <a class="nav-link" href="#modelos">Modelos</a>
+          <a class="nav-link" href="#modelos">Amenidades</a>
         </li>
         <li class="nav-item active hurmeregular">
           <a class="nav-link" href="#beneficios">Beneficios</a>

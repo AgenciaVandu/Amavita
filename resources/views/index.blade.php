@@ -141,82 +141,82 @@
     <div class="container">
         <div class="contenido-beneficios">
             <div class="row ">
-                <div class="col-lg-6 col-md-6 col-sm-6 sinpadding">
+                <div class="col-lg-6 col-md-6 col-sm-6">
                     <div class="row ">
                         <!--Elementos-->
-                        <div class="col-lg-4 col-md-4 col-sm-4 sinpadding">
+                        <div class="col-lg-4 col-md-4 col-sm-4">
                             <div class="beneficios-ico">
                                 <img src="{{asset('img/beneficios/1.svg') }}" alt="" class="img-fluid" width="100">
                             </div>
                         </div>
-                        <div class="col-lg-8 col-md-8 col-sm-8 sinpadding">
+                        <div class="col-lg-8 col-md-8 col-sm-8">
                             <h4 class="beneficio hurme-semibold">Supermercados</h4>
                         </div>
                         <!--Elementos-->
-                        <div class="col-lg-4 col-md-4 col-sm-4 sinpadding">
+                        <div class="col-lg-4 col-md-4 col-sm-4">
                             <div class="beneficios-ico">
                                 <img src="{{asset('img/beneficios/3.svg') }}" alt="" class="img-fluid" width="100">
                             </div>
                         </div>
-                        <div class="col-lg-8 col-md-8 col-sm-8 sinpadding">
+                        <div class="col-lg-8 col-md-8 col-sm-8">
                             <h4 class="beneficio hurme-semibold ">Centros Comreciales</h4>
                         </div>
                         <!--Elementos-->
-                        <div class="col-lg-4 col-md-4 col-sm-4 sinpadding">
+                        <div class="col-lg-4 col-md-4 col-sm-4">
                             <div class="beneficios-ico">
                                 <img src="{{asset('img/beneficios/4.svg') }}" alt="" class="img-fluid" width="100">
                             </div>
                         </div>
-                        <div class="col-lg-8 col-md-8 col-sm-8 sinpadding">
+                        <div class="col-lg-8 col-md-8 col-sm-8">
                             <h4 class="beneficio hurme-semibold ">Escuelas</h4>
                         </div>
                         <!--Elementos-->
-                        <div class="col-lg-4 col-md-4 col-sm-4 sinpadding">
+                        <div class="col-lg-4 col-md-4 col-sm-4">
                             <div class="beneficios-ico">
                                 <img src="{{asset('img/beneficios/6.svg') }}" alt="" class="img-fluid" width="100">
                             </div>
                         </div>
-                        <div class="col-lg-8 col-md-8 col-sm-8 sinpadding">
+                        <div class="col-lg-8 col-md-8 col-sm-8">
                             <h4 class="beneficio hurme-semibold ">Entretenimiento</h4>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-6 sinpadding">
+                <div class="col-lg-6 col-md-6 col-sm-6">
                     <div class="row">
                         <!--Elementos-->
-                        <div class="col-lg-4 col-md-4 col-sm-4 sinpadding">
+                        <div class="col-lg-4 col-md-4 col-sm-4">
                             <div class="beneficios-ico">
                                 <img src="{{asset('img/beneficios/2.svg') }}" alt="" class="img-fluid" width="100">
                             </div>
                         </div>
-                        <div class="col-lg-8 col-md-8 col-sm-8 sinpadding">
+                        <div class="col-lg-8 col-md-8 col-sm-8">
                             <h4 class="beneficio hurme-semibold ">Bancos</h4>
                         </div>
                         <!--Elementos-->
-                        <div class="col-lg-4 col-md-4 col-sm-4 sinpadding">
+                        <div class="col-lg-4 col-md-4 col-sm-4">
                             <div class="beneficios-ico">
                                 <img src="{{asset('img/beneficios/8.svg') }}" alt="" class="img-fluid" width="100">
                             </div>
                         </div>
-                        <div class="col-lg-8 col-md-8 col-sm-8  sinpadding">
+                        <div class="col-lg-8 col-md-8 col-sm-8 ">
                             <h4 class="beneficio hurme-semibold">Gasolineras</h4>
                         </div>
                         <!--Elementos-->
-                        <div class="col-lg-4 col-md-4 col-sm-4 sinpadding">
+                        <div class="col-lg-4 col-md-4 col-sm-4">
                             <div class="beneficios-ico">
                                 <img src="{{asset('img/beneficios/5.svg') }}" alt="" class="img-fluid" width="100">
                             </div>
                         </div>
-                        <div class="col-lg-8 col-md-8 col-sm-8  sinpadding">
+                        <div class="col-lg-8 col-md-8 col-sm-8 ">
                             <h4 class="beneficio hurme-semibold">Hospitales y Farmacias</h4>
                         </div>
                         <!--Elementos-->
-                        <div class="col-lg-4 col-md-4 col-sm-4 sinpadding">
+                        <div class="col-lg-4 col-md-4 col-sm-4">
                             <div class="beneficios-ico">
                                 <img src="{{asset('img/beneficios/7.svg') }}" alt="" class="img-fluid" width="100">
                             </div>
                         </div>
-                        <div class="col-lg-8 col-md-8 col-sm-8  sinpadding">
+                        <div class="col-lg-8 col-md-8 col-sm-8 ">
                             <h4 class="beneficio hurme-semibold">Pago de Servicios</h4>
                         </div>
                     </div>
