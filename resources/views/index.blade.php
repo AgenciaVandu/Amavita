@@ -237,7 +237,16 @@
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12">
-
+                    
+                            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
+                            <script>
+                            hbspt.forms.create({
+                            region: "na1",
+                            portalId: "5510950",
+                            formId: "4f8b9726-8345-4f16-b902-556d0b33072a"
+                            });
+                            </script>
+                    
                 </div>
             </div>
         </div>
