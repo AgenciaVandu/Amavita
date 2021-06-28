@@ -233,7 +233,7 @@
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-12">
                     <div class="mapa">
-                        <img src="{{asset('img/mapa.svg') }}" alt="">
+                        <img src="{{asset('img/mapa-2.svg') }}" alt="">
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12">

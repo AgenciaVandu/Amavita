@@ -53,10 +53,10 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item active hurmeregular">
-          <a class="nav-link" href="#ama-vivir-en-caucel">Desarrollos <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="#ama-vivir-en-caucel">Amenidades <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item active hurmeregular">
-          <a class="nav-link" href="#modelos">Amenidades</a>
+          <a class="nav-link" href="#modelos">Modelos</a>
         </li>
         <li class="nav-item active hurmeregular">
           <a class="nav-link" href="#beneficios">Beneficios</a>
