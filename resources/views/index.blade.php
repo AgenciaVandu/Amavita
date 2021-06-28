@@ -30,7 +30,7 @@
                         <div class="col-lg-6 col-6 col-sm-6">
                             <div class="icon">
                                 <img src="{{asset('img/caracteristicas/hectareas.svg') }}" class="img-fluid" width="110" alt="">
-                                <h5 class="hurmebold">6.8<br> <span class="hurmeregular">Perimetral</span></h5>
+                                <h5 class="hurmebold">6.8<br> <span class="hurmeregular">Hectáreas</span></h5>
                             
                             </div>
                         </div>
