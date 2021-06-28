@@ -90,7 +90,9 @@
                   <b>
                   www.grupocasitas.com.mx
                 </b></span> <br>
-                <span style="color: #fff"><i class="fab fa-facebook-square" style="margin-right: 5px"></i><i class="fab fa-instagram-square" style="margin-right: 5px"></i>GrupoCasitas</span>
+                <span style="color: #fff; text-deo"><a href="https://www.facebook.com/GrupoCasitas"><i class="fab fa-facebook-square" style="margin-right: 5px"></i></a>
+                  <a href="https://www.instagram.com/grupocasitas/"><i class="fab fa-instagram-square" style="margin-right: 5px">
+                  </i></a> GrupoCasitas</span>
               </p>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12 pt-4">
