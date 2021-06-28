@@ -3,7 +3,7 @@
 
 <header>
     <div class="bg-overlay">
-        
+
     </div>
 </header>
 
@@ -24,14 +24,14 @@
                             <div class="icon">
                                 <img src="{{asset('img/caracteristicas/caucel.svg') }}" class="img-fluid" width="110" alt="">
                                 <h5 class="hurmebold">Caucel</h5>
-                                
+
                             </div>
                         </div>
                         <div class="col-lg-6 col-6 col-sm-6">
                             <div class="icon">
                                 <img src="{{asset('img/caracteristicas/hectareas.svg') }}" class="img-fluid" width="110" alt="">
                                 <h5 class="hurmebold">6.8<br> <span class="hurmeregular">Hectáreas</span></h5>
-                            
+
                             </div>
                         </div>
                     </div>
@@ -42,14 +42,14 @@
                             <div class="icon">
                                 <img src="{{asset('img/caracteristicas/viviendas.svg') }}" class="img-fluid" width="110" alt="">
                                 <h5 class="hurmebold">441<br> <span class="hurmeregular">viviendas</span></h5>
-                            
+
                             </div>
                         </div>
                         <div class="col-lg-6 col-6 col-sm-6">
                             <div class="icon">
                                 <img src="{{asset('img/caracteristicas/caseta.svg') }}" class="img-fluid" width="110" alt="">
                                 <h5 class="hurmebold">Caseta<br> <span class="hurmeregular">de vigilancia</span></h5>
-                                 
+
                             </div>
                         </div>
                     </div>
@@ -60,14 +60,14 @@
                             <div class="icon">
                                 <img src="{{asset('img/caracteristicas/barda.svg') }}" class="img-fluid" width="110" alt="">
                                 <h5 class="hurmebold">Barda <br> <span class="hurmeregular">Perimetral</span></h5>
-                                
+
                             </div>
                         </div>
                         <div class="col-lg-6 col-6 col-sm-6">
                             <div class="icon">
                                 <img src="{{asset('img/caracteristicas/servicios.svg') }}" class="img-fluid" width="110" alt="">
                                 <h5 class="hurmebold">Todos los servicios<br> <span class="hurmeregular">a tu alcance</span></h5>
-                               
+
                             </div>
                         </div>
                     </div>
@@ -227,7 +227,7 @@
 </section>
 
 <section id="contactanos" class="mt-5">
-    <h1 style="text-align: center" class="hurmebold">Contáctanos</h1>
+    <h1 style="text-align: center" class="hurmebold text-white py-3">Contáctanos</h1>
     <div class="bg-contacto">
         <div class="container">
             <div class="row">
@@ -237,7 +237,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12">
-                    
+
                             <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
                             <script>
                             hbspt.forms.create({
@@ -246,7 +246,7 @@
                             formId: "4f8b9726-8345-4f16-b902-556d0b33072a"
                             });
                             </script>
-                    
+
                 </div>
             </div>
         </div>
