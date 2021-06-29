@@ -96,11 +96,11 @@
               </p>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12 pt-4">
-              
+
                 <div class="casitas">
                   <img src="{{ asset('img/casitas.svg')}}" class="img-fluid" alt="Grupo Casitas" width="300">
                 </div>
-              
+
             </div>
           </div>
         </div>
