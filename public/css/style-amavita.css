@@ -204,7 +204,8 @@ li {
 .bg-modelos-1 {
     background-image: url(/img/amavita/patron-modelos-1.svg);
     background-repeat: no-repeat;
-    min-height: 200px;
+    max-height: 350px;
+    background-size: cover;
 }
 
 .orden-1 {
@@ -227,6 +228,16 @@ li {
     }
 }
 
+.titular-modelos-1 {
+    padding-top: 130px;
+    position: relative;
+    top: 30px;
+}
+.bg-modelos-3 {
+    background-image: url(/img/fondo-modelos.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 footer {
     background-color: #EE7768;
 }

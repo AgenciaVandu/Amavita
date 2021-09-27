@@ -21,6 +21,9 @@ Route::get('/amavita', function(){
     return view ('amavita');
 });
 
+Route::get('/modelos-amavita', function() {
+    return view ('modelos.modelos');
+});
 
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
