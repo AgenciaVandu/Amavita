@@ -16,12 +16,12 @@
     <title>Amavita Caucel</title>
     <meta name="author" content="https://agenciavandu.com" />
 
-    <link href="{{asset('css/style-amavita.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
+    <link href="{{asset('css/style-amavita.css') }}" rel="stylesheet">
     <!--Bootstrap 4.6-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-
+   
   <!-- Facebook Pixel Code -->
 <script>
   !function(f,b,e,v,n,t,s)
@@ -81,15 +81,63 @@
 
     @yield('content')
 
+    <footer>
+      <div class="container">
+        <div class="row pt-5">
+          <div class="col-4">
+            <h4 class="hurmebold" style="color: #fff">Visita nuestro <br>punto de venta</h4>
+            <div class="mapa">
+
+            </div>
+            <p style="color: #fff">Plaza 55: C 59A Local 11 Cd. Caucel 
+              <br>Informes: Tel: <a href="tel:999949952" style="color: #fff">(999) 944 9952</a>
+            </p>
+          </div>
+          <div class="col-5">
+            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
+            <script data-hubspot-rendered="true">
+              hbspt.forms.create({
+                  region: "na1",
+                  portalId: "5510950",
+                  formId: "4f8b9726-8345-4f16-b902-556d0b33072a"
+              });
+          </script>
+          </div>
+          <div class="col-3 text-center pt-5">
+            <img src="{{asset('img/casitas.svg')}}" width="140" alt="Logo grupo casitas">
+            <div class="row">
+              <div class="col-12 pt-3">
+                <p>
+                    <a href=""> 
+                    <i class="icono fab fa-facebook-square pr-2 redes" style="color: #fff"></i>
+                    </a>
+                    <a href="">
+                        <i class=" icono fab fa-instagram pr-2 redes" style="color: #fff"></i>
+                    </a>
+                    <a href="">
+                        <i class=" icono fab fa-linkedin pr-2 redes" style="color: #fff"></i>
+                    </a> <br>
+                    <a href="" target="blanK_" style="color: #fff">www.grupocasitas.mx</a>
+                </p>
+              
+            </div>
+              
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </footer>
+
     
 
-
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
-
+    <script src="{{asset('js/carousel.js')}}"></script>
     <!-- Start of HubSpot Embed Code -->
-<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/5510950.js"></script>
+    <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/5510950.js"></script>
 <!-- End of HubSpot Embed Code -->
 </body>
 </html>

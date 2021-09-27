@@ -136,3 +136,58 @@ li {
     list-style: none ;
     padding: none !important;
 }
+
+.espaciado-2 {
+    padding-left: 230px;
+    padding-right: 230px;
+} @media (max-width: 600px) {
+    .espaciado-2 {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+}
+
+.centrado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 240px;
+}
+
+.bg-llamada {
+    background-image: url(/img/index/llamada.jpg);
+    background-position: center;
+    min-height: 240px;
+    background-repeat: no-repeat;
+}
+
+/*carousel*/
+
+.carousel__anterior,
+.carousel__siguiente {
+    display: none;
+}
+
+.carousel__indicadores .glider-dot {
+    background: #EE7768;
+    opacity: .2;
+}
+
+.carousel__indicadores .glider-dot:hover {
+    opacity: .5;
+}
+.carousel__indicadores .glider-dot.active {
+    opacity: 1;
+}
+
+footer {
+    background-color: #EE7768;
+}
+
+.redes {
+    font-size: 20px;
+}
+
+
+
+
