@@ -2,13 +2,14 @@
 <html lang="es">
 <head>
   <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-X3Z82DK556"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7Z17NR4HD9"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-X3Z82DK556');
+  gtag('config', 'G-7Z17NR4HD9');
 </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,7 +22,14 @@
     <link href="{{asset('css/style-amavita.css') }}" rel="stylesheet">
     <!--Bootstrap 4.6-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-   
+   <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-KJVX4HS');</script>
+  <!-- End Google Tag Manager -->
+  
   <!-- Facebook Pixel Code -->
 <script>
   !function(f,b,e,v,n,t,s)
@@ -42,49 +50,50 @@
 
 </head>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-nav fixed-top patron">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">
-        <img src="{{ asset('img/amavita-logo.svg')}}" width="200" alt="logotipo Amavita Caucel">
-      </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item active hurmeregular">
-          <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item active hurmeregular">
-          <a class="nav-link" href="#">Amavita <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item active hurmeregular">
-          <a class="nav-link" href="#">Galeria</a>
-        </li>
-       
-        
-      </ul>
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item active hurmeregular">
-          <a class="nav-link btn btn-primary" href="#">PRECALIFICATE</a>
-        </li>
-      </ul>
-    </div>
-</div>
-  </nav>
-
-
-
-
 
 <body>
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KJVX4HS"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-nav fixed-top patron">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+          <img src="{{ asset('img/amavita-logo.svg')}}" width="200" alt="logotipo Amavita Caucel">
+        </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active hurmeregular">
+            <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active hurmeregular">
+            <a class="nav-link" href="#">Amavita <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active hurmeregular">
+            <a class="nav-link" href="#">Galeria</a>
+          </li>
+         
+          
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active hurmeregular">
+            <a class="nav-link btn btn-primary" href="#">PRECALIFICATE</a>
+          </li>
+        </ul>
+      </div>
+  </div>
+    </nav>
+  
 
     @yield('content')
 
     <footer>
       <div class="container">
         <div class="row pt-5">
-          <div class="col-4">
+          <div class="col-md-4 col-sm-12">
             <h4 class="hurmebold" style="color: #fff">Visita nuestro <br>punto de venta</h4>
             <div class="mapa">
 
@@ -93,7 +102,7 @@
               <br>Informes: Tel: <a href="tel:999949952" style="color: #fff">(999) 944 9952</a>
             </p>
           </div>
-          <div class="col-5">
+          <div class="col-md-5 col-sm-12">
             <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
             <script data-hubspot-rendered="true">
               hbspt.forms.create({
@@ -103,7 +112,7 @@
               });
           </script>
           </div>
-          <div class="col-3 text-center pt-5">
+          <div class="col-md-3 col-sm-12 text-center pt-5">
             <img src="{{asset('img/casitas.svg')}}" width="140" alt="Logo grupo casitas">
             <div class="row">
               <div class="col-12 pt-3">

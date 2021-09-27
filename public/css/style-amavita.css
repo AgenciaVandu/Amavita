@@ -39,6 +39,13 @@ body {
     color: #0f3e67;
 }
 
+.color-gray {
+    color: #818180;
+}
+
+.bg-azul {
+    background-color: #0f3e67;
+}
 
 
 /* Fin-Colores */
@@ -164,7 +171,9 @@ li {
 /*carousel*/
 
 .carousel__anterior,
-.carousel__siguiente {
+.carousel__siguiente,
+.carousel__anterior1,
+.carousel__siguiente1  {
     display: none;
 }
 
@@ -180,12 +189,60 @@ li {
     opacity: 1;
 }
 
+.carousel__indicadores1 .glider-dot {
+    background: #EE7768;
+    opacity: .2;
+}
+
+.carousel__indicadores1 .glider-dot:hover {
+    opacity: .5;
+}
+.carousel__indicadores1 .glider-dot.active {
+    opacity: 1;
+}
+
+.bg-modelos-1 {
+    background-image: url(/img/amavita/patron-modelos-1.svg);
+    background-repeat: no-repeat;
+    min-height: 200px;
+}
+
+.orden-1 {
+    text-align: justify;
+}
+.gpo-casitas {
+    position: relative;
+    left: 50px;
+    top: 20px;
+} @media (max-width:600px) {
+    .gpo-casitas {
+        padding-top: 30px;
+        left: auto;
+        top: auto;
+        order: 2;
+    } 
+    .orden-1 {
+        padding-top: 30px;
+        order: 1;
+    }
+}
+
 footer {
     background-color: #EE7768;
 }
 
 .redes {
     font-size: 20px;
+}
+
+.titulo {
+    font-size: 35px;
+}
+
+@media (max-width:600px) {
+    .beneficios {
+        font-size: 13px;
+    }
 }
 
 

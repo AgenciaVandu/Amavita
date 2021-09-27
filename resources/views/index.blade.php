@@ -95,7 +95,7 @@
                     </div>
                     <div class="col-6">
                         <img src="{{asset('img/index/tu-podrias/viviendas.svg')}}" width="70" loading="lazy" alt="">
-                        <p class="hurme-semibold pt-2">BARDA <br>PERIMETRAOL</p>
+                        <p class="hurme-semibold pt-2">BARDA <br>PERIMETRAL</p>
                     </div>
                 </div>
                 <div class="col-12 mt-4">
@@ -112,46 +112,71 @@
 
 <section id="modelos">
     <div class="container text-center">
-        <h4 class="hurmebold color-rose pt-5">Amarás nuestros modelos, 
+        <h4 class="hurmebold color-rose pt-5 pb-5">Amarás nuestros modelos, 
             <br>
             elige el ideal para ti
         </h4>
-        <div class="bg-modelos">
-            <div class="row pt-4">
-                <div class="col-4">
-                    <img src="{{asset('img/index/modelos/1.png')}}" class="img-fluid" loading="lazy" alt="">
-                    <h5 class="color-blue hurmebold pt-3">ALULA <br> 
-                        <span class="hurme-semibold">Desde: $000,000</span>
-                    </h5>
-                    <li class="color-blue hurmeregular">2 recámaras</li>
-                    <li class="color-blue hurmeregular">Baño completo</li>
-                    <li class="color-blue hurmeregular">Pasillo lateral</li>
-                    <li class="color-blue hurmeregular">Patio</li>
-                    <a href="" class="btn btn-secondary hurmebold mt-2">Cotiza tu casa</a>
-                </div>
-                <div class="col-4">
-                    <img src="{{asset('img/index/modelos/2.png')}}" class="img-fluid" loading="lazy" alt="">
-                    <h5 class="color-blue hurmebold pt-3">Boreal <br> 
-                        <span class="hurme-semibold">Desde: $000,000</span>
-                    </h5>
-                    <li class="color-blue hurmeregular">2 recámaras</li>
-                    <li class="color-blue hurmeregular">Baño completo</li>
-                    <li class="color-blue hurmeregular">Pasillo lateral</li>
-                    <li class="color-blue hurmeregular">Patio</li>
-                    <a href="" class="btn btn-secondary hurmebold mt-2">Cotiza tu casa</a>
-                    
-                </div>
-                <div class="col-4">
-                    <img src="{{asset('img/index/modelos/3.png')}}" class="img-fluid" loading="lazy" alt="">
-                    <h5 class="color-blue hurmebold pt-3">CITALA <br> 
-                        <span class="hurme-semibold">Desde: $000,000</span>
-                    </h5>
-                    <li class="color-blue hurmeregular">2 recámaras</li>
-                    <li class="color-blue hurmeregular">Baño completo</li>
-                    <li class="color-blue hurmeregular">Pasillo lateral</li>
-                    <li class="color-blue hurmeregular">Patio</li>
-                    <a href="" class="btn btn-secondary hurmebold mt-2">Cotiza tu casa</a>
-                    
+    </div>
+    <div class="bg-modelos-1">
+        <div class="container text-center">
+            <div class="bg-modelos">
+                <div class="text-center pt-5">
+                    <div class="carousel_1">
+                        <!--Carousel 1-->
+                        <div class="carousel__contenedor">
+                            <!--Carousel contenedor-->
+                            <button aria-label="anterior" class="carousel__anterior1">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <div class="carousel__lista1">
+                                <div class="carousel__elemento1">
+                                    <div class="col">
+                                        <img src="{{asset('img/index/modelos/1.png')}}" class="img-fluid" loading="lazy" alt="">
+                                        <h5 class="color-blue hurmebold pt-3">ALULA <br> 
+                                            <span class="hurme-semibold">Desde: $000,000</span>
+                                        </h5>
+                                        <li class="color-blue hurmeregular">2 recámaras</li>
+                                        <li class="color-blue hurmeregular">Baño completo</li>
+                                        <li class="color-blue hurmeregular">Pasillo lateral</li>
+                                        <li class="color-blue hurmeregular">Patio</li>
+                                        <a href="" class="btn btn-secondary hurmebold mt-2">Cotiza tu casa</a>
+                                    </div>
+                                </div>
+                                <div class="carousel__elemento">
+                                    <div class="col">
+                                        <img src="{{asset('img/index/modelos/2.png')}}" class="img-fluid" loading="lazy" alt="">
+                                        <h5 class="color-blue hurmebold pt-3">Boreal <br> 
+                                            <span class="hurme-semibold">Desde: $000,000</span>
+                                        </h5>
+                                        <li class="color-blue hurmeregular">2 recámaras</li>
+                                        <li class="color-blue hurmeregular">Baño completo</li>
+                                        <li class="color-blue hurmeregular">Pasillo lateral</li>
+                                        <li class="color-blue hurmeregular">Patio</li>
+                                        <a href="" class="btn btn-secondary hurmebold mt-2">Cotiza tu casa</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="carousel__elemento">
+                                    <div class="col">
+                                        <img src="{{asset('img/index/modelos/3.png')}}" class="img-fluid" loading="lazy" alt="">
+                                        <h5 class="color-blue hurmebold pt-3">CITALA <br> 
+                                            <span class="hurme-semibold">Desde: $000,000</span>
+                                        </h5>
+                                        <li class="color-blue hurmeregular">2 recámaras</li>
+                                        <li class="color-blue hurmeregular">Baño completo</li>
+                                        <li class="color-blue hurmeregular">Pasillo lateral</li>
+                                        <li class="color-blue hurmeregular">Patio</li>
+                                        <a href="" class="btn btn-secondary hurmebold mt-2">Cotiza tu casa</a>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <button aria-label="siguiente" class="carousel__siguiente1">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+                        <div role="tabList" class="carousel__indicadores1"></div>
+                    </div> <!-- Fint Carousel 1-->
                 </div>
             </div>
         </div>
