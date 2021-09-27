@@ -16,7 +16,7 @@
     <title>Amavita Caucel</title>
     <meta name="author" content="https://agenciavandu.com" />
 
-    <link href="{{asset('css/style.css') }}" rel="stylesheet">
+    <link href="{{asset('css/style-amavita.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
     <!--Bootstrap 4.6-->
@@ -43,7 +43,7 @@
 </head>
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-nav fixed-top patron">
-  <div class="container">
+  <div class="container-fluid">
     <a class="navbar-brand" href="#">
         <img src="{{ asset('img/amavita-logo.svg')}}" width="200" alt="logotipo Amavita Caucel">
       </a>
@@ -53,16 +53,20 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item active hurmeregular">
-          <a class="nav-link" href="#ama-vivir-en-caucel">Amenidades <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item active hurmeregular">
-          <a class="nav-link" href="#modelos">Modelos</a>
+          <a class="nav-link" href="#">Amavita <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item active hurmeregular">
-          <a class="nav-link" href="#beneficios">Beneficios</a>
+          <a class="nav-link" href="#">Galeria</a>
         </li>
+       
+        
+      </ul>
+      <ul class="navbar-nav ml-auto">
         <li class="nav-item active hurmeregular">
-          <a class="nav-link" href="#contactanos">Contacto</a>
+          <a class="nav-link btn btn-primary" href="#">PRECALIFICATE</a>
         </li>
       </ul>
     </div>
@@ -77,35 +81,7 @@
 
     @yield('content')
 
-    <footer>
-      <div class="bg-footer">
-        <div class="container contenido-footer">
-          <div class="row align-items-start justify-content-center">
-            <div class="col-lg-6 col-md-6 col-sm-12">
-              <p class="footer-txt">
-                <span style="color: #fff"><b>Visita nuestro punto de venta</b></span> <br>
-                <span style="color: #fff">Plaza 55: C 59A Local 11 Cd. Caucel</span> <br>
-                <span style="color: #fff"><b>Informes: </b>Tel. (999) 944 9952 punto de venta</span> <br>
-                <span style="color: #fff">
-                  <b>
-                  www.grupocasitas.com.mx
-                </b></span> <br>
-                <span style="color: #fff; text-deo"><a href="https://www.facebook.com/GrupoCasitas"><i class="fab fa-facebook-square" style="margin-right: 5px"></i></a>
-                  <a href="https://www.instagram.com/grupocasitas/"><i class="fab fa-instagram-square" style="margin-right: 5px">
-                  </i></a> GrupoCasitas</span>
-              </p>
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-12 pt-4">
-
-                <div class="casitas">
-                  <img src="{{ asset('img/casitas.svg')}}" class="img-fluid" alt="Grupo Casitas" width="300">
-                </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
+    
 
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

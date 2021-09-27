@@ -1,0 +1,76 @@
+@font-face {
+    font-family: 'Hurme-bold';
+    src: url("../fonts/HurmeGeometricSans4-bold.otf");
+    font-style: normal;
+    font-weight: bold;
+    }
+
+@font-face {
+    font-family: 'Hurme-regular';
+    src: url("../fonts/HurmeGeometricSans4.otf");
+    font-style: normal;
+    font-weight: 300;
+    }
+
+@font-face {
+    font-family: 'Hurme-light';
+    src: url("../fonts/HurmeGeometricSans4-light.otf");
+    font-style: normal;
+    font-weight: 200;
+    }
+    
+
+@font-face {
+    font-family: 'Hurme-semibold';
+    src: url("../fonts/HurmeGeometricSans4-SemiBold.otf");
+    font-style: normal;
+    font-weight: 500;
+    }
+
+.hurmebold {
+    font-family: 'Hurme-bold';
+    font-style: normal;
+    font-weight: bold;
+    color: #0f3e67;
+    
+}
+
+.hurmeregular {
+    font-family: 'Hurme-regular';
+    font-weight: 300;
+    color: #0f3e67;
+    
+}
+
+.hurme-semibold {
+    font-family: 'Hurme-semibold';
+    font-weight: 500;
+    color: #0f3e67;
+    
+}
+
+.nav-item {
+    font-size: 20px;
+    padding-right: 25px;
+} 
+.bg-nav {
+    background-color: #EE7768;
+}
+
+
+.btn-primary {
+    background-color: #0f3e67 !important;
+    color: #EE7768 !important;
+    border: none !important;
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+    border-radius: 0 !important;
+}
+
+.btn-primary:hover {
+    background-color: #072642 !important;
+}
+
+.slider-header {
+    padding-top: 90px;
+}
