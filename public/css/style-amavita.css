@@ -110,6 +110,10 @@ body {
     padding-top: 90px;
 }
 
+.slider-header-1 {
+    padding-top: 130px;
+}
+
 
 .bg-intro {
     padding-top: 50px;
@@ -346,4 +350,20 @@ footer {
     background-image: url(/img/modelos/alula/circulo.svg);
     background-position: 0 70px;
     background-repeat: no-repeat;
+}
+
+.bg-avances {
+    background-image: url(/img/avances.png);
+    min-height: 362px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.btn-avances {
+    min-height: 362px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+    bottom: 30px;
 }

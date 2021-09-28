@@ -34,6 +34,12 @@ Route::get('/modelo-boreal', function(){
 Route::get('/modelo-citala', function(){
     return view ('modelos.citala');
 });
+Route::get('/galeria', function(){
+    return view ('gallery.index');
+});
+Route::get('/galeria/resultado', function(){
+    return view ('gallery.show');
+});
 
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
