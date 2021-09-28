@@ -310,6 +310,11 @@ footer {
     background-repeat: no-repeat;
     background-position: 0 35px;
 }
+.detalle-titulo-2 {
+    background-image: url(/img/modelos/citala/detalle-modelo-2.svg);
+    background-repeat: no-repeat;
+    background-position: 0 35px;
+}
 
 
 #cabecera {

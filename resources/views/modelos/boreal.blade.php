@@ -68,8 +68,8 @@
                 <div class="col-md-6 col-sm-12 mt-2 pt-5 detalle-titulo-1">
                     <ul>
                         <h4 class="hurmebold" style="color: #fff">Modelo Alula</h4> <br>
-                        <li class="hurmeregular">Construcción: 50.93 m2</li>
-                        <li class="hurmeregular">Terreno desde: 5 x 20 m</li> <br>
+                        <li class="hurmeregular">Construcción: 61.86 m2</li>
+                        <li class="hurmeregular">Terreno desde: 6 x 20 m</li> <br>
 
                         <li class="hurmebold"><b>Planta arquitectónica</b></li> <br>
 
@@ -77,10 +77,16 @@
                         <li class="hurmeregular">Cocina con barra desayunadora</li>
                         <li class="hurmeregular">Baño completo</li>
                         <li class="hurmeregular">Espacio para jardín interior</li>
-                        <li class="hurmeregular">Recámara 1 con área para clóset</li>
+                        <li class="hurmeregular">Recámara 1 con área para clóset con acceso a baño</li>
                         <li class="hurmeregular">Recámara 2 con área para clóset</li>
+                        <li class="hurmeregular">Área de lavado</li>
                         <li class="hurmeregular">Patio</li> <br>
-                        <li><img src="{{asset('img/modelos/alula/construccion.svg')}}" width="320" alt="Tipo de construccion"></li>
+                        <div class="d-none d-md-block d-lg-block">
+                            <li><img src="{{asset('img/modelos/boreal/construccion-1.svg')}}" width="480" alt="Tipo de construccion"></li>
+                        </div>
+                        <div class="d-block d-md-none d-lg-none">
+                            <li><img src="{{asset('img/modelos/boreal/construccion-2.svg')}}" width="340" alt="Tipo de construccion"></li>
+                        </div>
                     </ul>
                     <div class="row pt-5">
                         <div class="col-md-6 col-sm-12 pt-2">
@@ -96,7 +102,7 @@
                 <div class="col-md-6 col-sm-12 pt-5 text-center">
                     <div class="row">
                         <div class="col-12">
-                            <img src="{{asset('img/modelos/alula/plano.png')}}" class="img-fluid" alt="Plano de vivienda">
+                            <img src="{{asset('img/modelos/boreal/plano.png')}}" class="img-fluid" alt="Plano de vivienda">
                         </div>
                         
                     </div>
@@ -137,13 +143,13 @@
                                 <div class="carousel__elemento1">
                                     <div class="col">
                                         <img src="{{asset('img/index/modelos/1.png')}}" class="img-fluid" loading="lazy" alt="">
-                                        <h5 class="color-blue hurmebold pt-3">ALULA <br> 
+                                        <h5 class=" hurmebold pt-3" style="color: #fff">ALULA <br> 
                                             <span class="hurme-semibold">Desde: $000,000</span>
                                         </h5>
-                                        <li class="color-blue hurmeregular">2 recámaras</li>
-                                        <li class="color-blue hurmeregular">Baño completo</li>
-                                        <li class="color-blue hurmeregular">Pasillo lateral</li>
-                                        <li class="color-blue hurmeregular">Patio</li>
+                                        <li class=" hurmeregular" style="color: #fff">2 recámaras</li>
+                                        <li class=" hurmeregular" style="color: #fff">Baño completo</li>
+                                        <li class=" hurmeregular" style="color: #fff">Pasillo lateral</li>
+                                        <li class=" hurmeregular" style="color: #fff">Patio</li>
                                         <a href="" class="btn btn-secondary hurmebold mt-2">Cotiza tu casa</a>
                                     </div>
                                 </div>
