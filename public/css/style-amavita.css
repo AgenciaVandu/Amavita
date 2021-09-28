@@ -381,3 +381,23 @@ footer {
 .bco {
     color: #fff !important;
 }
+
+.typ {
+    background-image: url(/img/modelos/lead/TYP.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+}
+
+.acomodo {
+    text-align: center;
+    position: relative;
+    top: 180px;
+}
+
+@media (max-width:600px) {
+    .acomodo h2 {
+        font-size: 20px;
+    }
+}

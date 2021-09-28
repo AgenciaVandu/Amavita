@@ -54,6 +54,10 @@ Route::get('/lead-citala', function(){
     return view ('modelos.lead.citala');
 });
 
+Route::get('/gracias-por-registrarte', function(){
+    return view ('modelos.lead.gracias');
+});
+
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
