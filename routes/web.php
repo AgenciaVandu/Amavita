@@ -25,6 +25,10 @@ Route::get('/modelos-amavita', function() {
     return view ('modelos.modelos');
 });
 
+Route::get('/modelo-alula', function(){
+    return view ('modelos.alula');
+});
+
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');

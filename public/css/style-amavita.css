@@ -250,12 +250,68 @@ footer {
     font-size: 35px;
 }
 
+.titular-modelos-2 {
+    padding-top: 190px;
+    position: relative;
+    top: 10px;
+}
+
+.posicion-render {
+    position: relative;
+    right: 80px;
+} @media (max-width:600px) {
+    .posicion-render {
+        right: auto;
+    }
+}
+.posicion-render-1 {
+    position: relative;
+    left: 10px;
+} @media (max-width:600px) {
+    .posicion-render {
+        right: auto;
+    }
+}
+
 @media (max-width:600px) {
     .beneficios {
         font-size: 13px;
     }
 }
 
+.bg-modelos-4 {
+    background-image: url(/img/modelos/fondo-renders.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 480px;
+}
 
+.detalle-titulo {
+    background-image: url(/img/modelos/alula/detalle-titulo.svg);
+    background-repeat: no-repeat;
+    background-position: 0 35px;
+}
+
+
+#cabecera {
+    position: relative;
+    top: -100px;
+}
+
+#video {
+    padding-bottom: 40px;
+}
+
+@media(max-width:600px) {
+    #recorrido {
+        position: relative;
+        top: -80px;
+    }
+    #video {
+        position: relative;
+        top: -70px;
+        padding-bottom: 0px;
+    }
+}
 
 
