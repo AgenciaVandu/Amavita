@@ -218,8 +218,7 @@ li {
 .bg-modelos-1 {
     background-image: url(/img/amavita/patron-modelos-1.svg);
     background-repeat: no-repeat;
-    max-height: 350px;
-    background-size: cover;
+    width: 100%;
 }
 
 .orden-1 {

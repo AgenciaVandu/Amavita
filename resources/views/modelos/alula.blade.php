@@ -138,7 +138,7 @@
                                 <div class="carousel__elemento">
                                     <div class="col">
                                         <img src="{{asset('img/index/modelos/2.png')}}" class="img-fluid" loading="lazy" alt="">
-                                        <h5 class="hurmebold pt-3" style="color: #fff">Boreal <br> 
+                                        <h5 class="hurmebold pt-3" style="color: #fff">BOREAL <br> 
                                             <span class="hurme-semibold">Desde: $000,000</span>
                                         </h5>
                                         <li class="hurmeregular" style="color: #fff">2 recámaras</li>

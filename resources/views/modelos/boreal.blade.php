@@ -121,4 +121,89 @@
         </div>
     </section>
 
+    <section id="modelos-int">
+        <div class="bg-naranja">
+            <div class="container pt-4 pb-5">
+                <h4 class="hurmebold pt-5 color-rose text-center">Modelos que pueden interesarte</h4>
+                <div class="text-center pt-5">
+                    <div class="carousel_4">
+                        <!--Carousel 1-->
+                        <div class="carousel__contenedor">
+                            <!--Carousel contenedor-->
+                            <button aria-label="anterior" class="carousel__anterior4">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <div class="carousel__lista4">
+                                <div class="carousel__elemento1">
+                                    <div class="col">
+                                        <img src="{{asset('img/index/modelos/1.png')}}" class="img-fluid" loading="lazy" alt="">
+                                        <h5 class="color-blue hurmebold pt-3">ALULA <br> 
+                                            <span class="hurme-semibold">Desde: $000,000</span>
+                                        </h5>
+                                        <li class="color-blue hurmeregular">2 recámaras</li>
+                                        <li class="color-blue hurmeregular">Baño completo</li>
+                                        <li class="color-blue hurmeregular">Pasillo lateral</li>
+                                        <li class="color-blue hurmeregular">Patio</li>
+                                        <a href="" class="btn btn-secondary hurmebold mt-2">Cotiza tu casa</a>
+                                    </div>
+                                </div>
+                                <div class="carousel__elemento">
+                                    <div class="col">
+                                        <img src="{{asset('img/index/modelos/3.png')}}" class="img-fluid" loading="lazy" alt="">
+                                        <h5 class="hurmebold pt-3" style="color: #fff">CITALA <br> 
+                                            <span class="hurme-semibold">Desde: $000,000</span>
+                                        </h5>
+                                        <li class="hurmeregular" style="color: #fff">2 recámaras</li>
+                                        <li class="hurmeregular" style="color: #fff">Baño completo</li>
+                                        <li class="hurmeregular" style="color: #fff">Pasillo lateral</li>
+                                        <li class="hurmeregular" style="color: #fff">Patio</li>
+                                        <a href="" class="btn btn-secondary hurmebold mt-2">Cotiza tu casa</a>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <button aria-label="siguiente" class="carousel__siguiente4">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+                        <div role="tabList" class="carousel__indicadores4"></div>
+                    </div> <!-- Fint Carousel 1-->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="creditos">
+        <div class="container text-center">
+            <h4 class="hurmebold color-blue pt-5">Aceptamos todo tipo de crédito <br> ¡Precalifícate!</h4>
+            <div class="d-none d-md-block d-lg-block">
+                <div class="row espaciado-2">
+                    <div class="col-md-3 col-sm-6">
+                        <img src="{{asset('img/index/creditos/1.svg')}}" width="100" alt="">
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <img src="{{asset('img/index/creditos/2.svg')}}" width="100" alt="">
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <img src="{{asset('img/index/creditos/3.svg')}}" width="180" alt="">
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <img src="{{asset('img/index/creditos/4.svg')}}" width="100" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="d-block d-sm-block d-md-none d-lg-none">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <img src="{{asset('img/index/creditos/credito-1.svg')}}" width="290" alt="">
+                    </div>
+                    <div class="col-sm-6">
+                        <img src="{{asset('img/index/creditos/credito-2.svg')}}" width="290" alt="">
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
 @endsection
