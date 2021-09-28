@@ -173,7 +173,9 @@ li {
 .carousel__anterior,
 .carousel__siguiente,
 .carousel__anterior1,
-.carousel__siguiente1  {
+.carousel__siguiente1,
+.carousel__anterior4,
+.carousel__siguiente4   {
     display: none;
 }
 
@@ -200,6 +202,18 @@ li {
 .carousel__indicadores1 .glider-dot.active {
     opacity: 1;
 }
+.carousel__indicadores4 .glider-dot {
+    background: #EE7768;
+    opacity: .2;
+}
+
+.carousel__indicadores4 .glider-dot:hover {
+    opacity: .5;
+}
+.carousel__indicadores4 .glider-dot.active {
+    opacity: 1;
+}
+
 
 .bg-modelos-1 {
     background-image: url(/img/amavita/patron-modelos-1.svg);
@@ -292,6 +306,12 @@ footer {
     background-position: 0 35px;
 }
 
+.detalle-titulo-1 {
+    background-image: url(/img/modelos/boreal/detalle-modelo-1.svg);
+    background-repeat: no-repeat;
+    background-position: 0 35px;
+}
+
 
 #cabecera {
     position: relative;
@@ -314,4 +334,12 @@ footer {
     }
 }
 
+#modelos-int {
+    background-color: #0f3e67;
+}
 
+.bg-naranja {
+    background-image: url(/img/modelos/alula/circulo.svg);
+    background-position: 0 70px;
+    background-repeat: no-repeat;
+}

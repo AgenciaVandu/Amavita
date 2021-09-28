@@ -28,6 +28,12 @@ Route::get('/modelos-amavita', function() {
 Route::get('/modelo-alula', function(){
     return view ('modelos.alula');
 });
+Route::get('/modelo-boreal', function(){
+    return view ('modelos.boreal');
+});
+Route::get('/modelo-citala', function(){
+    return view ('modelos.citala');
+});
 
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {

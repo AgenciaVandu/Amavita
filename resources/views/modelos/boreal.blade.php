@@ -16,7 +16,7 @@
             <div class="d-none d-md-block d-lg-block">
                 <div class="row">
                     <div class="col-8 pt-1 posicion-render-1">
-                        <img src="{{asset('img/modelos/alula/render-modelo-1.jpg')}}" class="img-fluid" alt="Render de modelo alula">
+                        <img src="{{asset('img/modelos/alula/render-2.jpg')}}" class="img-fluid" alt="Render de modelo alula">
                     </div>
                     <div class="col-4 posicion-render">
                         <div class="row">
@@ -65,7 +65,7 @@
             </div>
 
             <div class="row">
-                <div class="col-md-6 col-sm-12 mt-2 pt-5 detalle-titulo">
+                <div class="col-md-6 col-sm-12 mt-2 pt-5 detalle-titulo-1">
                     <ul>
                         <h4 class="hurmebold" style="color: #fff">Modelo Alula</h4> <br>
                         <li class="hurmeregular">Construcción: 50.93 m2</li>
@@ -95,12 +95,10 @@
                 
                 <div class="col-md-6 col-sm-12 pt-5 text-center">
                     <div class="row">
-                        <div class="col-6">
+                        <div class="col-12">
                             <img src="{{asset('img/modelos/alula/plano.png')}}" class="img-fluid" alt="Plano de vivienda">
                         </div>
-                        <div class="col-6">
-                            <img src="{{asset('img/modelos/alula/plano.png')}}" class="img-fluid" alt="Plano de vivienda">
-                        </div>
+                        
                     </div>
                 </div>
             </div>
