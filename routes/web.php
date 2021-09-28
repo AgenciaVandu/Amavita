@@ -41,6 +41,18 @@ Route::get('/galeria/resultado', function(){
     return view ('gallery.show');
 });
 
+/*
+Leads
+*/ 
+Route::get('/lead-alula', function(){
+    return view ('modelos.lead.alula');
+});
+Route::get('/lead-boreal', function(){
+    return view ('modelos.lead.boreal');
+});
+Route::get('/lead-citala', function(){
+    return view ('modelos.lead.citala');
+});
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');

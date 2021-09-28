@@ -67,7 +67,7 @@
             <div class="row">
                 <div class="col-md-6 col-sm-12 mt-2 pt-5 detalle-titulo-1">
                     <ul>
-                        <h4 class="hurmebold" style="color: #fff">Modelo Alula</h4> <br>
+                        <h4 class="hurmebold" style="color: #fff">Modelo Boreal</h4> <br>
                         <li class="hurmeregular">Construcción: 61.86 m2</li>
                         <li class="hurmeregular">Terreno desde: 6 x 20 m</li> <br>
 
