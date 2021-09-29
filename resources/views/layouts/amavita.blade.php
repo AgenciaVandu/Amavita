@@ -16,7 +16,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Amavita Caucel</title>
     <meta name="author" content="https://agenciavandu.com" />
-
+    <script src="{{asset('js/scrollreveal.js')}}"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link href="{{asset('css/style-amavita.css') }}" rel="stylesheet">
@@ -139,7 +139,8 @@
     </footer>
 
     
-
+    <script src="{{asset('js/animacion.js')}}"></script>
+    
     <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>

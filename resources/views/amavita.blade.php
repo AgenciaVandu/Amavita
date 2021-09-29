@@ -28,7 +28,7 @@
 </header>
 
 <section id="master-plan">
-    <div class="bg-familia-3">
+    <div class="bg-familia-3 fade-in-1">
         <div class="container arrows-1 text-center">
             <h5 class="hurmebold color-rose pt-5 pb-4">Bienvenido a tu nuevo hogar,<br> 
                 <span class="hurmebold color-blue titulo">estás en Amavita Caucel</span>
@@ -95,7 +95,7 @@
 </section>
 
 <section id="caracteristicas">
-    <div class="bg">
+    <div class="bg fade-in-1">
         <div class="container">
             <div class="bg-detalles-1">
                 <h4 class="hurmebold color-rose text-center pt-4 pb-4">Ama el bienestar de tu familia <br> 
@@ -215,7 +215,7 @@
 </section>
 
 <section id="servicios">
-    <div class="container">
+    <div class="container fade-in-1">
         <div class="col-12 text-center pt-4">
             <h4 class="hurmebold color-rose">Ama estar rodeado <br> 
                 <span class="hurmebold color-blue">de todos los servicios</span>
@@ -281,7 +281,7 @@
     </div>
 </section>
 <section id="disponibilidad">
-    <div class="container">
+    <div class="container fade-in-1">
         <div class="col-12 text-center disponibilidad-2 pb-5">
             <h4 class="hurmebold color-rose">Conoce la disponibilidad, <br> <span class="hurmebold color-blue">Amarás vivir aquí:</span></h4>
         </div>
@@ -289,7 +289,7 @@
     <img src="{{asset('img/amavita/mapa-master-ed.png')}}" class="w-100" loading="lazy" alt="">
 </section>
 
-<section id="modelos">
+<section id="modelos" >
     <div class="container text-center">
         <h4 class="hurmebold color-rose pt-5 pb-5">Amarás nuestros modelos, 
             <br>

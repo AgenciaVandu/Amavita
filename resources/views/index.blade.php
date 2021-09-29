@@ -28,7 +28,7 @@
 </header>
 
 <section id="introduccion">
-    <div class="bg-familia">
+    <div class="bg-familia fade-in">
         <div class="container">
             <div class="row bg-intro">
                 <div class="col-md-6 col-sm-12 text-center">
@@ -46,7 +46,7 @@
 </section>
 
 <section id="desarrollo">
-    <div class="container">
+    <div class="container fade-in">
         <h4 class="color-rose hurmebold text-center pt-5 pb-5">Ama vivir en Caucel, <br> 
             <span class="color-blue">todo esto está a tu al rededor</span>
         </h4>
@@ -77,7 +77,7 @@
         <div class="text-center">
             <a href="#" class="btn btn-secondary hurme-semibold mt-4">Conoce Amavita</a>
         </div>
-        <div class="row pt-5 text-center">
+        <div class="row pt-5 text-center fade-in-1">
             <div class="col-md-6">
                 <h4 class="color-rose hurmebold">Tu podrías vivir aquí,<br>
                     <span class="color-blue">conoce tu próximo hogar</span>
@@ -113,13 +113,13 @@
 </section>
 
 <section id="modelos">
-    <div class="container text-center">
+    <div class="container text-center fade-in-1">
         <h4 class="hurmebold color-rose pt-5 pb-5">Amarás nuestros modelos, 
             <br>
             elige el ideal para ti
         </h4>
     </div>
-    <div class="bg-modelos-1">
+    <div class="bg-modelos-1 fade-in-1">
         <div class="container text-center">
             <div class="bg-modelos">
                 <div class="text-center pt-5">
@@ -187,7 +187,7 @@
 </section>
 
 <section id="creditos">
-    <div class="container text-center">
+    <div class="container text-center ">
         <h4 class="hurmebold color-blue pt-5 arrows">Aceptamos todo tipo de crédito <br> ¡Precalifícate!</h4>
         <div class="d-none d-md-block d-lg-block">
             <div class="row espaciado-2">
@@ -219,7 +219,7 @@
     </div>
 </section>
 
-<section id="galeria">
+<section id="galeria" ">
     <div class="container">
         <h4 class=" hurmebold color-blue text-center pt-5 pb-4">Conoce el avance de Amavita Caucel</h4>
         <div class="text-center pt-5">
