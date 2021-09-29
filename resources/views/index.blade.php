@@ -1,6 +1,5 @@
 @extends('layouts.amavita')
 @section('content')
-
     <main role="main">
         <div class="modal fade" id="modal-brochure" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
@@ -23,7 +22,6 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-light" data-dismiss="modal">Cerrar</button>
-
                     </div>
                 </div>
             </div>
@@ -143,7 +141,82 @@
             </div>
             <div class="text-center">
                 <a href="{{ url('/amavita') }}" class="btn btn-secondary hurme-semibold mt-4">Conoce Amavita</a>
-                              <div class="col">
+            </div>
+            <div class="row pt-5 text-center fade-in-1">
+                <div class="col-md-6">
+                    <h4 class="color-rose hurmebold">Tu podrías vivir aquí,<br>
+                        <span class="color-blue">conoce tu próximo hogar</span>
+                    </h4>
+                    <div class="row espaciado-1">
+                        <div class="col-6">
+                            <img src="{{ asset('img/index/tu-podrias/viviendas.svg') }}" width="70" loading="lazy"
+                                alt="">
+                            <p class="hurme-semibold pt-2">CAUCEL</p>
+                        </div>
+                        <div class="col-6">
+                            <img src="{{ asset('img/index/tu-podrias/viviendas.svg') }}" width="70" loading="lazy"
+                                alt="">
+                            <p class="hurme-semibold pt-2">441 VIVIENDAS</p>
+                        </div>
+                        <div class="col-6">
+                            <img src="{{ asset('img/index/tu-podrias/viviendas.svg') }}" width="70" loading="lazy"
+                                alt="">
+                            <p class="hurme-semibold pt-2">CASETA DE <br> VIGILANCIA</p>
+                        </div>
+                        <div class="col-6">
+                            <img src="{{ asset('img/index/tu-podrias/viviendas.svg') }}" width="70" loading="lazy"
+                                alt="">
+                            <p class="hurme-semibold pt-2">BARDA <br>PERIMETRAL</p>
+                        </div>
+                    </div>
+                    <div class="col-12 mt-4">
+                        <a href="{{ url('/amavita') }}" class="btn btn-secondary hurmebold">Conoce Amavita</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img src="{{ asset('img/index/familia.png') }}" class="img-fluid pt-4" loading="lazy"
+                        alt="Familia en amavita">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="modelos">
+        <div class="container text-center fade-in-1">
+            <h4 class="hurmebold color-rose pt-5 pb-5">Amarás nuestros modelos,
+                <br>
+                elige el ideal para ti
+            </h4>
+        </div>
+        <div class="bg-modelos-1 fade-in-1">
+            <div class="container text-center">
+                <div class="bg-modelos">
+                    <div class="text-center pt-5">
+                        <div class="carousel_1">
+                            <!--Carousel 1-->
+                            <div class="carousel__contenedor">
+                                <!--Carousel contenedor-->
+                                <button aria-label="anterior" class="carousel__anterior1">
+                                    <i class="fas fa-chevron-left"></i>
+                                </button>
+                                <div class="carousel__lista1">
+                                    <div class="carousel__elemento1">
+                                        <div class="col">
+                                            <img src="{{ asset('img/index/modelos/1.png') }}" class="img-fluid"
+                                                loading="lazy" alt="">
+                                            <h5 class="color-blue hurmebold pt-3">ALULA <br>
+                                                <span class="hurme-semibold">Desde: $000,000</span>
+                                            </h5>
+                                            <li class="color-blue hurmeregular">2 recámaras</li>
+                                            <li class="color-blue hurmeregular">Baño completo</li>
+                                            <li class="color-blue hurmeregular">Pasillo lateral</li>
+                                            <li class="color-blue hurmeregular">Patio</li>
+                                            <a href="{{ url('/modelo-alula') }}"
+                                                class="btn btn-secondary hurmebold mt-2">Cotiza tu casa</a>
+                                        </div>
+                                    </div>
+                                    <div class="carousel__elemento">
+                                        <div class="col">
                                             <img src="{{ asset('img/index/modelos/2.png') }}" class="img-fluid"
                                                 loading="lazy" alt="">
                                             <h5 class="color-blue hurmebold pt-3">Boreal <br>
@@ -155,7 +228,6 @@
                                             <li class="color-blue hurmeregular">Patio</li>
                                             <a href="{{ url('/modelo-boreal') }}"
                                                 class="btn btn-secondary hurmebold mt-2">Cotiza tu casa</a>
-
                                         </div>
                                     </div>
                                     <div class="carousel__elemento">
@@ -171,7 +243,6 @@
                                             <li class="color-blue hurmeregular">Patio</li>
                                             <a href="{{ url('/modelo-citala') }}"
                                                 class="btn btn-secondary hurmebold mt-2">Cotiza tu casa</a>
-
                                         </div>
                                     </div>
                                 </div>
@@ -215,7 +286,6 @@
                     <div class="col-sm-6">
                         <img src="{{ asset('img/index/creditos/credito-2.svg') }}" width="290" alt="">
                     </div>
-
                 </div>
             </div>
         </div>
@@ -269,8 +339,6 @@
                                         loading="lazy" alt="Amenidades de los desarrollos habitacionales">
                                 </div>
                             </div>
-
-
                         </div>
                         <button aria-label="siguiente" class="carousel__siguiente">
                             <i class="fas fa-chevron-right"></i>
@@ -295,8 +363,6 @@
                         </div>
                     </div>
                 </div>
-
-
             </div>
         </div>
     </section>
