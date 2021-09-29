@@ -22,7 +22,6 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-light" data-dismiss="modal">Cerrar</button>
-
                     </div>
                 </div>
             </div>
