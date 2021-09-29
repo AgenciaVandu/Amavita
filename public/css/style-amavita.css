@@ -267,6 +267,12 @@ footer {
     font-size: 20px;
 }
 
+.mapa {
+    width: auto;
+
+}
+
+
 .titulo {
     font-size: 35px;
 }
@@ -476,3 +482,4 @@ footer {
     background-position: right;
     background-repeat: no-repeat;
 }
+
