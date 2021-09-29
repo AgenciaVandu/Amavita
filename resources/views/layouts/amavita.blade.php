@@ -16,7 +16,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Amavita Caucel</title>
     <meta name="author" content="https://agenciavandu.com" />
-
+    <script src="{{asset('js/scrollreveal.js')}}"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link href="{{asset('css/style-amavita.css') }}" rel="stylesheet">
@@ -58,7 +58,7 @@
   <!-- End Google Tag Manager (noscript) -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-nav fixed-top patron">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="{{url('/')}}">
           <img src="{{ asset('img/amavita-logo.svg')}}" width="200" alt="logotipo Amavita Caucel">
         </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -67,20 +67,23 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active hurmeregular">
-            <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="{{url('/')}}">Inicio <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item active hurmeregular">
-            <a class="nav-link" href="#">Amavita <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="{{url('/amavita')}}"">Amavita <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item active hurmeregular">
-            <a class="nav-link" href="#">Galeria</a>
+            <a class="nav-link" href="{{url('/modelos-amavita')}}">Modelos</a>
+          </li>
+          <li class="nav-item active hurmeregular">
+            <a class="nav-link" href="{{url('/galeria')}}">Galeria</a>
           </li>
          
           
         </ul>
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active hurmeregular">
-            <a class="nav-link btn btn-primary" href="#">PRECALIFICATE</a>
+            <a class="nav-link btn btn-primary" href="{{url('/contacto')}}">PRECALIFICATE</a>
           </li>
         </ul>
       </div>
@@ -96,7 +99,7 @@
           <div class="col-md-4 col-sm-12">
             <h4 class="hurmebold" style="color: #fff">Visita nuestro <br>punto de venta</h4>
             <div class="mapa">
-
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.398826371192!2d-89.72779978506757!3d21.016722186004877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjHCsDAxJzAwLjIiTiA4OcKwNDMnMzIuMiJX!5e0!3m2!1ses-419!2smx!4v1632937582481!5m2!1ses-419!2smx" width="" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
             <p style="color: #fff">Plaza 55: C 59A Local 11 Cd. Caucel 
               <br>Informes: Tel: <a href="tel:999949952" style="color: #fff">(999) 944 9952</a>
@@ -139,7 +142,8 @@
     </footer>
 
     
-
+    <script src="{{asset('js/animacion.js')}}"></script>
+    
     <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>

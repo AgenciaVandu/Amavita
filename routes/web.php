@@ -39,6 +39,9 @@ Route::get('/galeria', function () {
 Route::get('/galeria/resultado', function () {
     return view('gallery.show');
 });
+Route::get('/contacto', function(){
+    return view ('contacto');
+});
 
 /*
 Leads

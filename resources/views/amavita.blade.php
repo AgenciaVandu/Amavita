@@ -1,5 +1,34 @@
 @extends('layouts.amavita')
 @section('content')
+<main role="main">
+    <div class="modal fade" id="modal-brochure" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="exampleModalLabel">Descarga nuestro Brochure</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body" style="background-color: #0f3e67">
+                        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
+                        <script>
+                            hbspt.forms.create({
+                                region: "na1",
+                                portalId: "5510950",
+                                formId: "dc9cfba4-600b-4430-9bc3-cd95ff13c768"
+                            });
+                        </script>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-light" data-dismiss="modal">Cerrar</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+</main>
 <header class="slider-header">
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -28,7 +57,7 @@
 </header>
 
 <section id="master-plan">
-    <div class="bg-familia-3">
+    <div class="bg-familia-3 fade-in-1">
         <div class="container arrows-1 text-center">
             <h5 class="hurmebold color-rose pt-5 pb-4">Bienvenido a tu nuevo hogar,<br> 
                 <span class="hurmebold color-blue titulo">estás en Amavita Caucel</span>
@@ -83,10 +112,10 @@
             <div class="col-12 text-center pb-5">
                 <div class="row espaciado">
                     <div class="col-md-6 col-sm-12 mt-3">
-                        <a href="" class="btn btn-secondary hurmebold">Descarga el brochure</a>
+                        <a href="" class="btn btn-secondary hurmebold" data-toggle="modal" data-target="#modal-brochure">Descarga el brochure</a>
                     </div>
                     <div class="col-md-6 col-sm-12 mt-3">
-                        <a href="" class="btn btn-secondary hurmebold">Descarga el brochure</a>
+                        <a href="{{url('/modelos-amavita')}}" class="btn btn-lead hurmebold">Cotiza tu casa</a>
                     </div>
                 </div>
             </div>
@@ -95,7 +124,7 @@
 </section>
 
 <section id="caracteristicas">
-    <div class="bg">
+    <div class="bg fade-in-1">
         <div class="container">
             <div class="bg-detalles-1">
                 <h4 class="hurmebold color-rose text-center pt-4 pb-4">Ama el bienestar de tu familia <br> 
@@ -135,7 +164,7 @@
 
                             Totalmente conectada a todos los servicios que tu  familia necesita, 
                             para que solo te enfoques en la gente que amas y en disfrutar de tu entorno.</p>
-                        <a href="" class="hurmebold btn btn-secondary">Cotiza tu casa</a>
+                        <a href="{{url('/modelos-amavita')}}" class="hurmebold btn btn-secondary">Cotiza tu casa</a>
                     </div>
                     <div class="col-md-7 col-sm-12">
                         <div class="d-none d-md-block d-lg-block">
@@ -215,7 +244,7 @@
 </section>
 
 <section id="servicios">
-    <div class="container">
+    <div class="container fade-in-1">
         <div class="col-12 text-center pt-4">
             <h4 class="hurmebold color-rose">Ama estar rodeado <br> 
                 <span class="hurmebold color-blue">de todos los servicios</span>
@@ -281,7 +310,7 @@
     </div>
 </section>
 <section id="disponibilidad">
-    <div class="container">
+    <div class="container fade-in-1">
         <div class="col-12 text-center disponibilidad-2 pb-5">
             <h4 class="hurmebold color-rose">Conoce la disponibilidad, <br> <span class="hurmebold color-blue">Amarás vivir aquí:</span></h4>
         </div>
@@ -290,13 +319,13 @@
 </section>
 
 <section id="modelos">
-    <div class="container text-center">
+    <div class="container text-center fade-in-1">
         <h4 class="hurmebold color-rose pt-5 pb-5">Amarás nuestros modelos, 
             <br>
             elige el ideal para ti
         </h4>
     </div>
-    <div class="bg-modelos-1">
+    <div class="bg-modelos-1 fade-in-1">
         <div class="container text-center">
             <div class="bg-modelos">
                 <div class="text-center pt-5">
@@ -318,7 +347,7 @@
                                         <li class="color-blue hurmeregular">Baño completo</li>
                                         <li class="color-blue hurmeregular">Pasillo lateral</li>
                                         <li class="color-blue hurmeregular">Patio</li>
-                                        <a href="" class="btn btn-secondary hurmebold mt-2">Cotiza tu casa</a>
+                                        <a href="{{url('/modelo-alula')}}" class="btn btn-secondary hurmebold mt-2">Cotiza tu casa</a>
                                     </div>
                                 </div>
                                 <div class="carousel__elemento">
@@ -331,7 +360,7 @@
                                         <li class="color-blue hurmeregular">Baño completo</li>
                                         <li class="color-blue hurmeregular">Pasillo lateral</li>
                                         <li class="color-blue hurmeregular">Patio</li>
-                                        <a href="" class="btn btn-secondary hurmebold mt-2">Cotiza tu casa</a>
+                                        <a href="{{url('/modelo-boreal')}}" class="btn btn-secondary hurmebold mt-2">Cotiza tu casa</a>
                                         
                                     </div>
                                 </div>
@@ -345,7 +374,7 @@
                                         <li class="color-blue hurmeregular">Baño completo</li>
                                         <li class="color-blue hurmeregular">Pasillo lateral</li>
                                         <li class="color-blue hurmeregular">Patio</li>
-                                        <a href="" class="btn btn-secondary hurmebold mt-2">Cotiza tu casa</a>
+                                        <a href="{{url('/modelo-citala')}}" class="btn btn-secondary hurmebold mt-2">Cotiza tu casa</a>
                                         
                                     </div>
                                 </div>
@@ -358,6 +387,7 @@
                     </div> <!-- Fint Carousel 1-->
                 </div>
             </div>
+            
         </div>
     </div>
 </section>
