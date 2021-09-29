@@ -28,16 +28,18 @@
 </header>
 
 <section id="introduccion">
-    <div class="container">
-        <div class="row bg-intro">
-            <div class="col-md-6 col-sm-12 text-center">
-                <img src="{{asset('img/index/desarrollo.png')}}" class="img-fluid" loading="lazy" alt="Desarrollo habitacional amavita caucel">
-            </div>
-            <div class="col-md-6 col-sm-12  text-center">
-                <h3 class="hurme-semibold color-rose pt-3">Tú y tu familia disfrutarán de <br> todo lo bueno de la vida</h3>
-                <h4 class="hurme-semibold color-blue pt-3">Desde: $000,000</h4>
-                <p class="pt-2">Disfruta vivir en un desarrollo tipo privada habitacional<br>con la oportunidad de vivir cerca de todos los servicios<br> que tu familia necesita, así como la tranquilidad de<br> vivir en un lugar seguro, fresco y a la altura de<br> tus necesidades.</p>
-                <a href="" class="btn btn-secondary mt-2">Desacarga el brochure</a>
+    <div class="bg-familia">
+        <div class="container">
+            <div class="row bg-intro">
+                <div class="col-md-6 col-sm-12 text-center">
+                    <img src="{{asset('img/index/desarrollo.png')}}" class="img-fluid" loading="lazy" alt="Desarrollo habitacional amavita caucel">
+                </div>
+                <div class="col-md-6 col-sm-12  text-center">
+                    <h3 class="hurme-semibold color-rose pt-3">Tú y tu familia disfrutarán de <br> todo lo bueno de la vida</h3>
+                    <h4 class="hurme-semibold color-blue pt-3">Desde: $000,000</h4>
+                    <p class="pt-2">Disfruta vivir en un desarrollo tipo privada habitacional<br>con la oportunidad de vivir cerca de todos los servicios<br> que tu familia necesita, así como la tranquilidad de<br> vivir en un lugar seguro, fresco y a la altura de<br> tus necesidades.</p>
+                    <a href="" class="btn btn-secondary mt-2">Desacarga el brochure</a>
+                </div>
             </div>
         </div>
     </div>
@@ -52,11 +54,11 @@
             <div class="espaciado">
                 <div class="row text-center">
                     <div class="col">
-                        <img src="{{asset ('img/index/centros-comerciales.svg')}}" width="100" loading="lazy" alt="Iconos de servicios">
+                        <img src="{{asset ('img/index/escuelas.svg')}}" width="100" loading="lazy" alt="Iconos de servicios">
                         <p class="hurme-semibold pt-3" >Escuelas</p>
                     </div>
                     <div class="col">
-                        <img src="{{asset ('img/index/centros-comerciales.svg')}}" width="100" loading="lazy" alt="Iconos de servicios">
+                        <img src="{{asset ('img/index/entretenimiento.svg')}}" width="100" loading="lazy" alt="Iconos de servicios">
                         <p class="hurme-semibold pt-3">Entretenimiento</p>
                     </div>
                     <div class="col">
@@ -186,7 +188,7 @@
 
 <section id="creditos">
     <div class="container text-center">
-        <h4 class="hurmebold color-blue pt-5">Aceptamos todo tipo de crédito <br> ¡Precalifícate!</h4>
+        <h4 class="hurmebold color-blue pt-5 arrows">Aceptamos todo tipo de crédito <br> ¡Precalifícate!</h4>
         <div class="d-none d-md-block d-lg-block">
             <div class="row espaciado-2">
                 <div class="col-md-3 col-sm-6">
@@ -220,20 +222,7 @@
 <section id="galeria">
     <div class="container">
         <h4 class=" hurmebold color-blue text-center pt-5 pb-4">Conoce el avance de Amavita Caucel</h4>
-        <div class="d-none d-md-block d-lg-block">
-            <div class="row">
-                <div class="col-4 ">
-                    <img src="{{asset('img/index/galeria/1.jpg')}}" class="img-fluid" loading="lazy" alt="Amenidades de los desarrollos habitacionales">
-                </div>
-                <div class="col-4 ">
-                    <img src="{{asset('img/index/galeria/2.jpg')}}" class="img-fluid" loading="lazy" alt="Amenidades de los desarrollos habitacionales">
-                </div>
-                <div class="col-4 ">
-                    <img src="{{asset('img/index/galeria/3.jpg')}}" class="img-fluid" loading="lazy" alt="Amenidades de los desarrollos habitacionales">
-                </div>
-            </div>
-        </div>
-        <div class="text-center d-block d-sm-block d-md-none d-lg-none">
+        <div class="text-center pt-5">
             <div class="carousel_1">
                 <!--Carousel 1-->
                 <div class="carousel__contenedor">

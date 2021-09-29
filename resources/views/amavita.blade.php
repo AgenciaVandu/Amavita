@@ -28,10 +28,12 @@
 </header>
 
 <section id="master-plan">
-    <div class="container text-center">
-        <h5 class="hurmebold color-rose pt-5 pb-4">Bienvenido a tu nuevo hogar,<br> 
-            <span class="hurmebold color-blue titulo">estás en Amavita Caucel</span>
-        </h5>
+    <div class="bg-familia-3">
+        <div class="container arrows-1 text-center">
+            <h5 class="hurmebold color-rose pt-5 pb-4">Bienvenido a tu nuevo hogar,<br> 
+                <span class="hurmebold color-blue titulo">estás en Amavita Caucel</span>
+            </h5>
+        </div>
     </div>
     <div class="p-0">
         <img src="{{asset('img/amavita/master.jpg')}}" class="img-fluid p-0 w-100" alt="Master plan Amavita Caucel">
@@ -93,36 +95,38 @@
 </section>
 
 <section id="caracteristicas">
-    <div class="bg-detalles-1">
+    <div class="bg">
         <div class="container">
-            <h4 class="hurmebold color-rose text-center pt-4 pb-4">Ama el bienestar de tu familia <br> 
-                <span class="hurmebold color-blue">el desarrollo cuenta con:</span>
-            </h4>
-            <div class="row text-center">
-                <div class="col">
-                    <img src="{{asset('img/amavita/el-desarrollo/1.svg')}}" width="70" alt="Instalaciones electricas">
-                    <p class="hurmeregular color-gray pt-2">Instalaciones eléctricas 
-                        <br> subterráneas
-                    </p>
-                </div>
-                <div class="col">
-                    <img src="{{asset('img/amavita/el-desarrollo/2.svg')}}" width="70" alt="Drenaje pluvial">
-                    <p class="hurmeregular color-gray pt-2">Drenaje pluvial
-                    </p>
-                </div>
-                <div class="col">
-                    <img src="{{asset('img/amavita/el-desarrollo/3.svg')}}" width="70" alt="Planta de tratamiento">
-                    <p class="hurmeregular color-gray pt-2">Planta de tratamiento
-                    </p>
-                </div>
-                <div class="col">
-                    <img src="{{asset('img/amavita/el-desarrollo/4.svg')}}" width="70" alt="Servicio de agua potable">
-                    <p class="hurmeregular color-gray pt-2">Servicio de agua potable
-                    </p>
+            <div class="bg-detalles-1">
+                <h4 class="hurmebold color-rose text-center pt-4 pb-4">Ama el bienestar de tu familia <br> 
+                    <span class="hurmebold color-blue">el desarrollo cuenta con:</span>
+                </h4>
+                <div class="row p-bienestar text-center">
+                    <div class="col">
+                        <img src="{{asset('img/amavita/el-desarrollo/1.svg')}}" width="70" alt="Instalaciones electricas">
+                        <p class="hurmeregular color-gray pt-2">Instalaciones eléctricas 
+                            <br> subterráneas
+                        </p>
+                    </div>
+                    <div class="col">
+                        <img src="{{asset('img/amavita/el-desarrollo/2.svg')}}" width="70" alt="Drenaje pluvial">
+                        <p class="hurmeregular color-gray pt-2">Drenaje pluvial
+                        </p>
+                    </div>
+                    <div class="col">
+                        <img src="{{asset('img/amavita/el-desarrollo/3.svg')}}" width="70" alt="Planta de tratamiento">
+                        <p class="hurmeregular color-gray pt-2">Planta de tratamiento
+                        </p>
+                    </div>
+                    <div class="col">
+                        <img src="{{asset('img/amavita/el-desarrollo/4.svg')}}" width="70" alt="Servicio de agua potable">
+                        <p class="hurmeregular color-gray pt-2">Servicio de agua potable
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="bg-detalles-2">
+        <div class="bg-familia-2">
             <div class="container">
                 <div class="row pt-5">
                     <div class="col-md-5 col-sm-12">
@@ -134,33 +138,73 @@
                         <a href="" class="hurmebold btn btn-secondary">Cotiza tu casa</a>
                     </div>
                     <div class="col-md-7 col-sm-12">
-                        <div class="row">
-                            <div class="col-6">
-                                <p class="hurmeregular"><img src="{{asset('img/amavita/beneficios/8.svg')}}" width="80" alt="">
-                                    Gasolineras
-                                </p>
-                                <p class="hurmeregular"><img src="{{asset('img/amavita/beneficios/3.svg')}}" width="80" alt="">
-                                    Comercios
-                                </p>
-                                <p class="hurmeregular"><img src="{{asset('img/amavita/beneficios/5.svg')}}" width="80" alt="">
-                                    Hospitales
-                                </p>
-                                <p class="hurmeregular"><img src="{{asset('img/amavita/beneficios/6.svg')}}" width="80" alt="">
-                                    <span class="beneficios">Entretenimiento</span>
-                                </p>
-                                
+                        <div class="d-none d-md-block d-lg-block">
+                            <div class="row">
+                                <div class="col-6">
+                                    <p class="hurmeregular"><img src="{{asset('img/amavita/beneficios/8.svg')}}" width="80" alt="">
+                                        Gasolineras
+                                    </p>
+                                    <p class="hurmeregular"><img src="{{asset('img/amavita/beneficios/3.svg')}}" width="80" alt="">
+                                        Comercios
+                                    </p>
+                                    <p class="hurmeregular"><img src="{{asset('img/amavita/beneficios/5.svg')}}" width="80" alt="">
+                                        Hospitales
+                                    </p>
+                                    <p class="hurmeregular"><img src="{{asset('img/amavita/beneficios/6.svg')}}" width="80" alt="">
+                                        <span class="beneficios">Entretenimiento</span>
+                                    </p>
+                                    
+                                </div>
+                                <div class="col-6">
+                                    <p class="hurmeregular"><img src="{{asset('img/amavita/beneficios/2.svg')}}" width="80" alt="">
+                                        Bancos
+                                    </p>
+                                    <p class="hurmeregular"><img src="{{asset('img/amavita/beneficios/4.svg')}}" width="80" alt="">
+                                        Escuelas
+                                    </p>
+                                    <p class="hurmeregular"><img src="{{asset('img/amavita/beneficios/1.svg')}}" width="80" alt="">
+                                        <span class="beneficios">Supermercados</span>
+                                    </p>
+                                    
+                                </div>
                             </div>
-                            <div class="col-6">
-                                <p class="hurmeregular"><img src="{{asset('img/amavita/beneficios/2.svg')}}" width="80" alt="">
-                                    Bancos
-                                </p>
-                                <p class="hurmeregular"><img src="{{asset('img/amavita/beneficios/4.svg')}}" width="80" alt="">
-                                    Escuelas
-                                </p>
-                                <p class="hurmeregular"><img src="{{asset('img/amavita/beneficios/1.svg')}}" width="80" alt="">
-                                    <span class="beneficios">Supermercados</span>
-                                </p>
-                                
+                        </div>
+                        <div class="d-block d-md-none d-lg-none">
+                            <div class="row">
+                                <div class="col-6 text-center">
+                                    <img src="{{asset('img/amavita/beneficios/8.svg')}}" width="80" alt="">
+                                    <p class="hurmeregular">
+                                        Gasolineras
+                                    </p>
+                                    <img src="{{asset('img/amavita/beneficios/3.svg')}}" width="80" alt="">
+                                    <p class="hurmeregular">
+                                        Comercios
+                                    </p>
+                                    <img src="{{asset('img/amavita/beneficios/5.svg')}}" width="80" alt="">
+                                    <p class="hurmeregular">
+                                        Hospitales
+                                    </p>
+                                    <img src="{{asset('img/amavita/beneficios/6.svg')}}" width="80" alt="">
+                                    <p class="hurmeregular">
+                                        <span class="beneficios">Entretenimiento</span>
+                                    </p>
+                                    
+                                </div>
+                                <div class="col-6 text-center">
+                                    <img src="{{asset('img/amavita/beneficios/2.svg')}}" width="80" alt="">
+                                    <p class="hurmeregular">
+                                        Bancos
+                                    </p>
+                                    <img src="{{asset('img/amavita/beneficios/4.svg')}}" width="80" alt="">
+                                    <p class="hurmeregular">
+                                        Escuelas
+                                    </p>
+                                    <img src="{{asset('img/amavita/beneficios/1.svg')}}" width="80" alt="">
+                                    <p class="hurmeregular">
+                                        <span class="beneficios">Supermercados</span>
+                                    </p>
+                                    
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -178,7 +222,7 @@
              </h4>
         </div>
         <img src="{{asset('img/amavita/mapa-servicios.svg')}}" class="img-fluid" alt="">
-        <div class="text-center pt-5">
+        <div class="text-center pt-5 pb-5">
             <div class="carousel_1">
                 <!--Carousel 1-->
                 <div class="carousel__contenedor">
@@ -238,7 +282,7 @@
 </section>
 <section id="disponibilidad">
     <div class="container">
-        <div class="col-12 text-center pt-5 pb-5">
+        <div class="col-12 text-center disponibilidad-2 pb-5">
             <h4 class="hurmebold color-rose">Conoce la disponibilidad, <br> <span class="hurmebold color-blue">Amarás vivir aquí:</span></h4>
         </div>
     </div>
@@ -320,7 +364,7 @@
 
 <section id="creditos">
     <div class="container text-center">
-        <h4 class="hurmebold color-blue pt-5">Aceptamos todo tipo de crédito <br> ¡Precalifícate!</h4>
+        <h4 class="hurmebold color-blue pt-5 arrows">Aceptamos todo tipo de crédito <br> ¡Precalifícate!</h4>
         <div class="d-none d-md-block d-lg-block">
             <div class="row espaciado-2">
                 <div class="col-md-3 col-sm-6">
