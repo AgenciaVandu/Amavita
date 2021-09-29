@@ -164,7 +164,7 @@
 
                             Totalmente conectada a todos los servicios que tu  familia necesita, 
                             para que solo te enfoques en la gente que amas y en disfrutar de tu entorno.</p>
-                        <a href="{{url('/modelos-amavita')}}" class="hurmebold btn btn-secondary">Cotiza tu casa</a>
+                        <a href="{{url('/modelos-amavita')}}" class="hurmebold btn btn-secondary mb-3">Cotiza tu casa</a>
                     </div>
                     <div class="col-md-7 col-sm-12">
                         <div class="d-none d-md-block d-lg-block">

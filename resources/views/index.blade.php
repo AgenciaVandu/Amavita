@@ -86,12 +86,12 @@
                             alt="Desarrollo habitacional amavita caucel">
                     </div>
                     <div class="col-md-6 col-sm-12  text-center">
-                        <h3 class="hurme-semibold color-rose pt-3">Tú y tu familia disfrutarán de <br> todo lo bueno de la
+                        <h3 class="hurme-semibold color-rose pt-3">Tú y tu familia disfrutarán de <br class="d-none d-md-block d-lg-block"> todo lo bueno de la
                             vida</h3>
                         <h4 class="hurme-semibold color-blue pt-3">Desde: $000,000</h4>
-                        <p class="pt-2">Disfruta vivir en un desarrollo tipo privada habitacional<br>con la
-                            oportunidad de vivir cerca de todos los servicios<br> que tu familia necesita, así como la
-                            tranquilidad de<br> vivir en un lugar seguro, fresco y a la altura de<br> tus necesidades.</p>
+                        <p class="pt-2 disfruta-vivir">Disfruta vivir en un desarrollo tipo privada habitacional<br class="d-none d-md-block d-lg-block">con la
+                            oportunidad de vivir cerca de todos los servicios<br class="d-none d-md-block d-lg-block"> que tu familia necesita, así como la
+                            tranquilidad de<br class="d-none d-md-block d-lg-block"> vivir en un lugar seguro, fresco y a la altura de<br class="d-none d-md-block d-lg-block"> tus necesidades.</p>
                         <a href="" class="btn btn-secondary mt-2" data-toggle="modal"
                             data-target="#modal-brochure">Desacarga el brochure</a>
                     </div>
@@ -143,7 +143,7 @@
                     </h4>
                     <div class="row espaciado-1">
                         <div class="col-6">
-                            <img src="{{ asset('img/index/tu-podrias/viviendas.svg') }}" width="70" loading="lazy"
+                            <img src="{{ asset('img/index/tu-podrias/caucel.svg') }}" width="70" loading="lazy"
                                 alt="">
                             <p class="hurme-semibold pt-2">CAUCEL</p>
                         </div>
@@ -153,12 +153,12 @@
                             <p class="hurme-semibold pt-2">441 VIVIENDAS</p>
                         </div>
                         <div class="col-6">
-                            <img src="{{ asset('img/index/tu-podrias/viviendas.svg') }}" width="70" loading="lazy"
+                            <img src="{{ asset('img/index/tu-podrias/caseta.svg') }}" width="70" loading="lazy"
                                 alt="">
                             <p class="hurme-semibold pt-2">CASETA DE <br> VIGILANCIA</p>
                         </div>
                         <div class="col-6">
-                            <img src="{{ asset('img/index/tu-podrias/viviendas.svg') }}" width="70" loading="lazy"
+                            <img src="{{ asset('img/index/tu-podrias/barda.svg') }}" width="70" loading="lazy"
                                 alt="">
                             <p class="hurme-semibold pt-2">BARDA <br>PERIMETRAL</p>
                         </div>
