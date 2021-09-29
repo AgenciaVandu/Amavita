@@ -66,10 +66,6 @@
                         <img src="{{ asset('img/index/Slider.png') }}" class="d-block w-100"
                             alt="Amavita Caucel | Informacion">
                     </div>
-                    <div class="carousel-item active">
-                        <img src="{{ asset('img/index/Slider.png') }}" class="d-block w-100"
-                            alt="Amavita Caucel | Informacion">
-                    </div>
                 @endisset
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
