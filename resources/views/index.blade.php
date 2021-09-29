@@ -1,6 +1,5 @@
 @extends('layouts.amavita')
 @section('content')
-
     <main role="main">
         <div class="modal fade" id="modal-brochure" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
@@ -151,19 +150,23 @@
                     </h4>
                     <div class="row espaciado-1">
                         <div class="col-6">
-                            <img src="{{ asset('img/index/tu-podrias/viviendas.svg') }}" width="70" loading="lazy" alt="">
+                            <img src="{{ asset('img/index/tu-podrias/viviendas.svg') }}" width="70" loading="lazy"
+                                alt="">
                             <p class="hurme-semibold pt-2">CAUCEL</p>
                         </div>
                         <div class="col-6">
-                            <img src="{{ asset('img/index/tu-podrias/viviendas.svg') }}" width="70" loading="lazy" alt="">
+                            <img src="{{ asset('img/index/tu-podrias/viviendas.svg') }}" width="70" loading="lazy"
+                                alt="">
                             <p class="hurme-semibold pt-2">441 VIVIENDAS</p>
                         </div>
                         <div class="col-6">
-                            <img src="{{ asset('img/index/tu-podrias/viviendas.svg') }}" width="70" loading="lazy" alt="">
+                            <img src="{{ asset('img/index/tu-podrias/viviendas.svg') }}" width="70" loading="lazy"
+                                alt="">
                             <p class="hurme-semibold pt-2">CASETA DE <br> VIGILANCIA</p>
                         </div>
                         <div class="col-6">
-                            <img src="{{ asset('img/index/tu-podrias/viviendas.svg') }}" width="70" loading="lazy" alt="">
+                            <img src="{{ asset('img/index/tu-podrias/viviendas.svg') }}" width="70" loading="lazy"
+                                alt="">
                             <p class="hurme-semibold pt-2">BARDA <br>PERIMETRAL</p>
                         </div>
                     </div>
@@ -175,7 +178,6 @@
                     <img src="{{ asset('img/index/familia.png') }}" class="img-fluid pt-4" loading="lazy"
                         alt="Familia en amavita">
                 </div>
-
             </div>
         </div>
     </section>
@@ -227,7 +229,6 @@
                                             <li class="color-blue hurmeregular">Patio</li>
                                             <a href="{{ url('/modelo-boreal') }}"
                                                 class="btn btn-secondary hurmebold mt-2">Cotiza tu casa</a>
-
                                         </div>
                                     </div>
                                     <div class="carousel__elemento">
@@ -243,7 +244,6 @@
                                             <li class="color-blue hurmeregular">Patio</li>
                                             <a href="{{ url('/modelo-citala') }}"
                                                 class="btn btn-secondary hurmebold mt-2">Cotiza tu casa</a>
-
                                         </div>
                                     </div>
                                 </div>
@@ -287,7 +287,6 @@
                     <div class="col-sm-6">
                         <img src="{{ asset('img/index/creditos/credito-2.svg') }}" width="290" alt="">
                     </div>
-
                 </div>
             </div>
         </div>
@@ -341,8 +340,6 @@
                                         loading="lazy" alt="Amenidades de los desarrollos habitacionales">
                                 </div>
                             </div>
-
-
                         </div>
                         <button aria-label="siguiente" class="carousel__siguiente">
                             <i class="fas fa-chevron-right"></i>
@@ -367,8 +364,6 @@
                         </div>
                     </div>
                 </div>
-
-
             </div>
         </div>
     </section>
