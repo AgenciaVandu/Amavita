@@ -1,5 +1,36 @@
 @extends('layouts.amavita')
 @section('content')
+
+<main role="main">
+    <div class="modal fade" id="modal-brochure" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="exampleModalLabel">Descarga nuestro Brochure</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body" style="background-color: #0f3e67">
+                        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
+                        <script>
+                            hbspt.forms.create({
+                                region: "na1",
+                                portalId: "5510950",
+                                formId: "dc9cfba4-600b-4430-9bc3-cd95ff13c768"
+                            });
+                        </script>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-light" data-dismiss="modal">Cerrar</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+</main>
+
 <header class="slider-header">
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -38,7 +69,7 @@
                     <h3 class="hurme-semibold color-rose pt-3">Tú y tu familia disfrutarán de <br> todo lo bueno de la vida</h3>
                     <h4 class="hurme-semibold color-blue pt-3">Desde: $000,000</h4>
                     <p class="pt-2">Disfruta vivir en un desarrollo tipo privada habitacional<br>con la oportunidad de vivir cerca de todos los servicios<br> que tu familia necesita, así como la tranquilidad de<br> vivir en un lugar seguro, fresco y a la altura de<br> tus necesidades.</p>
-                    <a href="" class="btn btn-secondary mt-2">Desacarga el brochure</a>
+                    <a href="" class="btn btn-secondary mt-2" data-toggle="modal" data-target="#modal-brochure">Desacarga el brochure</a>
                 </div>
             </div>
         </div>
@@ -75,7 +106,7 @@
             </div>
         </div>
         <div class="text-center">
-            <a href="#" class="btn btn-secondary hurme-semibold mt-4">Conoce Amavita</a>
+            <a href="{{url('/amavita')}}" class="btn btn-secondary hurme-semibold mt-4">Conoce Amavita</a>
         </div>
         <div class="row pt-5 text-center fade-in-1">
             <div class="col-md-6">
@@ -101,7 +132,7 @@
                     </div>
                 </div>
                 <div class="col-12 mt-4">
-                    <a href="#" class="btn btn-secondary hurmebold">Conoce Amavita</a>
+                    <a href="{{url('/amavita')}}" class="btn btn-secondary hurmebold">Conoce Amavita</a>
                 </div>
             </div>
             <div class="col-md-6">
@@ -141,7 +172,7 @@
                                         <li class="color-blue hurmeregular">Baño completo</li>
                                         <li class="color-blue hurmeregular">Pasillo lateral</li>
                                         <li class="color-blue hurmeregular">Patio</li>
-                                        <a href="" class="btn btn-secondary hurmebold mt-2">Cotiza tu casa</a>
+                                        <a href="{{url('/modelo-alula')}}" class="btn btn-secondary hurmebold mt-2">Cotiza tu casa</a>
                                     </div>
                                 </div>
                                 <div class="carousel__elemento">
@@ -154,7 +185,7 @@
                                         <li class="color-blue hurmeregular">Baño completo</li>
                                         <li class="color-blue hurmeregular">Pasillo lateral</li>
                                         <li class="color-blue hurmeregular">Patio</li>
-                                        <a href="" class="btn btn-secondary hurmebold mt-2">Cotiza tu casa</a>
+                                        <a href="{{url('/modelo-boreal')}}" class="btn btn-secondary hurmebold mt-2">Cotiza tu casa</a>
                                         
                                     </div>
                                 </div>
@@ -168,7 +199,7 @@
                                         <li class="color-blue hurmeregular">Baño completo</li>
                                         <li class="color-blue hurmeregular">Pasillo lateral</li>
                                         <li class="color-blue hurmeregular">Patio</li>
-                                        <a href="" class="btn btn-secondary hurmebold mt-2">Cotiza tu casa</a>
+                                        <a href="{{url('/modelo-citala')}}" class="btn btn-secondary hurmebold mt-2">Cotiza tu casa</a>
                                         
                                     </div>
                                 </div>
@@ -283,7 +314,7 @@
                     <h4 class="hurmebold" style="color: #fff">¿Te gustaria vivir en Amavita Caucel?</h4>
                 </div>
                 <div class="col-12">
-                    <a href="" class="btn btn-secondary hurmebold">Conócelo ahora</a>
+                    <a href="{{url('/amavita')}}" class="btn btn-secondary hurmebold">Conócelo ahora</a>
                 </div>
             </div>
            </div>

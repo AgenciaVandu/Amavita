@@ -26,7 +26,7 @@
                                     <li class="hurmeregular" style="color: #fff">Baño completo</li>
                                     <li class="hurmeregular" style="color: #fff">Pasillo lateral</li>
                                     <li class="hurmeregular" style="color: #fff">Patio</li>
-                                    <a href="" class="btn btn-secondary hurmebold mt-2">Cotiza tu casa</a>
+                                    <a href="{{url('/modelo-alula')}}" class="btn btn-secondary hurmebold mt-2">Cotiza tu casa</a>
                                 </div>
                             </div>
                             <div class="carousel__elemento">
@@ -39,7 +39,7 @@
                                     <li class="hurmeregular" style="color: #fff">Baño completo</li>
                                     <li class="hurmeregular" style="color: #fff">Pasillo lateral</li>
                                     <li class="hurmeregular" style="color: #fff">Patio</li>
-                                    <a href="" class="btn btn-secondary hurmebold mt-2">Cotiza tu casa</a>
+                                    <a href="{{url('/modelo-boreal')}}" class="btn btn-secondary hurmebold mt-2">Cotiza tu casa</a>
                                     
                                 </div>
                             </div>
@@ -53,7 +53,7 @@
                                     <li class="hurmeregular" style="color: #fff">Baño completo</li>
                                     <li class="hurmeregular" style="color: #fff">Pasillo lateral</li>
                                     <li class="hurmeregular" style="color: #fff">Patio</li>
-                                    <a href="" class="btn btn-secondary hurmebold mt-2">Cotiza tu casa</a>
+                                    <a href="{{url('/modelo-citala')}}" class="btn btn-secondary hurmebold mt-2">Cotiza tu casa</a>
                                     
                                 </div>
                             </div>

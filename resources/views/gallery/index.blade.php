@@ -12,7 +12,7 @@
                <div class="col-md-4 col-sm-6 pt-4">
                    <div class="bg-avances">
                        <div class="btn-avances text-center">
-                           <a href="" class="hurmeregular btn btn-primary ">Ver Agosto</a>
+                           <a href="{{url('/galeria/resultado')}}" class="hurmeregular btn btn-primary ">Ver Agosto</a>
                        </div>
                        
                    </div>
@@ -20,7 +20,7 @@
                <div class="col-md-4 col-sm-6 pt-4">
                    <div class="bg-avances">
                        <div class="btn-avances text-center">
-                           <a href="" class="hurmeregular btn btn-primary">Ver Agosto</a>
+                           <a href="{{url('/galeria/resultado')}}" class="hurmeregular btn btn-primary">Ver Agosto</a>
                        </div>
 
                    </div>
@@ -28,7 +28,7 @@
                <div class="col-md-4 col-sm-6 pt-4">
                    <div class="bg-avances">
                        <div class="btn-avances text-center">
-                           <a href="" class="hurmeregular btn btn-primary">Ver Agosto</a>
+                           <a href="{{url('/galeria/resultado')}}" class="hurmeregular btn btn-primary">Ver Agosto</a>
                        </div>
 
                    </div>
@@ -47,7 +47,7 @@
                         <h4 class="hurmebold" style="color: #fff">¿Te gustaria vivir en Amavita Caucel?</h4>
                     </div>
                     <div class="col-12">
-                        <a href="" class="btn btn-secondary hurmebold">Conócelo ahora</a>
+                        <a href="{{url('/amavita')}}" class="btn btn-secondary hurmebold">Conócelo ahora</a>
                     </div>
                 </div>
                </div>

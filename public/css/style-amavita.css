@@ -30,6 +30,10 @@ body {
     background-color: #FAF7F2;
 }
 
+
+
+
+
 /* Colores */
 .color-rose {
     color: #EE7768;
@@ -75,6 +79,17 @@ body {
     border: none !important;
 }
 .btn-secondary:hover {
+    background-color: #0f3e67 !important;
+}
+.btn-lead {
+    background-color: #EE7768 !important;
+    color: #fff !important;
+    padding-right: 40px !important;
+    padding-left: 40px !important;
+    color: #fff;
+    border: none !important;
+}
+.btn-lead:hover {
     background-color: #0f3e67 !important;
 }
 

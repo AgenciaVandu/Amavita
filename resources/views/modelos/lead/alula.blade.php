@@ -1,5 +1,6 @@
 @extends('layouts.lead')
 @section('content')
+
     <header id="leads" class="bg-amavita">
         <div class="container">
             <div class="text-center pt-4 pb-4">

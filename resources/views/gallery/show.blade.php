@@ -26,7 +26,7 @@
                 
             </div>
             <div class="regresar pb-4">
-                <a href="" class="hurmebold btn btn-secondary">Regresar</a>
+                <a href="{{ URL::previous() }}" class="hurmebold btn btn-secondary">Regresar</a>
             </div>
         </div>
     </header>
@@ -39,7 +39,7 @@
                         <h4 class="hurmebold" style="color: #fff">¿Te gustaria vivir en Amavita Caucel?</h4>
                     </div>
                     <div class="col-12">
-                        <a href="" class="btn btn-secondary hurmebold">Conócelo ahora</a>
+                        <a href="{{url('/amavita')}}" class="btn btn-secondary hurmebold">Conócelo ahora</a>
                     </div>
                 </div>
                </div>

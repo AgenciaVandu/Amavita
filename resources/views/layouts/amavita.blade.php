@@ -73,6 +73,9 @@
             <a class="nav-link" href="{{url('/amavita')}}"">Amavita <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item active hurmeregular">
+            <a class="nav-link" href="{{url('/modelos-amavita')}}">Modelos</a>
+          </li>
+          <li class="nav-item active hurmeregular">
             <a class="nav-link" href="{{url('/galeria')}}">Galeria</a>
           </li>
          
