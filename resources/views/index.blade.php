@@ -31,20 +31,18 @@
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             @isset($header->resources)
                 <ol class="carousel-indicators">
-                    @foreach ($header->resources as $resource)
+                    @forelse ($header->resources as $resource)
                         <li data-target="#carouselExampleIndicators" data-slide-to="{{ $loop->index }}"
                             class="{{ $loop->first ? 'active' : '' }}"></li>
-                    @endforeach
-                </ol>
-            @else
-                <ol>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">
-                    </li>
+                    @empty
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">
+                        </li>
+                    @endforelse
                 </ol>
             @endisset
             <div class="carousel-inner">
                 @isset($header->resources)
-                    @foreach ($header->resources as $resource)
+                    @forelse ($header->resources as $resource)
                         @php
                             $file = new SplFileInfo($resource->url);
                             $extension = $file->getExtension();
@@ -60,12 +58,12 @@
                                     alt="Amavita Caucel | Informacion">
                             </div>
                         @endif
-                    @endforeach
-                @else
-                    <div class="carousel-item active">
-                        <img src="{{ asset('img/index/Slider.png') }}" class="d-block w-100"
-                            alt="Amavita Caucel | Informacion">
-                    </div>
+                    @empty
+                        <div class="carousel-item active">
+                            <img src="{{ asset('img/index/Slider.png') }}" class="d-block w-100"
+                                alt="Amavita Caucel | Informacion">
+                        </div>
+                    @endforelse
                 @endisset
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
