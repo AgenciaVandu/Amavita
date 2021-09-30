@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\GaleryController;
 use App\Http\Controllers\LandingController;
 use Illuminate\Support\Facades\Route;
 
@@ -33,14 +34,10 @@ Route::get('/modelo-boreal', function () {
 Route::get('/modelo-citala', function () {
     return view('modelos.citala');
 });
-Route::get('/galeria', function () {
-    return view('gallery.index');
-});
-Route::get('/galeria/resultado', function () {
-    return view('gallery.show');
-});
-Route::get('/contacto', function(){
-    return view ('contacto');
+Route::get('/galeria', [GaleryController::class, 'index'])->name('galery.index');
+Route::get('/galeria/{album}', [GaleryController::class, 'show'])->name('galery.show');
+Route::get('/contacto', function () {
+    return view('contacto');
 });
 
 /*
@@ -59,6 +56,3 @@ Route::get('/lead-citala', function () {
 Route::get('/gracias-por-registrarte', function () {
     return view('modelos.lead.gracias');
 });
-
-
-

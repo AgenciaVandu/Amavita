@@ -16,4 +16,9 @@ class Album extends Model
     {
         return $this->morphMany(Resource::class, 'resourable');
     }
+
+    public function getRouteKeyName()
+    {
+        return 'name';
+    }
 }
