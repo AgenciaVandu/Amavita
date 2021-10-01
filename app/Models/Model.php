@@ -8,4 +8,5 @@ use Illuminate\Database\Eloquent\Model as ModelLaravel;
 class Model extends ModelLaravel
 {
     use HasFactory;
+    protected $guarded = ['id'];
 }

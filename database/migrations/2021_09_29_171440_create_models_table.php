@@ -16,12 +16,12 @@ class CreateModelsTable extends Migration
         Schema::create('models', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('price');
-            $table->boolean('price_visible');
-            $table->text('virtual');
-            $table->boolean('virtual_visible');
-            $table->string('video');
-            $table->boolean('video_visible');
+            $table->double('price')->nullable();
+            $table->boolean('price_visible')->default(false);
+            $table->text('virtual')->nullable();
+            $table->boolean('virtual_visible')->default(false);
+            $table->string('video')->nullable();
+            $table->boolean('video_visible')->default(false);
             $table->timestamps();
         });
     }

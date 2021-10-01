@@ -12,13 +12,20 @@
 
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-jet-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
+                    {{-- <x-jet-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
                         {{ __('Dashboard') }}
-                    </x-jet-nav-link>
+                    </x-jet-nav-link> --}}
                     <x-jet-nav-link href="{{ route('admin.index') }}" :active="request()->routeIs('admin.index')">
                         {{ __('Inicio') }}
                     </x-jet-nav-link>
-                    <x-jet-nav-link href="{{ route('admin.galeries') }}" :active="request()->routeIs('admin.galeries')">
+                    <x-jet-nav-link href="{{ route('admin.amavita') }}" :active="request()->routeIs('admin.amavita')">
+                        {{ __('Amavita') }}
+                    </x-jet-nav-link>
+                    <x-jet-nav-link href="{{ route('admin.models') }}" :active="request()->routeIs('admin.models')">
+                        {{ __('Modelos') }}
+                    </x-jet-nav-link>
+                    <x-jet-nav-link href="{{ route('admin.galeries') }}"
+                        :active="request()->routeIs('admin.galeries')">
                         {{ __('Galerias') }}
                     </x-jet-nav-link>
                 </div>

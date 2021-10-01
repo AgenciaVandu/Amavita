@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Controllers\AmavitaController;
 use App\Http\Controllers\GaleryController;
 use App\Http\Controllers\LandingController;
+use App\Http\Controllers\ModelController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,14 +18,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [LandingController::class, 'index'])->name('index');
-
-Route::get('/amavita', function () {
-    return view('amavita');
-});
-
-Route::get('/modelos-amavita', function () {
-    return view('modelos.modelos');
-});
+Route::get('/amavita', [AmavitaController::class, 'index'])->name('amavita.index');
+Route::get('/galeria', [GaleryController::class, 'index'])->name('galery.index');
+Route::get('/galeria/{album}', [GaleryController::class, 'show'])->name('galery.show');
+Route::get('/modelos-amavita', [ModelController::class, 'index'])->name('models.index');
 
 Route::get('/modelo-alula', function () {
     return view('modelos.alula');
@@ -34,8 +32,8 @@ Route::get('/modelo-boreal', function () {
 Route::get('/modelo-citala', function () {
     return view('modelos.citala');
 });
-Route::get('/galeria', [GaleryController::class, 'index'])->name('galery.index');
-Route::get('/galeria/{album}', [GaleryController::class, 'show'])->name('galery.show');
+
+
 Route::get('/contacto', function () {
     return view('contacto');
 });

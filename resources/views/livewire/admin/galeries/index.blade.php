@@ -1,4 +1,5 @@
-<div class="bg-white">
+<div class="bg-white mx-8 mt-6 rounded-lg shadow-lg">
+    <h1 class="text-3xl text-gray-700 font-bold ml-6 pt-4">Administracion de Galerias</h1>
     @if ($create)
         <div class="p-4">
             <h1 class="text-2xl font-bold text-gray-700">Crear nuevo album</h1>
@@ -31,6 +32,9 @@
             </form>
         </div>
     @elseif ($add)
+        <div class="p-4">
+            <h1 class="text-2xl text-gray-700 font-bold">{{ $album->name }}</h1>
+        </div>
         <form wire:submit.prevent="uploadPhotos({{ $album->id }})">
             <div class="flex flex-wrap p-4">
                 @isset($album->resources)
@@ -119,8 +123,7 @@
         <div class="flex justify-center items-center px-4 flex-wrap mb-4">
             @foreach ($albumes as $album)
                 <div class="shadow-lg rounded-lg mx-2 mb-4">
-                    <img src="{{ Storage::url($album->image) }}" class="w-64 h-64 object-cover object-center"
-                        alt="">
+                    <img src="{{ Storage::url($album->image) }}" class="w-64 h-64 object-cover object-center" alt="">
                     <p class="font-bold text-xl text-center mt-2 text-gray-700">{{ $album->name }}</p>
                     <div class="flex justify-between px-3 py-2">
                         <i class="fas fa-pen cursor-pointer" wire:click="edit({{ $album->id }})"></i>
