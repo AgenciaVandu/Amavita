@@ -319,42 +319,16 @@
                             <i class="fas fa-chevron-left"></i>
                         </button>
                         <div class="carousel__lista">
-                            <div class="carousel__elemento">
-                                <div class="col">
-                                    <img src="{{ asset('img/index/galeria/1.jpg') }}" class="img-fluid"
-                                        loading="lazy" alt="Amenidades de los desarrollos habitacionales">
+                            @foreach ($albumes as $album)
+                                <div class="carousel__elemento">
+                                    <div class="col">
+                                        <a href="{{ route('galery.show', $album) }}">
+                                            <img src="{{ Storage::url($album->image) }}" class="img-fluid"
+                                                loading="lazy" alt="Amenidades de los desarrollos habitacionales">
+                                        </a>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="carousel__elemento">
-                                <div class="col">
-                                    <img src="{{ asset('img/index/galeria/2.jpg') }}" class="img-fluid"
-                                        loading="lazy" alt="Amenidades de los desarrollos habitacionales">
-                                </div>
-                            </div>
-                            <div class="carousel__elemento">
-                                <div class="col">
-                                    <img src="{{ asset('img/index/galeria/3.jpg') }}" class="img-fluid"
-                                        loading="lazy" alt="Amenidades de los desarrollos habitacionales">
-                                </div>
-                            </div>
-                            <div class="carousel__elemento">
-                                <div class="col">
-                                    <img src="{{ asset('img/index/galeria/1.jpg') }}" class="img-fluid"
-                                        loading="lazy" alt="Amenidades de los desarrollos habitacionales">
-                                </div>
-                            </div>
-                            <div class="carousel__elemento">
-                                <div class="col">
-                                    <img src="{{ asset('img/index/galeria/2.jpg') }}" class="img-fluid"
-                                        loading="lazy" alt="Amenidades de los desarrollos habitacionales">
-                                </div>
-                            </div>
-                            <div class="carousel__elemento">
-                                <div class="col">
-                                    <img src="{{ asset('img/index/galeria/3.jpg') }}" class="img-fluid"
-                                        loading="lazy" alt="Amenidades de los desarrollos habitacionales">
-                                </div>
-                            </div>
+                            @endforeach
                         </div>
                         <button aria-label="siguiente" class="carousel__siguiente">
                             <i class="fas fa-chevron-right"></i>

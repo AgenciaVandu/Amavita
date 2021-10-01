@@ -101,7 +101,7 @@
                             sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item active hurmeregular">
-                        <a class="nav-link" href="{{ route('amavita.index') }}">Modelos</a>
+                        <a class="nav-link" href="{{ route('models.index') }}">Modelos</a>
                     </li>
                     <li class="nav-item active hurmeregular">
                         <a class="nav-link" href="{{ route('galery.index') }}">Galeria</a>

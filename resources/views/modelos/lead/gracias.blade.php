@@ -10,10 +10,10 @@
                         <img src="{{ asset('img/modelos/lead/amavita-bco.svg') }}" class="img-fluid mt-3"
                             alt="Logotipo Amavita Caucel">
                         <p class=" mt-3" style="color: #fff">En breve un asesor estará en contacto contigo</p>
-                        <a href="#" class="btn btn-primary mt-3">Regresar al inicio</a>
+                        <a href="{{ route('index') }}" class="btn btn-primary mt-3">Regresar al inicio</a>
                     </div>
                 </div>
             </div>
         </div>
-</header>
+    </header>
 @endsection
