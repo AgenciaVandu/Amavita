@@ -25,4 +25,4 @@ Route::get('/galeria/{album}', [GaleryController::class, 'show'])->name('galery.
 Route::get('/modelos-amavita', [ModelController::class, 'index'])->name('models.index');
 Route::get('/{model}', [ModelController::class, 'show'])->name('models.show');
 Route::get('/lead/{model}', [ModelController::class, 'lead'])->name('models.leads');
-Route::get('/lead/gracias', [LandingController::class, 'tanks'])->name('tanks');
+Route::get('/gracias-por-registrarte', [LandingController::class, 'tanks'])->name('tanks');
