@@ -18,39 +18,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [LandingController::class, 'index'])->name('index');
+Route::get('/contacto', [LandingController::class, 'contact'])->name('contacto');
 Route::get('/amavita', [AmavitaController::class, 'index'])->name('amavita.index');
 Route::get('/galeria', [GaleryController::class, 'index'])->name('galery.index');
 Route::get('/galeria/{album}', [GaleryController::class, 'show'])->name('galery.show');
 Route::get('/modelos-amavita', [ModelController::class, 'index'])->name('models.index');
-
-Route::get('/modelo-alula', function () {
-    return view('modelos.alula');
-});
-Route::get('/modelo-boreal', function () {
-    return view('modelos.boreal');
-});
-Route::get('/modelo-citala', function () {
-    return view('modelos.citala');
-});
-
-
-Route::get('/contacto', function () {
-    return view('contacto');
-});
-
-/*
-Leads
-*/
-Route::get('/lead-alula', function () {
-    return view('modelos.lead.alula');
-});
-Route::get('/lead-boreal', function () {
-    return view('modelos.lead.boreal');
-});
-Route::get('/lead-citala', function () {
-    return view('modelos.lead.citala');
-});
-
-Route::get('/gracias-por-registrarte', function () {
-    return view('modelos.lead.gracias');
-});
+Route::get('/{model}', [ModelController::class, 'show'])->name('models.show');
+Route::get('/lead/{model}', [ModelController::class, 'lead'])->name('models.leads');
+Route::get('/lead/gracias', [LandingController::class, 'tanks'])->name('tanks');

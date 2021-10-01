@@ -17,11 +17,11 @@ class CreateModelsTable extends Migration
             $table->id();
             $table->string('name');
             $table->double('price')->nullable();
-            $table->boolean('price_visible')->default(false);
+            $table->boolean('price_visible')->nullable();
             $table->text('virtual')->nullable();
-            $table->boolean('virtual_visible')->default(false);
+            $table->boolean('virtual_visible')->nullable();
             $table->string('video')->nullable();
-            $table->boolean('video_visible')->default(false);
+            $table->boolean('video_visible')->nullable();
             $table->timestamps();
         });
     }

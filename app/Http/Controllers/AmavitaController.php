@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Model;
 use App\Models\Page;
 use Illuminate\Http\Request;
 
@@ -13,6 +14,7 @@ class AmavitaController extends Controller
         $services = Page::where('name', 'amavita')->where('section', 'services')->first();
         $video = Page::where('name', 'amavita')->where('section', 'video')->first();
         $master = Page::where('name', 'amavita')->where('section', 'master')->first();
-        return view('amavita', compact('header', 'services', 'video', 'master'));
+        $models = Model::all();
+        return view('amavita', compact('header', 'services', 'video', 'master', 'models'));
     }
 }

@@ -363,51 +363,70 @@
                                 </button>
                                 <div class="carousel__lista1">
                                     <div class="carousel__elemento1">
-                                        <div class="col">
-                                            <img src="{{ asset('img/index/modelos/1.png') }}" class="img-fluid"
-                                                loading="lazy" alt="">
-                                            <h5 class="color-blue hurmebold pt-3">ALULA <br>
-                                                <span class="hurme-semibold">Desde: $000,000</span>
-                                            </h5>
-                                            <li class="color-blue hurmeregular">2 recámaras</li>
-                                            <li class="color-blue hurmeregular">Baño completo</li>
-                                            <li class="color-blue hurmeregular">Pasillo lateral</li>
-                                            <li class="color-blue hurmeregular">Patio</li>
-                                            <a href="{{ url('/modelo-alula') }}"
-                                                class="btn btn-secondary hurmebold mt-2">Cotiza tu casa</a>
-                                        </div>
+                                        @foreach ($models as $model)
+                                            @if ($model->id == 1)
+                                                <div class="col">
+                                                    <img src="{{ asset('img/index/modelos/1.png') }}"
+                                                        class="img-fluid" loading="lazy" alt="">
+                                                    <h5 class="color-blue hurmebold pt-3">{{ $model->name }} <br>
+                                                        @if ($model->price_visible)
+                                                            <span class="hurme-semibold">Desde:
+                                                                ${{ number_format($model->price, 2) }}</span>
+                                                        @endif
+                                                    </h5>
+                                                    <li class="color-blue hurmeregular">2 recámaras</li>
+                                                    <li class="color-blue hurmeregular">Baño completo</li>
+                                                    <li class="color-blue hurmeregular">Pasillo lateral</li>
+                                                    <li class="color-blue hurmeregular">Patio</li>
+                                                    <a href="{{ route('models.show', $model) }}"
+                                                        class="btn btn-secondary hurmebold mt-2">Cotiza tu casa</a>
+                                                </div>
+                                            @endif
+                                        @endforeach
                                     </div>
                                     <div class="carousel__elemento">
-                                        <div class="col">
-                                            <img src="{{ asset('img/index/modelos/2.png') }}" class="img-fluid"
-                                                loading="lazy" alt="">
-                                            <h5 class="color-blue hurmebold pt-3">Boreal <br>
-                                                <span class="hurme-semibold">Desde: $000,000</span>
-                                            </h5>
-                                            <li class="color-blue hurmeregular">2 recámaras</li>
-                                            <li class="color-blue hurmeregular">Baño completo</li>
-                                            <li class="color-blue hurmeregular">Pasillo lateral</li>
-                                            <li class="color-blue hurmeregular">Patio</li>
-                                            <a href="{{ url('/modelo-boreal') }}"
-                                                class="btn btn-secondary hurmebold mt-2">Cotiza tu casa</a>
-
-                                        </div>
+                                        @foreach ($models as $model)
+                                            @if ($model->id == 2)
+                                                <div class="col">
+                                                    <img src="{{ asset('img/index/modelos/2.png') }}"
+                                                        class="img-fluid" loading="lazy" alt="">
+                                                    <h5 class="color-blue hurmebold pt-3">{{ $model->name }}<br>
+                                                        @if ($model->price_visible)
+                                                            <span class="hurme-semibold">Desde:
+                                                                ${{ number_format($model->price, 2) }}</span>
+                                                        @endif
+                                                    </h5>
+                                                    <li class="color-blue hurmeregular">2 recámaras</li>
+                                                    <li class="color-blue hurmeregular">Baño completo</li>
+                                                    <li class="color-blue hurmeregular">Pasillo lateral</li>
+                                                    <li class="color-blue hurmeregular">Patio</li>
+                                                    <a href="{{ route('models.show', $model) }}"
+                                                        class="btn btn-secondary hurmebold mt-2">Cotiza tu casa</a>
+                                                </div>
+                                            @endif
+                                        @endforeach
                                     </div>
                                     <div class="carousel__elemento">
-                                        <div class="col">
-                                            <img src="{{ asset('img/index/modelos/3.png') }}" class="img-fluid"
-                                                loading="lazy" alt="">
-                                            <h5 class="color-blue hurmebold pt-3">CITALA <br>
-                                                <span class="hurme-semibold">Desde: $000,000</span>
-                                            </h5>
-                                            <li class="color-blue hurmeregular">2 recámaras</li>
-                                            <li class="color-blue hurmeregular">Baño completo</li>
-                                            <li class="color-blue hurmeregular">Pasillo lateral</li>
-                                            <li class="color-blue hurmeregular">Patio</li>
-                                            <a href="{{ url('/modelo-citala') }}"
-                                                class="btn btn-secondary hurmebold mt-2">Cotiza tu casa</a>
-
-                                        </div>
+                                        @foreach ($models as $model)
+                                            @if ($model->id == 3)
+                                                <div class="col">
+                                                    <img src="{{ asset('img/index/modelos/3.png') }}"
+                                                        class="img-fluid" loading="lazy" alt="">
+                                                    <h5 class="color-blue hurmebold pt-3">{{ $model->name }}<br>
+                                                        @if ($model->price_visible)
+                                                            <span class="hurme-semibold">Desde:
+                                                                ${{ number_format($model->price, 2) }}</span>
+                                                        @endif
+                                                    </h5>
+                                                    <li class="color-blue hurmeregular">2 recámaras</li>
+                                                    <li class="color-blue hurmeregular">Baño completo</li>
+                                                    <li class="color-blue hurmeregular">Pasillo lateral</li>
+                                                    <li class="color-blue hurmeregular">Patio</li>
+                                                    <a href="{{ route('models.show', $model) }}"
+                                                        class="btn btn-secondary hurmebold mt-2">Cotiza tu casa</a>
+                                                </div>
+                                            @endif
+                                        @endforeach
                                     </div>
                                 </div>
                                 <button aria-label="siguiente" class="carousel__siguiente1">

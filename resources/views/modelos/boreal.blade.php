@@ -1,8 +1,7 @@
 @extends('layouts.amavita')
 @section('content')
-<main role="main">
-    <div class="modal fade" id="modal-ficha" tabindex="-1" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
+    <main role="main">
+        <div class="modal fade" id="modal-ficha" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -28,12 +27,12 @@
                 </div>
             </div>
         </div>
-</main>
+    </main>
     <header>
         <div class="bg-modelos-4">
             <div class="container pb-5">
                 <div class="text-center titular-modelos-2">
-                    <img src="{{asset('img/ama-vivir.svg')}}" class="img-fluid" alt="Ama vivir en Caucel">
+                    <img src="{{ asset('img/ama-vivir.svg') }}" class="img-fluid" alt="Ama vivir en Caucel">
                 </div>
             </div>
         </div>
@@ -44,15 +43,18 @@
             <div class="d-none d-md-block d-lg-block">
                 <div class="row">
                     <div class="col-8 pt-1 posicion-render-1">
-                        <img src="{{asset('img/modelos/alula/render-2.jpg')}}" class="img-fluid" alt="Render de modelo alula">
+                        <img src="{{ asset('img/modelos/alula/render-2.jpg') }}" class="img-fluid"
+                            alt="Render de modelo alula">
                     </div>
                     <div class="col-4 posicion-render">
                         <div class="row">
                             <div class="col-12 pt-1">
-                                <img src="{{asset('img/modelos/alula/render-1.jpg')}}" class="img-fluid" alt="Render de modelo alula">
+                                <img src="{{ asset('img/modelos/alula/render-1.jpg') }}" class="img-fluid"
+                                    alt="Render de modelo alula">
                             </div>
                             <div class="col-12 pt-1">
-                                <img src="{{asset('img/modelos/alula/render-1.jpg')}}" class="img-fluid" alt="Render de modelo alula">
+                                <img src="{{ asset('img/modelos/alula/render-1.jpg') }}" class="img-fluid"
+                                    alt="Render de modelo alula">
                             </div>
                         </div>
                     </div>
@@ -70,17 +72,20 @@
                         <div class="carousel__lista">
                             <div class="carousel__elemento">
                                 <div class="col">
-                                    <img src="{{asset('img/modelos/alula/render-modelo-1.jpg')}}" class="img-fluid" alt="Render de modelo alula">
+                                    <img src="{{ asset('img/modelos/alula/render-modelo-1.jpg') }}" class="img-fluid"
+                                        alt="Render de modelo alula">
                                 </div>
                             </div>
                             <div class="carousel__elemento">
                                 <div class="col">
-                                    <img src="{{asset('img/modelos/alula/render-modelo-1.jpg')}}" class="img-fluid" alt="Render de modelo alula">
+                                    <img src="{{ asset('img/modelos/alula/render-modelo-1.jpg') }}" class="img-fluid"
+                                        alt="Render de modelo alula">
                                 </div>
                             </div>
                             <div class="carousel__elemento">
                                 <div class="col">
-                                    <img src="{{asset('img/modelos/alula/render-modelo-1.jpg')}}" class="img-fluid" alt="Render de modelo alula">
+                                    <img src="{{ asset('img/modelos/alula/render-modelo-1.jpg') }}" class="img-fluid"
+                                        alt="Render de modelo alula">
                                 </div>
                             </div>
                         </div>
@@ -95,7 +100,7 @@
             <div class="row">
                 <div class="col-md-6 col-sm-12 mt-2 pt-5 detalle-titulo-1">
                     <ul>
-                        <h4 class="hurmebold" style="color: #fff">Modelo Boreal</h4> <br>
+                        <h4 class="hurmebold" style="color: #fff">Modelo {{ $model->name }}</h4> <br>
                         <li class="hurmeregular">Construcción: 61.86 m2</li>
                         <li class="hurmeregular">Terreno desde: 6 x 20 m</li> <br>
 
@@ -110,29 +115,34 @@
                         <li class="hurmeregular">Área de lavado</li>
                         <li class="hurmeregular">Patio</li> <br>
                         <div class="d-none d-md-block d-lg-block">
-                            <li><img src="{{asset('img/modelos/boreal/construccion-1.svg')}}" width="480" alt="Tipo de construccion"></li>
+                            <li><img src="{{ asset('img/modelos/boreal/construccion-1.svg') }}" width="480"
+                                    alt="Tipo de construccion"></li>
                         </div>
                         <div class="d-block d-md-none d-lg-none">
-                            <li><img src="{{asset('img/modelos/boreal/construccion-2.svg')}}" width="340" alt="Tipo de construccion"></li>
+                            <li><img src="{{ asset('img/modelos/boreal/construccion-2.svg') }}" width="340"
+                                    alt="Tipo de construccion"></li>
                         </div>
                     </ul>
                     <div class="row pt-5">
                         <div class="col-md-6 col-sm-12 pt-2">
-                            <a href="" class="hurmebold btn btn-secondary btn-block" data-toggle="modal" data-target="#modal-ficha">Ficha Técnica</a>
+                            <a href="" class="hurmebold btn btn-secondary btn-block" data-toggle="modal"
+                                data-target="#modal-ficha">Ficha Técnica</a>
                         </div>
                         <div class="col-md-6 col-sm-12 pt-2">
-                            <a href="{{url('/lead-boreal')}}" class="hurmebold btn btn-secondary btn-block">Cotiza tu casa</a>
+                            <a href="{{ route('models.leads',$model) }}" class="hurmebold btn btn-secondary btn-block">Cotiza tu
+                                casa</a>
                         </div>
                     </div>
-                   
+
                 </div>
-                
+
                 <div class="col-md-6 col-sm-12 pt-5 text-center">
                     <div class="row">
                         <div class="col-12">
-                            <img src="{{asset('img/modelos/boreal/plano.png')}}" class="img-fluid" alt="Plano de vivienda">
+                            <img src="{{ asset('img/modelos/boreal/plano.png') }}" class="img-fluid"
+                                alt="Plano de vivienda">
                         </div>
-                        
+
                     </div>
                 </div>
             </div>
@@ -142,7 +152,9 @@
     <section id="recorrido">
         <div class="container">
             <div class="text-center">
-                <img src="{{asset('img/modelos/alula/recorrido.jpg')}}" class="w-100" alt="">
+                @if ($model->virtual_visible)
+                    {!! $model->virtual !!}
+                @endif
             </div>
         </div>
     </section>
@@ -150,7 +162,9 @@
     <section id="video">
         <div class="container">
             <div class="text-center pt-4">
-                <video src="{{asset('img/amavita/pres.mp4')}}" autoplay muted class="w-100" ></video>
+                @if ($model->video_visible)
+                    <video src="{{ Storage::url($model->video) }}" autoplay muted class="w-100"></video>
+                @endif
             </div>
         </div>
     </section>
@@ -169,31 +183,41 @@
                             </button>
                             <div class="carousel__lista4">
                                 <div class="carousel__elemento1">
-                                    <div class="col">
-                                        <img src="{{asset('img/index/modelos/1.png')}}" class="img-fluid" loading="lazy" alt="">
-                                        <h5 class=" hurmebold pt-3" style="color: #fff">ALULA <br> 
-                                            <span class="hurme-semibold">Desde: $000,000</span>
-                                        </h5>
-                                        <li class=" hurmeregular" style="color: #fff">2 recámaras</li>
-                                        <li class=" hurmeregular" style="color: #fff">Baño completo</li>
-                                        <li class=" hurmeregular" style="color: #fff">Pasillo lateral</li>
-                                        <li class=" hurmeregular" style="color: #fff">Patio</li>
-                                        <a href="" class="btn btn-secondary hurmebold mt-2">Cotiza tu casa</a>
-                                    </div>
+                                    @foreach ($models as $model)
+                                        @if ($model->id == 1)
+                                            <div class="col">
+                                                <img src="{{ asset('img/index/modelos/1.png') }}" class="img-fluid"
+                                                    loading="lazy" alt="">
+                                                <h5 class=" hurmebold pt-3" style="color: #fff">{{ $model->name }} <br>
+                                                    <span class="hurme-semibold">Desde: $000,000</span>
+                                                </h5>
+                                                <li class=" hurmeregular" style="color: #fff">2 recámaras</li>
+                                                <li class=" hurmeregular" style="color: #fff">Baño completo</li>
+                                                <li class=" hurmeregular" style="color: #fff">Pasillo lateral</li>
+                                                <li class=" hurmeregular" style="color: #fff">Patio</li>
+                                                <a href="{{ route('models.show', $model) }}"
+                                                    class="btn btn-secondary hurmebold mt-2">Cotiza tu casa</a>
+                                            </div>
+                                        @endif
+                                    @endforeach
                                 </div>
                                 <div class="carousel__elemento">
-                                    <div class="col">
-                                        <img src="{{asset('img/index/modelos/3.png')}}" class="img-fluid" loading="lazy" alt="">
-                                        <h5 class="hurmebold pt-3" style="color: #fff">CITALA <br> 
-                                            <span class="hurme-semibold">Desde: $000,000</span>
-                                        </h5>
-                                        <li class="hurmeregular" style="color: #fff">2 recámaras</li>
-                                        <li class="hurmeregular" style="color: #fff">Baño completo</li>
-                                        <li class="hurmeregular" style="color: #fff">Pasillo lateral</li>
-                                        <li class="hurmeregular" style="color: #fff">Patio</li>
-                                        <a href="" class="btn btn-secondary hurmebold mt-2">Cotiza tu casa</a>
-                                        
-                                    </div>
+                                    @foreach ($models as $model)
+                                        @if ($model->id == 3)
+                                            <div class="col">
+                                                <img src="{{ asset('img/index/modelos/3.png') }}" class="img-fluid"
+                                                    loading="lazy" alt="">
+                                                <h5 class="hurmebold pt-3" style="color: #fff">CITALA <br>
+                                                    <span class="hurme-semibold">Desde: $000,000</span>
+                                                </h5>
+                                                <li class="hurmeregular" style="color: #fff">2 recámaras</li>
+                                                <li class="hurmeregular" style="color: #fff">Baño completo</li>
+                                                <li class="hurmeregular" style="color: #fff">Pasillo lateral</li>
+                                                <li class="hurmeregular" style="color: #fff">Patio</li>
+                                                <a href="{{ route('models.show', $model) }}" class="btn btn-secondary hurmebold mt-2">Cotiza tu casa</a>
+                                            </div>
+                                        @endif
+                                    @endforeach
                                 </div>
                             </div>
                             <button aria-label="siguiente" class="carousel__siguiente4">
@@ -213,28 +237,28 @@
             <div class="d-none d-md-block d-lg-block">
                 <div class="row espaciado-2">
                     <div class="col-md-3 col-sm-6">
-                        <img src="{{asset('img/index/creditos/1.svg')}}" width="100" alt="">
+                        <img src="{{ asset('img/index/creditos/1.svg') }}" width="100" alt="">
                     </div>
                     <div class="col-md-3 col-sm-6">
-                        <img src="{{asset('img/index/creditos/2.svg')}}" width="100" alt="">
+                        <img src="{{ asset('img/index/creditos/2.svg') }}" width="100" alt="">
                     </div>
                     <div class="col-md-3 col-sm-6">
-                        <img src="{{asset('img/index/creditos/3.svg')}}" width="180" alt="">
+                        <img src="{{ asset('img/index/creditos/3.svg') }}" width="180" alt="">
                     </div>
                     <div class="col-md-3 col-sm-6">
-                        <img src="{{asset('img/index/creditos/4.svg')}}" width="100" alt="">
+                        <img src="{{ asset('img/index/creditos/4.svg') }}" width="100" alt="">
                     </div>
                 </div>
             </div>
             <div class="d-block d-sm-block d-md-none d-lg-none">
                 <div class="row">
                     <div class="col-sm-6">
-                        <img src="{{asset('img/index/creditos/credito-1.svg')}}" width="290" alt="">
+                        <img src="{{ asset('img/index/creditos/credito-1.svg') }}" width="290" alt="">
                     </div>
                     <div class="col-sm-6">
-                        <img src="{{asset('img/index/creditos/credito-2.svg')}}" width="290" alt="">
+                        <img src="{{ asset('img/index/creditos/credito-2.svg') }}" width="290" alt="">
                     </div>
-                    
+
                 </div>
             </div>
         </div>

@@ -93,7 +93,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active hurmeregular">
-                        <a class="nav-link" href="{{ url('/') }}">Inicio <span
+                        <a class="nav-link" href="{{ route('index') }}">Inicio <span
                                 class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item active hurmeregular">
@@ -101,7 +101,7 @@
                             sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item active hurmeregular">
-                        <a class="nav-link" href="{{ url('/modelos-amavita') }}">Modelos</a>
+                        <a class="nav-link" href="{{ route('amavita.index') }}">Modelos</a>
                     </li>
                     <li class="nav-item active hurmeregular">
                         <a class="nav-link" href="{{ route('galery.index') }}">Galeria</a>
@@ -111,7 +111,7 @@
                 </ul>
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active hurmeregular">
-                        <a class="nav-link btn btn-primary" href="{{ url('/contacto') }}">PRECALIFICATE</a>
+                        <a class="nav-link btn btn-primary" href="{{ route('contacto') }}">PRECALIFICATE</a>
                     </li>
                 </ul>
             </div>

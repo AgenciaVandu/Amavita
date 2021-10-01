@@ -2,14 +2,27 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Model;
 use App\Models\Page;
-use Illuminate\Http\Request;
 
 class  LandingController extends Controller
 {
     public function index()
     {
         $header = Page::where('name', 'index')->where('section', 'header')->first();
-        return view('index', compact('header'));
+        $models = Model::all();
+        $services = Page::where('name', 'amavita')->where('section', 'services')->first();
+        return view('index', compact('header', 'models', 'services'));
     }
+
+    public function contact()
+    {
+        return view('contacto');
+    }
+
+
+    public function tanks(){
+        return view('modelos.lead.gracias');
+    }
+
 }
