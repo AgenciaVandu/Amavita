@@ -23,6 +23,50 @@
                     </div>
                     <div class="col-span-4">
                         <form wire:submit.prevent="update({{ $model->id }})" class="px-4 text-right">
+                            <div class="grid grid-rows-2 grid-flow-col gap-4 text-left justify-items-center">
+                                <div class="row-span-2 ">
+                                    @if ($img1)
+                                        <img class="w-44" src="{{ $img1->temporaryUrl() }}">
+                                    @endif
+                                    @isset($imgen1)
+                                    <div class="shadow-md bg-white rounded-lg mx-2 mt-4">
+                                        <img class="h-40 w-60 object-cover" src="{{ Storage::url($imgen1) }}">
+                                        <div class="flex justify-between items-center py-2 mx-2">
+                                            <i class="fas fa-imge ml-2"></i>
+                                        </div>
+                                    </div>
+                                @endisset
+                                    <input type='file' wire:model="img1">
+                                </div>
+                                <div class="">
+                                    @if ($img2)
+                                        <img class="w-44" src="{{ $img2->temporaryUrl() }}">
+                                    @endif
+                                    @isset($imgen2)
+                                    <div class="shadow-md bg-white rounded-lg mx-2 mt-4">
+                                        <img class="h-40 w-60 object-cover" src="{{ Storage::url($imgen2) }}">
+                                        <div class="flex justify-between items-center py-2 mx-2">
+                                            <i class="fas fa-imge ml-2"></i>
+                                        </div>
+                                    </div>
+                                @endisset
+                                    <input type='file' wire:model="img2">
+                                </div>
+                                <div class="">
+                                    @if ($img3)
+                                        <img class="w-44" src="{{ $img3->temporaryUrl() }}">
+                                    @endif
+                                    @isset($imgen3)
+                                    <div class="shadow-md bg-white rounded-lg mx-2 mt-4">
+                                        <img class="h-40 w-60 object-cover" src="{{ Storage::url($imgen3) }}">
+                                        <div class="flex justify-between items-center py-2 mx-2">
+                                            <i class="fas fa-imge ml-2"></i>
+                                        </div>
+                                    </div>
+                                @endisset
+                                    <input type='file' wire:model="img3">
+                                </div>
+                            </div>
                             <x-jet-label class="text-left">
                                 Nombre:
                             </x-jet-label>

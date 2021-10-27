@@ -43,17 +43,16 @@
             <div class="d-none d-md-block d-lg-block">
                 <div class="row">
                     <div class="col-8 pt-1 posicion-render-1">
-                        <img src="{{ asset('img/modelos/alula/render-2.jpg') }}" class="img-fluid"
-                            alt="Render de modelo alula">
+                        <img src="{{ Storage::url($model->img1) }}" class="img-fluid" alt="Render de modelo alula">
                     </div>
                     <div class="col-4 posicion-render">
                         <div class="row">
                             <div class="col-12 pt-1">
-                                <img src="{{ asset('img/modelos/alula/render-1.jpg') }}" class="img-fluid"
+                                <img src="{{ Storage::url($model->img2) }}" class="img-fluid"
                                     alt="Render de modelo alula">
                             </div>
                             <div class="col-12 pt-1">
-                                <img src="{{ asset('img/modelos/alula/render-1.jpg') }}" class="img-fluid"
+                                <img src="{{ Storage::url($model->img3) }}" class="img-fluid"
                                     alt="Render de modelo alula">
                             </div>
                         </div>
@@ -130,7 +129,8 @@
                                 data-target="#modal-ficha">Ficha Técnica</a>
                         </div>
                         <div class="col-md-6 col-sm-12 pt-2">
-                            <a href="{{ route('models.leads',$model) }}" class="hurmebold btn btn-secondary btn-block">Cotiza tu
+                            <a href="{{ route('models.leads', $model) }}"
+                                class="hurmebold btn btn-secondary btn-block">Cotiza tu
                                 casa</a>
                         </div>
                     </div>
@@ -203,7 +203,8 @@
                                                 <li class=" hurmeregular" style="color: #fff">Baño completo</li>
                                                 <li class=" hurmeregular" style="color: #fff">Pasillo lateral</li>
                                                 <li class=" hurmeregular" style="color: #fff">Patio</li>
-                                                <a href="{{ route('models.show', $model) }}" class="btn btn-secondary hurmebold mt-2">Cotiza tu casa</a>
+                                                <a href="{{ route('models.show', $model) }}"
+                                                    class="btn btn-secondary hurmebold mt-2">Cotiza tu casa</a>
                                             </div>
                                         @endif
                                     @endforeach
@@ -224,7 +225,8 @@
                                                 <li class="hurmeregular" style="color: #fff">Baño completo</li>
                                                 <li class="hurmeregular" style="color: #fff">Pasillo lateral</li>
                                                 <li class="hurmeregular" style="color: #fff">Patio</li>
-                                                <a href="{{ route('models.show', $model) }}" class="btn btn-secondary hurmebold mt-2">Cotiza tu casa</a>
+                                                <a href="{{ route('models.show', $model) }}"
+                                                    class="btn btn-secondary hurmebold mt-2">Cotiza tu casa</a>
                                             </div>
                                         @endif
                                     @endforeach

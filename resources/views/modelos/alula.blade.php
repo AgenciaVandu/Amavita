@@ -43,17 +43,17 @@
             <div class="d-none d-md-block d-lg-block">
                 <div class="row">
                     <div class="col-8 pt-1 posicion-render-1">
-                        <img src="{{ asset('img/modelos/alula/render-2.jpg') }}" class="img-fluid"
+                        <img src="{{ Storage::url($model->img1) }}" class="img-fluid"
                             alt="Render de modelo alula">
                     </div>
                     <div class="col-4 posicion-render">
                         <div class="row">
                             <div class="col-12 pt-1">
-                                <img src="{{ asset('img/modelos/alula/render-1.jpg') }}" class="img-fluid"
+                                <img src="{{ Storage::url($model->img2) }}" class="img-fluid"
                                     alt="Render de modelo alula">
                             </div>
                             <div class="col-12 pt-1">
-                                <img src="{{ asset('img/modelos/alula/render-1.jpg') }}" class="img-fluid"
+                                <img src="{{ Storage::url($model->img3) }}" class="img-fluid"
                                     alt="Render de modelo alula">
                             </div>
                         </div>

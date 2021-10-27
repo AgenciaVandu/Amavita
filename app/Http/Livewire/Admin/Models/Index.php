@@ -14,12 +14,18 @@ class Index extends Component
     public $alula = true, $boreal, $citala;
     public $name, $price;
     public $file;
+    public $img1;
+    public $img2;
+    public $img3;
     public $virtual;
     public $virtual_visible;
     public $price_visible;
     public $video;
     public $video_visible;
     public $model;
+    public $imgen1;
+    public $imgen2;
+    public $imgen3;
 
     public function mount()
     {
@@ -31,6 +37,9 @@ class Index extends Component
         $this->price_visible = $this->model->price_visible;
         $this->video = $this->model->video;
         $this->video_visible = $this->video_visible;
+        $this->imgen1 = $this->model->img1;
+        $this->imgen2 = $this->model->img2;
+        $this->imgen3 = $this->model->img3;
     }
 
     public function setNavigation($option)
@@ -48,6 +57,9 @@ class Index extends Component
                 $this->price_visible = $this->model->price_visible;
                 $this->video = $this->model->video;
                 $this->video_visible = $this->video_visible;
+                $this->imgen1 = $this->model->img1;
+                $this->imgen2 = $this->model->img2;
+                $this->imgen3 = $this->model->img3;
                 break;
             case 'boreal':
                 $this->alula = false;
@@ -60,6 +72,9 @@ class Index extends Component
                 $this->virtual_visible = $this->model->virtual_visible;
                 $this->price_visible = $this->model->price_visible;
                 $this->video = $this->model->video;
+                $this->imgen1 = $this->model->img1;
+                $this->imgen2 = $this->model->img2;
+                $this->imgen3 = $this->model->img3;
                 break;
             case 'citala':
                 $this->alula = false;
@@ -73,6 +88,9 @@ class Index extends Component
                 $this->price_visible = $this->model->price_visible;
                 $this->video = $this->model->video;
                 $this->video_visible = $this->video_visible;
+                $this->imgen1 = $this->model->img1;
+                $this->imgen2 = $this->model->img2;
+                $this->imgen3 = $this->model->img3;
                 break;
         }
     }
@@ -80,9 +98,12 @@ class Index extends Component
     public function update($model)
     {
         $model = Model::find($model);
-        if (!empty($this->file)) {
+        if (!empty($this->file) && !empty($this->img1) && !empty($this->img2) && !empty($this->img3)) {
             Storage::delete($model->image);
             $url = $this->file->store('resources');
+            $img1 = $this->img1->store('resources');
+            $img2 = $this->img2->store('resources');
+            $img3 = $this->img3->store('resources');
             $model->update([
                 'name' => $this->name,
                 'price' => $this->price,
@@ -91,6 +112,73 @@ class Index extends Component
                 'virtual_visible' => $this->virtual_visible,
                 'video' => $url,
                 'video_visible' => $this->video_visible,
+                'img1' => $img1,
+                'img2' => $img2,
+                'img3' => $img3,
+            ]);
+        } elseif (!empty($this->file) && !empty($this->img1) && !empty($this->img2) && empty($this->img3)) {
+            Storage::delete($model->image);
+            $url = $this->file->store('resources');
+            $img1 = $this->img1->store('resources');
+            $img2 = $this->img2->store('resources');
+            $model->update([
+                'name' => $this->name,
+                'price' => $this->price,
+                'price_visible' => $this->price_visible,
+                'virtual' => $this->virtual,
+                'virtual_visible' => $this->virtual_visible,
+                'video' => $url,
+                'video_visible' => $this->video_visible,
+                'img1' => $img1,
+                'img2' => $img2,
+            ]);
+        } elseif (!empty($this->file) && !empty($this->img1) && empty($this->img2) && !empty($this->img3)) {
+            Storage::delete($model->image);
+            $url = $this->file->store('resources');
+            $img1 = $this->img1->store('resources');
+            $img3 = $this->img3->store('resources');
+            $model->update([
+                'name' => $this->name,
+                'price' => $this->price,
+                'price_visible' => $this->price_visible,
+                'virtual' => $this->virtual,
+                'virtual_visible' => $this->virtual_visible,
+                'video' => $url,
+                'video_visible' => $this->video_visible,
+                'img1' => $img1,
+                'img3' => $img3,
+            ]);
+        } elseif (!empty($this->file) && empty($this->img1) && !empty($this->img2) && !empty($this->img3)) {
+            Storage::delete($model->image);
+            $url = $this->file->store('resources');
+            $img2 = $this->img2->store('resources');
+            $img3 = $this->img3->store('resources');
+            $model->update([
+                'name' => $this->name,
+                'price' => $this->price,
+                'price_visible' => $this->price_visible,
+                'virtual' => $this->virtual,
+                'virtual_visible' => $this->virtual_visible,
+                'video' => $url,
+                'video_visible' => $this->video_visible,
+                'img2' => $img2,
+                'img3' => $img3,
+            ]);
+        } elseif (empty($this->file) && !empty($this->img1) && !empty($this->img2) && !empty($this->img3)) {
+            Storage::delete($model->image);
+            $img1 = $this->img1->store('resources');
+            $img2 = $this->img2->store('resources');
+            $img3 = $this->img3->store('resources');
+            $model->update([
+                'name' => $this->name,
+                'price' => $this->price,
+                'price_visible' => $this->price_visible,
+                'virtual' => $this->virtual,
+                'virtual_visible' => $this->virtual_visible,
+                'video_visible' => $this->video_visible,
+                'img1' => $img1,
+                'img2' => $img2,
+                'img3' => $img3,
             ]);
         } else {
             $model->update([
@@ -103,9 +191,12 @@ class Index extends Component
             ]);
         }
 
-        $this->reset(['file']);
+        $this->reset(['file', 'img1', 'img2', 'img3']);
         $this->model = Model::find($this->model->id);
         $this->video = $model->video;
+        $this->imgen1 = $model->img1;
+        $this->imgen2 = $model->img2;
+        $this->imgen3 = $model->img3;
     }
 
 
