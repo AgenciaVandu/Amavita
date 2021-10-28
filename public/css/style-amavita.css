@@ -378,6 +378,13 @@ footer {
     background-position: 0 70px;
     background-repeat: no-repeat;
 }
+@media (max-width:600px) {
+    .bg-naranja {
+        background-image: url(#);
+        background-position: 0 70px;
+        background-repeat: no-repeat;
+    }
+}
 
 .bg-avances {
     background-image: url(/img/avances.png);
@@ -430,6 +437,12 @@ footer {
     background-image: url(/img/d-naranja.svg);
     background-repeat: no-repeat;
     background-position: 25px 0;
+} @media (max-width:600px) {
+    .bg-2 {
+        background-image: url(#);
+        background-repeat: no-repeat;
+        background-position: 25px 0;
+    }
 }
 
 .bg-familia {

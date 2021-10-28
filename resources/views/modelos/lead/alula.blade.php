@@ -9,7 +9,7 @@
             <div class="row pt-4">
                 <div class="col-md-6 text-center">
                     <h5 class="hurmebold" style="color: #fff">Estás por cotizar tu nuevo hogar</h5>
-                    <img src="{{ asset('img/modelos/lead/1.png') }}" alt="">
+                    <img src="{{ asset('img/modelos/lead/1.png') }}" class="img-fluid" alt="">
                 </div>
                 <div class="col-md-6 detalle-mdo pt-5">
                     <ul>

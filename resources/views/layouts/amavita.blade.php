@@ -159,7 +159,7 @@
                                 <a href="">
                                     <i class=" icono fab fa-linkedin pr-2 redes" style="color: #fff"></i>
                                 </a> <br>
-                                <a href="" target="blanK_" style="color: #fff">www.grupocasitas.mx</a>
+                                <a href="https://grupocasitas.com.mx" target="blanK_" style="color: #fff">www.grupocasitas.com.mx</a>
                             </p>
 
                         </div>
