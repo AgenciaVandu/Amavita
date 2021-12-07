@@ -1,5 +1,9 @@
 <?php
 
+use App\Http\Controllers\AmavitaController;
+use App\Http\Controllers\GaleryController;
+use App\Http\Controllers\LandingController;
+use App\Http\Controllers\ModelController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,12 +17,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
-
-
-
-Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-    return view('dashboard');
-})->name('dashboard');
+Route::get('/', [LandingController::class, 'index'])->name('index');
+Route::get('/contacto', [LandingController::class, 'contact'])->name('contacto');
+Route::get('/amavita', [AmavitaController::class, 'index'])->name('amavita.index');
+Route::get('/galeria', [GaleryController::class, 'index'])->name('galery.index');
+Route::get('/galeria/{album}', [GaleryController::class, 'show'])->name('galery.show');
+Route::get('/modelos-amavita', [ModelController::class, 'index'])->name('models.index');
+Route::get('/modelos-amavita/{model}', [ModelController::class, 'show'])->name('models.show');
+Route::get('/lead/{model}', [ModelController::class, 'lead'])->name('models.leads');
+Route::get('/gracias-por-registrarte', [LandingController::class, 'tanks'])->name('tanks');

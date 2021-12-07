@@ -1,258 +1,360 @@
 @extends('layouts.amavita')
 @section('content')
-
-<header>
-    <div class="bg-overlay">
-
-    </div>
-</header>
-
-<section id="ama-vivir-en-caucel" class="mt-5">
-    <div class="ama-vivir">
-        <div class="container">
-            <div class="titular">
-                <img src="{{asset('img/ama-vivir.svg') }}" alt="Ama vivir en Caucel | Amtiavita " class="img-fluid" width="480">
-            </div>
-        </div>
-    </div>
-    <div class="hight-lights">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="row">
-                        <div class="col-lg-6 col-6 col-sm-6">
-                            <div class="icon">
-                                <img src="{{asset('img/caracteristicas/caucel.svg') }}" class="img-fluid" width="110" alt="">
-                                <h5 class="hurmebold">Caucel</h5>
-
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-6 col-sm-6">
-                            <div class="icon">
-                                <img src="{{asset('img/caracteristicas/hectareas.svg') }}" class="img-fluid" width="110" alt="">
-                                <h5 class="hurmebold">6.8<br> <span class="hurmeregular">Hectáreas</span></h5>
-
-                            </div>
-                        </div>
+    <main role="main">
+        <div class="modal fade" id="modal-brochure" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="exampleModalLabel">Descarga nuestro Brochure</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="row">
-                        <div class="col-lg-6 col-6 col-sm-6">
-                            <div class="icon">
-                                <img src="{{asset('img/caracteristicas/viviendas.svg') }}" class="img-fluid" width="110" alt="">
-                                <h5 class="hurmebold">441<br> <span class="hurmeregular">viviendas</span></h5>
-
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-6 col-sm-6">
-                            <div class="icon">
-                                <img src="{{asset('img/caracteristicas/caseta.svg') }}" class="img-fluid" width="110" alt="">
-                                <h5 class="hurmebold">Caseta<br> <span class="hurmeregular">de vigilancia</span></h5>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="row">
-                        <div class="col-lg-6 col-6 col-sm-6">
-                            <div class="icon">
-                                <img src="{{asset('img/caracteristicas/barda.svg') }}" class="img-fluid" width="110" alt="">
-                                <h5 class="hurmebold">Barda <br> <span class="hurmeregular">Perimetral</span></h5>
-
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-6 col-sm-6">
-                            <div class="icon">
-                                <img src="{{asset('img/caracteristicas/servicios.svg') }}" class="img-fluid" width="110" alt="">
-                                <h5 class="hurmebold">Todos los servicios<br> <span class="hurmeregular">a tu alcance</span></h5>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section id="modelos" class="mt-5">
-    <div class="container">
-        <h1 style="text-align: center" class="hurmebold">Nuestros Modelos</h1>
-       <div class="modelos">
-        <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-12">
-                <div class="modelo">
-                    <img src="{{asset('img/ALULA.png') }}" class="img-fluid" alt="">
-                </div>
-                <div class="especificaciones">
-                        <p  class="hurmeregular">Construcción: <span class="hurmebold">50.93 m2</span><br>
-                        <span  class="hurmeregular">Terreno desde: <span class="hurmebold">5 x 20 m</span></span></p>
-                        <p></p>
-                    <li class="hurmeregular">2 recámaras</li>
-                    <li class="hurmeregular">Baño completo</li>
-                    <li class="hurmeregular">Pasillo lateral</li>
-                    <li class="hurmeregular">Patio</li>
-                    </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-12">
-                <div class="modelo">
-                    <img src="{{asset('img/BOREAL.png') }}" class="img-fluid" alt="">
-                </div>
-                <div class="especificaciones">
-                        <p  class="hurmeregular">Construcción: <span class="hurmebold">61.86 m2</span><br>
-                        <span  class="hurmeregular">Terreno desde: <span class="hurmebold">6 x 20 m</span></span></p>
-                        <p></p>
-                    <li class="hurmeregular">2 recámaras</li>
-                    <li class="hurmeregular">Baño completo</li>
-                    <li class="hurmeregular">Pasillo lateral</li>
-                    <li class="hurmeregular">Patio</li>
-                    </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-12">
-                <div class="modelo">
-                    <img src="{{asset('img/CITALA.png') }}" class="img-fluid" alt="">
-                </div>
-                <div class="especificaciones">
-                        <p  class="hurmeregular">Construcción: <span class="hurmebold">69.86 m2</span><br>
-                        <span  class="hurmeregular">Terreno desde: <span class="hurmebold">5.5 x 20 m</span></span></p>
-                        <p></p>
-                    <li class="hurmeregular">2 recámaras</li>
-                    <li class="hurmeregular">1 y 1/2 Baños</li>
-                    <li class="hurmeregular">Amplio patio de: <span class="hurmebold"> 39m2</span></li>
-                    <li class="hurmeregular">Pasillo lateral</li>
-                    </div>
-            </div>
-        </div>
-       </div>
-    </div>
-
-</section>
-
-<section id="beneficios">
-    <div class="bg-beneficios">
-        <div class="container">
-            <div class="titular">
-                <h1 class="hurmebold">Beneficios</h1>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="contenido-beneficios">
-            <div class="row ">
-                <div class="col-lg-6 col-md-6 col-sm-6">
-                    <div class="row ">
-                        <!--Elementos-->
-                        <div class="col-lg-4 col-md-4 col-sm-4">
-                            <div class="beneficios-ico">
-                                <img src="{{asset('img/beneficios/1.svg') }}" alt="" class="img-fluid" width="100">
-                            </div>
-                        </div>
-                        <div class="col-lg-8 col-md-8 col-sm-8">
-                            <h4 class="beneficio hurme-semibold">Supermercados</h4>
-                        </div>
-                        <!--Elementos-->
-                        <div class="col-lg-4 col-md-4 col-sm-4">
-                            <div class="beneficios-ico">
-                                <img src="{{asset('img/beneficios/3.svg') }}" alt="" class="img-fluid" width="100">
-                            </div>
-                        </div>
-                        <div class="col-lg-8 col-md-8 col-sm-8">
-                            <h4 class="beneficio hurme-semibold ">Centros Comreciales</h4>
-                        </div>
-                        <!--Elementos-->
-                        <div class="col-lg-4 col-md-4 col-sm-4">
-                            <div class="beneficios-ico">
-                                <img src="{{asset('img/beneficios/4.svg') }}" alt="" class="img-fluid" width="100">
-                            </div>
-                        </div>
-                        <div class="col-lg-8 col-md-8 col-sm-8">
-                            <h4 class="beneficio hurme-semibold ">Escuelas</h4>
-                        </div>
-                        <!--Elementos-->
-                        <div class="col-lg-4 col-md-4 col-sm-4">
-                            <div class="beneficios-ico">
-                                <img src="{{asset('img/beneficios/6.svg') }}" alt="" class="img-fluid" width="100">
-                            </div>
-                        </div>
-                        <div class="col-lg-8 col-md-8 col-sm-8">
-                            <h4 class="beneficio hurme-semibold ">Entretenimiento</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-6">
-                    <div class="row">
-                        <!--Elementos-->
-                        <div class="col-lg-4 col-md-4 col-sm-4">
-                            <div class="beneficios-ico">
-                                <img src="{{asset('img/beneficios/2.svg') }}" alt="" class="img-fluid" width="100">
-                            </div>
-                        </div>
-                        <div class="col-lg-8 col-md-8 col-sm-8">
-                            <h4 class="beneficio hurme-semibold ">Bancos</h4>
-                        </div>
-                        <!--Elementos-->
-                        <div class="col-lg-4 col-md-4 col-sm-4">
-                            <div class="beneficios-ico">
-                                <img src="{{asset('img/beneficios/8.svg') }}" alt="" class="img-fluid" width="100">
-                            </div>
-                        </div>
-                        <div class="col-lg-8 col-md-8 col-sm-8 ">
-                            <h4 class="beneficio hurme-semibold">Gasolineras</h4>
-                        </div>
-                        <!--Elementos-->
-                        <div class="col-lg-4 col-md-4 col-sm-4">
-                            <div class="beneficios-ico">
-                                <img src="{{asset('img/beneficios/5.svg') }}" alt="" class="img-fluid" width="100">
-                            </div>
-                        </div>
-                        <div class="col-lg-8 col-md-8 col-sm-8 ">
-                            <h4 class="beneficio hurme-semibold">Hospitales y Farmacias</h4>
-                        </div>
-                        <!--Elementos-->
-                        <div class="col-lg-4 col-md-4 col-sm-4">
-                            <div class="beneficios-ico">
-                                <img src="{{asset('img/beneficios/7.svg') }}" alt="" class="img-fluid" width="100">
-                            </div>
-                        </div>
-                        <div class="col-lg-8 col-md-8 col-sm-8 ">
-                            <h4 class="beneficio hurme-semibold">Pago de Servicios</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section id="contactanos" class="mt-5">
-    <h1 style="text-align: center" class="hurmebold text-white py-3">Contáctanos</h1>
-    <div class="bg-contacto">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-12">
-                    <div class="mapa">
-                        <img src="{{asset('img/mapa-2.svg') }}" alt="">
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-12">
-
-                            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
-                            <script>
+                    <div class="modal-body" style="background-color: #0f3e67">
+                        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
+                        <script>
                             hbspt.forms.create({
-                            region: "na1",
-                            portalId: "5510950",
-                            formId: "4f8b9726-8345-4f16-b902-556d0b33072a"
+                                region: "na1",
+                                portalId: "5510950",
+                                formId: "dc9cfba4-600b-4430-9bc3-cd95ff13c768"
                             });
-                            </script>
-
+                        </script>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-light" data-dismiss="modal">Cerrar</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </main>
+    <header class="slider-header">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            @isset($header->resources)
+                <ol class="carousel-indicators">
+                    @forelse ($header->resources as $resource)
+                        <li data-target="#carouselExampleIndicators" data-slide-to="{{ $loop->index }}"
+                            class="{{ $loop->first ? 'active' : '' }}"></li>
+                    @empty
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">
+                        </li>
+                    @endforelse
+                </ol>
+            @endisset
+            <div class="carousel-inner">
+                @isset($header->resources)
+                    @forelse ($header->resources as $resource)
+                        @php
+                            $file = new SplFileInfo($resource->url);
+                            $extension = $file->getExtension();
+                        @endphp
+                        @if ($extension == 'mp4' || $extension == 'mov' || $extension == 'ogg' || $extension == 'avi')
+                            <div class="carousel-item {{ $loop->first ? 'active' : '' }}">
+                                <video src="{{ Storage::url($resource->url) }}" loop muted preload autoplay
+                                    class="d-block w-100"></video>
+                            </div>
+                        @else
+                            <div class="carousel-item {{ $loop->first ? 'active' : '' }}">
+                                <img src="{{ Storage::url($resource->url) }}" class="d-block w-100"
+                                    alt="Amavita Caucel | Informacion">
+                            </div>
+                        @endif
+                    @empty
+                        <div class="carousel-item active">
+                            <img src="{{ asset('img/index/Slider.png') }}" class="d-block w-100"
+                                alt="Amavita Caucel | Informacion">
+                        </div>
+                    @endforelse
+                @endisset
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </header>
 
-</section>
+    <section id="introduccion">
+        <div class="bg-familia fade-in">
+            <div class="container">
+                <div class="row bg-intro">
+                    <div class="col-md-6 col-sm-12 text-center">
+                        <img src="{{ asset('img/index/desarrollo.png') }}" class="img-fluid" loading="lazy"
+                            alt="Desarrollo habitacional amavita caucel">
+                    </div>
+                    <div class="col-md-6 col-sm-12  text-center">
+                        <h3 class="hurme-semibold color-rose pt-3">Tú y tu familia disfrutarán de <br
+                                class="d-none d-md-block d-lg-block"> todo lo bueno de la
+                            vida</h3>
+                        <h4 class="hurme-semibold color-blue pt-3">Desde: $000,000</h4>
+                        <p class="pt-2 disfruta-vivir">Disfruta vivir en un desarrollo tipo privada habitacional<br
+                                class="d-none d-md-block d-lg-block">con la
+                            oportunidad de vivir cerca de todos los servicios<br class="d-none d-md-block d-lg-block"> que
+                            tu familia necesita, así como la
+                            tranquilidad de<br class="d-none d-md-block d-lg-block"> vivir en un lugar seguro, fresco y a la
+                            altura de<br class="d-none d-md-block d-lg-block"> tus necesidades.</p>
+                        <a href="" class="btn btn-secondary mt-2" data-toggle="modal"
+                            data-target="#modal-brochure">Desacarga el brochure</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="desarrollo">
+        <div class="container fade-in">
+            <h4 class="color-rose hurmebold text-center pt-5 pb-5">Ama vivir en Caucel, <br>
+                <span class="color-blue">todo esto está a tu al rededor</span>
+            </h4>
+            <div class="bg-2">
+                <div class="espaciado">
+                    <div class="row text-center">
+                        <div class="col">
+                            <img src="{{ asset('img/index/escuelas.svg') }}" width="100" loading="lazy"
+                                alt="Iconos de servicios">
+                            <p class="hurme-semibold pt-3">Escuelas</p>
+                        </div>
+                        <div class="col">
+                            <img src="{{ asset('img/index/entretenimiento.svg') }}" width="100" loading="lazy"
+                                alt="Iconos de servicios">
+                            <p class="hurme-semibold pt-3">Entretenimiento</p>
+                        </div>
+                        <div class="col">
+                            <img src="{{ asset('img/index/centros-comerciales.svg') }}" width="100" loading="lazy"
+                                alt="Iconos de servicios">
+                            <p class="hurme-semibold pt-3">Centros
+                                <br> Comerciales
+                            </p>
+                        </div>
+                        <div class="col">
+                            <img src="{{ asset('img/index/supermercado.svg') }}" width="100" loading="lazy"
+                                alt="Iconos de servicios">
+                            <p class="hurme-semibold pt-3">Supermercados</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="{{ url('/amavita') }}" class="btn btn-secondary hurme-semibold mt-4">Conoce Amavita</a>
+            </div>
+            <div class="row pt-5 text-center fade-in-1">
+                <div class="col-md-6">
+                    <h4 class="color-rose hurmebold">Tu podrías vivir aquí,<br>
+                        <span class="color-blue">conoce tu próximo hogar</span>
+                    </h4>
+                    <div class="row espaciado-1">
+                        <div class="col-6">
+                            <img src="{{ asset('img/index/tu-podrias/caucel.svg') }}" width="70" loading="lazy" alt="">
+                            <p class="hurme-semibold pt-2">CAUCEL</p>
+                        </div>
+                        <div class="col-6">
+                            <img src="{{ asset('img/index/tu-podrias/viviendas.svg') }}" width="70" loading="lazy"
+                                alt="">
+                            <p class="hurme-semibold pt-2">441 VIVIENDAS</p>
+                        </div>
+                        <div class="col-6">
+                            <img src="{{ asset('img/index/tu-podrias/caseta.svg') }}" width="70" loading="lazy" alt="">
+                            <p class="hurme-semibold pt-2">CASETA DE <br> VIGILANCIA</p>
+                        </div>
+                        <div class="col-6">
+                            <img src="{{ asset('img/index/tu-podrias/barda.svg') }}" width="70" loading="lazy" alt="">
+                            <p class="hurme-semibold pt-2">BARDA <br>PERIMETRAL</p>
+                        </div>
+                    </div>
+                    <div class="col-12 mt-4">
+                        <a href="{{ url('/amavita') }}" class="btn btn-secondary hurmebold">Conoce Amavita</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img src="{{ asset('img/index/familia.png') }}" class="img-fluid pt-4" loading="lazy"
+                        alt="Familia en amavita">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="modelos">
+        <div class="container text-center fade-in-1">
+            <h4 class="hurmebold color-rose pt-5 pb-5">Amarás nuestros modelos,
+                <br>
+                elige el ideal para ti
+            </h4>
+        </div>
+        <div class="bg-modelos-1 fade-in-1">
+            <div class="container text-center">
+                <div class="bg-modelos">
+                    <div class="text-center pt-5">
+                        <div class="carousel_1">
+                            <!--Carousel 1-->
+                            <div class="carousel__contenedor">
+                                <!--Carousel contenedor-->
+                                <button aria-label="anterior" class="carousel__anterior1">
+                                    <i class="fas fa-chevron-left"></i>
+                                </button>
+                                <div class="carousel__lista1">
+                                    <div class="carousel__elemento1">
+                                        @foreach ($models as $model)
+                                            @if ($model->id == 1)
+                                                <div class="col">
+                                                    <img src="{{ asset('img/index/modelos/1.png') }}"
+                                                        class="img-fluid" loading="lazy" alt="">
+                                                    <h5 class="color-blue hurmebold pt-3">{{ $model->name }} <br>
+                                                        @if ($model->price_visible)
+                                                            <span class="hurme-semibold">Desde:
+                                                                ${{ number_format($model->price, 2) }}</span>
+                                                        @endif
+                                                    </h5>
+                                                    <li class="color-blue hurmeregular">2 recámaras</li>
+                                                    <li class="color-blue hurmeregular">Baño completo</li>
+                                                    <li class="color-blue hurmeregular">Pasillo lateral</li>
+                                                    <li class="color-blue hurmeregular">Patio</li>
+                                                    <a href="{{ url('/modelo-alula') }}"
+                                                        class="btn btn-secondary hurmebold mt-2">Cotiza tu casa</a>
+                                                </div>
+                                            @endif
+                                        @endforeach
+                                    </div>
+                                    <div class="carousel__elemento">
+                                        @foreach ($models as $model)
+                                            @if ($model->id == 2)
+                                                <div class="col">
+                                                    <img src="{{ asset('img/index/modelos/2.png') }}"
+                                                        class="img-fluid" loading="lazy" alt="">
+                                                    <h5 class="color-blue hurmebold pt-3">{{ $model->name }}<br>
+                                                        @if ($model->price_visible)
+                                                            <span class="hurme-semibold">Desde:
+                                                                ${{ number_format($model->price, 2) }}</span>
+                                                        @endif
+                                                    </h5>
+                                                    <li class="color-blue hurmeregular">2 recámaras</li>
+                                                    <li class="color-blue hurmeregular">Baño completo</li>
+                                                    <li class="color-blue hurmeregular">Pasillo lateral</li>
+                                                    <li class="color-blue hurmeregular">Patio</li>
+                                                    <a href="{{ url('/modelo-boreal') }}"
+                                                        class="btn btn-secondary hurmebold mt-2">Cotiza tu casa</a>
+                                                </div>
+                                            @endif
+                                        @endforeach
+                                    </div>
+                                    <div class="carousel__elemento">
+                                        @foreach ($models as $model)
+                                            @if ($model->id == 3)
+                                                <div class="col">
+                                                    <img src="{{ asset('img/index/modelos/3.png') }}"
+                                                        class="img-fluid" loading="lazy" alt="">
+                                                    <h5 class="color-blue hurmebold pt-3">{{ $model->name }}<br>
+                                                        @if ($model->price_visible)
+                                                            <span class="hurme-semibold">Desde:
+                                                                ${{ number_format($model->price, 2) }}</span>
+                                                        @endif
+                                                    </h5>
+                                                    <li class="color-blue hurmeregular">2 recámaras</li>
+                                                    <li class="color-blue hurmeregular">Baño completo</li>
+                                                    <li class="color-blue hurmeregular">Pasillo lateral</li>
+                                                    <li class="color-blue hurmeregular">Patio</li>
+                                                    <a href="{{ url('/modelo-citala') }}"
+                                                        class="btn btn-secondary hurmebold mt-2">Cotiza tu casa</a>
+                                                </div>
+                                            @endif
+                                        @endforeach
+                                    </div>
+                                </div>
+                                <button aria-label="siguiente" class="carousel__siguiente1">
+                                    <i class="fas fa-chevron-right"></i>
+                                </button>
+                            </div>
+                            <div role="tabList" class="carousel__indicadores1"></div>
+                        </div> <!-- Fint Carousel 1-->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="creditos">
+        <div class="container text-center ">
+            <h4 class="hurmebold color-blue pt-5 arrows">Aceptamos todo tipo de crédito <br> ¡Precalifícate!</h4>
+            <div class="d-none d-md-block d-lg-block">
+                <div class="row espaciado-2">
+                    <div class="col-md-3 col-sm-6">
+                        <img src="{{ asset('img/index/creditos/1.svg') }}" width="100" alt="">
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <img src="{{ asset('img/index/creditos/2.svg') }}" width="100" alt="">
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <img src="{{ asset('img/index/creditos/3.svg') }}" width="180" alt="">
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <img src="{{ asset('img/index/creditos/4.svg') }}" width="100" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="d-block d-sm-block d-md-none d-lg-none">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <img src="{{ asset('img/index/creditos/credito-1.svg') }}" width="290" alt="">
+                    </div>
+                    <div class="col-sm-6">
+                        <img src="{{ asset('img/index/creditos/credito-2.svg') }}" width="290" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="galeria">
+        <div class="container">
+            <h4 class=" hurmebold color-blue text-center pt-5 pb-4">Conoce el avance de Amavita Caucel</h4>
+            <div class="text-center pt-5">
+                <div class="carousel_1">
+                    <!--Carousel 1-->
+                    <div class="carousel__contenedor">
+                        <!--Carousel contenedor-->
+                        <button aria-label="anterior" class="carousel__anterior">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <div class="carousel__lista">
+                            @foreach ($albumes as $album)
+                                <div class="carousel__elemento">
+                                    <div class="col">
+                                        <a href="{{ route('galery.show', $album) }}">
+                                            <img src="{{ Storage::url($album->image) }}" class="img-fluid"
+                                                loading="lazy" alt="Amenidades de los desarrollos habitacionales">
+                                        </a>
+                                    </div>
+                                </div>
+                            @endforeach
+                        </div>
+                        <button aria-label="siguiente" class="carousel__siguiente">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                    <div role="tabList" class="carousel__indicadores"></div>
+                </div> <!-- Fint Carousel 1-->
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container-fluid pt-5 mb-5">
+            <div class="bg-llamada">
+                <div class="text-center centrado">
+                    <div class="row">
+                        <div class="col-12">
+                            <h4 class="hurmebold" style="color: #fff">¿Te gustaria vivir en Amavita Caucel?</h4>
+                        </div>
+                        <div class="col-12">
+                            <a href="{{ url('/amavita') }}" class="btn btn-secondary hurmebold">Conócelo ahora</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 @endsection
-
