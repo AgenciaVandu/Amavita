@@ -4,6 +4,7 @@ use App\Http\Controllers\AmavitaController;
 use App\Http\Controllers\GaleryController;
 use App\Http\Controllers\LandingController;
 use App\Http\Controllers\ModelController;
+use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -26,3 +27,7 @@ Route::get('/modelos-amavita', [ModelController::class, 'index'])->name('models.
 Route::get('/modelos-amavita/{model}', [ModelController::class, 'show'])->name('models.show');
 Route::get('/lead/{model}', [ModelController::class, 'lead'])->name('models.leads');
 Route::get('/gracias-por-registrarte', [LandingController::class, 'tanks'])->name('tanks');
+
+Route::get('/storage', function () {
+    Artisan::call('storage:link');
+});
