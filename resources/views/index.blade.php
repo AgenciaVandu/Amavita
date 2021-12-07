@@ -211,7 +211,7 @@
                                                     <li class="color-blue hurmeregular">Baño completo</li>
                                                     <li class="color-blue hurmeregular">Pasillo lateral</li>
                                                     <li class="color-blue hurmeregular">Patio</li>
-                                                    <a href="{{ url('/modelo-alula') }}"
+                                                    <a href="{{ route('models.show', $model) }}"
                                                         class="btn btn-secondary hurmebold mt-2">Cotiza tu casa</a>
                                                 </div>
                                             @endif
@@ -233,7 +233,7 @@
                                                     <li class="color-blue hurmeregular">Baño completo</li>
                                                     <li class="color-blue hurmeregular">Pasillo lateral</li>
                                                     <li class="color-blue hurmeregular">Patio</li>
-                                                    <a href="{{ url('/modelo-boreal') }}"
+                                                    <a href="{{ route('models.show', $model) }}"
                                                         class="btn btn-secondary hurmebold mt-2">Cotiza tu casa</a>
                                                 </div>
                                             @endif
@@ -255,7 +255,7 @@
                                                     <li class="color-blue hurmeregular">Baño completo</li>
                                                     <li class="color-blue hurmeregular">Pasillo lateral</li>
                                                     <li class="color-blue hurmeregular">Patio</li>
-                                                    <a href="{{ url('/modelo-citala') }}"
+                                                    <a href="{{ route('models.show', $model) }}"
                                                         class="btn btn-secondary hurmebold mt-2">Cotiza tu casa</a>
                                                 </div>
                                             @endif
