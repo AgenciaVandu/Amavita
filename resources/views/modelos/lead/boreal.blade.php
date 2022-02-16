@@ -3,7 +3,9 @@
     <header id="leads" class="bg-amavita">
         <div class="container">
             <div class="text-center pt-4 pb-4">
-                <img src="{{ asset('img/modelos/lead/amavita-bco.svg') }}" class="img-fluid" alt="">
+                <a href="https://amavitacaucel.mx/">
+                    <img src="{{ asset('img/modelos/lead/amavita-bco.svg') }}" class="img-fluid" alt="">
+                </a>
             </div>
             <div class="row pt-4">
                 <div class="col-md-6 text-center">
@@ -26,14 +28,16 @@
                         <li class="hurmeregular">Recámara 2 con área para clóset</li>
                         <li class="hurmeregular">Área de lavado</li>
                         <li class="hurmeregular">Patio</li> <br>
-                        <li><script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
-                            <script data-hubspot-rendered="true">
-                                hbspt.forms.create({
-                                    region: "na1",
-                                    portalId: "5510950",
-                                    formId: "4f8b9726-8345-4f16-b902-556d0b33072a"
-                                });
-                            </script></li>
+                        <li>
+                            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
+                            <script>
+                            hbspt.forms.create({
+                            region: "na1",
+                            portalId: "5510950",
+                            formId: "ee13e82f-5f84-457d-9d43-2ec76efa7e19"
+                            });
+                            </script>
+                        </li>
                     </ul>
                 </div>
             </div>

@@ -10,14 +10,14 @@
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
-                    <div class="modal-body" style="background-color: #0f3e67">
+                    <div class="modal-body">
                         <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
                         <script>
-                            hbspt.forms.create({
-                                region: "na1",
-                                portalId: "5510950",
-                                formId: "dc9cfba4-600b-4430-9bc3-cd95ff13c768"
-                            });
+                        hbspt.forms.create({
+                        region: "na1",
+                        portalId: "5510950",
+                        formId: "c79d78cc-3fc8-4467-b6c5-3d562046a680"
+                        });
                         </script>
                     </div>
                     <div class="modal-footer">
@@ -27,6 +27,7 @@
                 </div>
             </div>
         </div>
+       
     </main>
     <header class="slider-header">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -107,7 +108,7 @@
                         </div>
                         <div class="col-md-3 col-sm-6">
                             <img src="{{ asset('img/index/tu-podrias/barda.svg') }}" width="70" loading="lazy" alt="">
-                            <p class="hurme-semibold pt-2" style="color: #fff">BARDA PERIMETRAOL</p>
+                            <p class="hurme-semibold pt-2" style="color: #fff">BARDA PERIMETRAL</p>
                         </div>
                     </div>
                 </div>
@@ -136,7 +137,8 @@
                     <div class="row espaciado">
                         <div class="col-md-6 col-sm-12 mt-3">
                             <a href="" class="btn btn-secondary hurmebold" data-toggle="modal"
-                                data-target="#modal-brochure">Descarga el brochure</a>
+                                data-target="#modal-brochure">Descarga el brochure
+                            </a>
                         </div>
                         <div class="col-md-6 col-sm-12 mt-3">
                             <a href="{{ url('/modelos-amavita') }}" class="btn btn-lead hurmebold">Cotiza tu casa</a>

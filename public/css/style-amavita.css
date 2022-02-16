@@ -275,6 +275,7 @@ li {
     background-image: url(/img/fondo-modelos.svg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 footer {
     background-color: #EE7768;
@@ -288,7 +289,9 @@ footer {
     width: auto;
 
 }
-
+.cta-index:hover {
+    color: #EE7768;
+}
 
 .titulo {
     font-size: 35px;

@@ -111,7 +111,7 @@
                 </ul>
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active hurmeregular">
-                        <a class="nav-link btn btn-primary" href="{{ route('contacto') }}">PRECALIFICATE</a>
+                        <a class="nav-link btn btn-primary" href="{{ route('contacto') }}">PRECALIFÍCATE</a>
                     </li>
                 </ul>
             </div>
@@ -132,17 +132,17 @@
                             width="" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                     </div>
                     <p style="color: #fff">Plaza 55: C 59A Local 11 Cd. Caucel
-                        <br>Informes: Tel: <a href="tel:999949952" style="color: #fff">(999) 944 9952</a>
+                        <br>Informes: Tel: <a href="https://wa.link/2qf5s4" style="color: #fff">(999) 944 9952</a>
                     </p>
                 </div>
                 <div class="col-md-5 col-sm-12">
                     <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
-                    <script data-hubspot-rendered="true">
-                        hbspt.forms.create({
-                            region: "na1",
-                            portalId: "5510950",
-                            formId: "4f8b9726-8345-4f16-b902-556d0b33072a"
-                        });
+                    <script>
+                    hbspt.forms.create({
+                    region: "na1",
+                    portalId: "5510950",
+                    formId: "9cc8f620-1474-4650-a7a7-1fa8e225084c"
+                    });
                     </script>
                 </div>
                 <div class="col-md-3 col-sm-12 text-center pt-5">
@@ -150,13 +150,13 @@
                     <div class="row">
                         <div class="col-12 pt-3">
                             <p>
-                                <a href="">
+                                <a href="https://www.facebook.com/GrupoCasitas" target="blanK_">
                                     <i class="icono fab fa-facebook-square pr-2 redes" style="color: #fff"></i>
                                 </a>
-                                <a href="">
+                                <a href="https://www.instagram.com/grupocasitas/" target="blanK_">
                                     <i class=" icono fab fa-instagram pr-2 redes" style="color: #fff"></i>
                                 </a>
-                                <a href="">
+                                <a href="https://mx.linkedin.com/company/grupo-casitas" target="blanK_">
                                     <i class=" icono fab fa-linkedin pr-2 redes" style="color: #fff"></i>
                                 </a> <br>
                                 <a href="https://grupocasitas.com.mx" target="blanK_" style="color: #fff">www.grupocasitas.com.mx</a>

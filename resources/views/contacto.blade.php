@@ -13,12 +13,12 @@
                 </div>
                 <div class="col-md-6 col-sm-12">
                     <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
-                    <script data-hubspot-rendered="true">
-                        hbspt.forms.create({
-                            region: "na1",
-                            portalId: "5510950",
-                            formId: "4f8b9726-8345-4f16-b902-556d0b33072a"
-                        });
+                    <script>
+                    hbspt.forms.create({
+                    region: "na1",
+                    portalId: "5510950",
+                    formId: "560d4ffa-856b-43e6-a182-d73be5aafea6"
+                    });
                     </script>
                 </div>
             </div>

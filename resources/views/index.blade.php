@@ -97,7 +97,7 @@
                             tranquilidad de<br class="d-none d-md-block d-lg-block"> vivir en un lugar seguro, fresco y a la
                             altura de<br class="d-none d-md-block d-lg-block"> tus necesidades.</p>
                         <a href="" class="btn btn-secondary mt-2" data-toggle="modal"
-                            data-target="#modal-brochure">Desacarga el brochure</a>
+                            data-target="#modal-brochure">Descarga el brochure</a>
                     </div>
                 </div>
             </div>
@@ -138,7 +138,7 @@
                 </div>
             </div>
             <div class="text-center">
-                <a href="{{ url('/amavita') }}" class="btn btn-secondary hurme-semibold mt-4">Conoce Amavita</a>
+                <a href="{{ url('/amavita') }}" class="btn btn-secondary hurme-semibold mt-4">Explora todas las amenidade</a>
             </div>
             <div class="row pt-5 text-center fade-in-1">
                 <div class="col-md-6">
@@ -209,7 +209,7 @@
                                                     </h5>
                                                     <li class="color-blue hurmeregular">2 recámaras</li>
                                                     <li class="color-blue hurmeregular">Baño completo</li>
-                                                    <li class="color-blue hurmeregular">Pasillo lateral</li>
+                                                    {{-- <li class="color-blue hurmeregular">Pasillo lateral</li> --}}
                                                     <li class="color-blue hurmeregular">Patio</li>
                                                     <a href="{{ url('/modelo-alula') }}"
                                                         class="btn btn-secondary hurmebold mt-2">Cotiza tu casa</a>
@@ -252,9 +252,9 @@
                                                         @endif
                                                     </h5>
                                                     <li class="color-blue hurmeregular">2 recámaras</li>
-                                                    <li class="color-blue hurmeregular">Baño completo</li>
+                                                    <li class="color-blue hurmeregular">1  1/2 baños</li>
                                                     <li class="color-blue hurmeregular">Pasillo lateral</li>
-                                                    <li class="color-blue hurmeregular">Patio</li>
+                                                    <li class="color-blue hurmeregular">Amplio patio de 39 m2</li>
                                                     <a href="{{ url('/modelo-citala') }}"
                                                         class="btn btn-secondary hurmebold mt-2">Cotiza tu casa</a>
                                                 </div>
@@ -277,7 +277,9 @@
 
     <section id="creditos">
         <div class="container text-center ">
-            <h4 class="hurmebold color-blue pt-5 arrows">Aceptamos todo tipo de crédito <br> ¡Precalifícate!</h4>
+            <a href="{{ route('contacto') }}" style="text-decoration: none">
+                <h4 class="hurmebold color-blue pt-5 arrows cta-index">Aceptamos todo tipo de crédito <br> ¡Precalifícate!</h4>
+            </a>
             <div class="d-none d-md-block d-lg-block">
                 <div class="row espaciado-2">
                     <div class="col-md-3 col-sm-6">
@@ -320,14 +322,16 @@
                         </button>
                         <div class="carousel__lista">
                             @foreach ($albumes as $album)
-                                <div class="carousel__elemento">
-                                    <div class="col">
-                                        <a href="{{ route('galery.show', $album) }}">
-                                            <img src="{{ Storage::url($album->image) }}" class="img-fluid"
-                                                loading="lazy" alt="Amenidades de los desarrollos habitacionales">
-                                        </a>
+                                <a href="{{ route('galery.show', $album) }}">
+                                    <div class="carousel__elemento">
+                                        <div class="col">
+                                            {{-- <a href="{{ route('galery.show', $album) }}"> --}}
+                                                <img src="{{ Storage::url($album->image) }}" class="img-fluid"
+                                                    loading="lazy" alt="Amenidades de los desarrollos habitacionales">
+                                            {{-- </a> --}}
+                                        </div>
                                     </div>
-                                </div>
+                                </a>
                             @endforeach
                         </div>
                         <button aria-label="siguiente" class="carousel__siguiente">
