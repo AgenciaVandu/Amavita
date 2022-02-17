@@ -89,7 +89,7 @@
                         <h3 class="hurme-semibold color-rose pt-3">Tú y tu familia disfrutarán de <br
                                 class="d-none d-md-block d-lg-block"> todo lo bueno de la
                             vida</h3>
-                        <h4 class="hurme-semibold color-blue pt-3">Desde: $000,000</h4>
+                        <h4 class="hurme-semibold color-blue pt-3">Desde: ${{ number_format($price->price,2) }}</h4>
                         <p class="pt-2 disfruta-vivir">Disfruta vivir en un desarrollo tipo privada habitacional<br
                                 class="d-none d-md-block d-lg-block">con la
                             oportunidad de vivir cerca de todos los servicios<br class="d-none d-md-block d-lg-block"> que

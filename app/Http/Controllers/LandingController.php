@@ -14,7 +14,8 @@ class  LandingController extends Controller
         $models = Model::all();
         $services = Page::where('name', 'amavita')->where('section', 'services')->first();
         $albumes = Album::all();
-        return view('index', compact('header', 'models', 'services', 'albumes'));
+        $price = Model::orderBy('price', 'asc')->first();
+        return view('index', compact('header', 'models', 'services', 'albumes','price'));
     }
 
     public function contact()
