@@ -131,7 +131,7 @@
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.398826371192!2d-89.72779978506757!3d21.016722186004877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjHCsDAxJzAwLjIiTiA4OcKwNDMnMzIuMiJX!5e0!3m2!1ses-419!2smx!4v1632937582481!5m2!1ses-419!2smx"
                             width="" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                     </div>
-                    <p style="color: #fff">Plaza 55: C 59A Local 11 Cd. Caucel
+                    <p style="color: #fff">Calle 114 #552 Casa R, Amavita Caucel <br> Código Postal 97314
                         <br>Informes: Tel: <a href="https://wa.link/2qf5s4" style="color: #fff">(999) 944 9952</a>
                     </p>
                 </div>
