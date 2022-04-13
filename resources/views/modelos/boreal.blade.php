@@ -72,19 +72,19 @@
                         <div class="carousel__lista">
                             <div class="carousel__elemento">
                                 <div class="col">
-                                    <img src="{{ asset('img/modelos/alula/render-modelo-1.jpg') }}" class="img-fluid"
+                                    <img src="{{ Storage::url($model->img1) }}" class="img-fluid"
                                         alt="Render de modelo alula">
                                 </div>
                             </div>
                             <div class="carousel__elemento">
                                 <div class="col">
-                                    <img src="{{ asset('img/modelos/alula/render-modelo-1.jpg') }}" class="img-fluid"
+                                    <img src="{{ Storage::url($model->img2) }}" class="img-fluid"
                                         alt="Render de modelo alula">
                                 </div>
                             </div>
                             <div class="carousel__elemento">
                                 <div class="col">
-                                    <img src="{{ asset('img/modelos/alula/render-modelo-1.jpg') }}" class="img-fluid"
+                                    <img src="{{ Storage::url($model->img3) }}" class="img-fluid"
                                         alt="Render de modelo alula">
                                 </div>
                             </div>
