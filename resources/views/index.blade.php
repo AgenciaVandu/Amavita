@@ -138,7 +138,7 @@
                 </div>
             </div>
             <div class="text-center">
-                <a href="{{ url('/amavita') }}" class="btn btn-secondary hurme-semibold mt-4">Explora todas las amenidade</a>
+                <a href="{{ url('/amavita') }}" class="btn btn-secondary hurme-semibold mt-4">Explora todas las amenidades</a>
             </div>
             <div class="row pt-5 text-center fade-in-1">
                 <div class="col-md-6">
@@ -165,7 +165,7 @@
                         </div>
                     </div>
                     <div class="col-12 mt-4">
-                        <a href="{{ url('/amavita') }}" class="btn btn-secondary hurmebold">Conoce Amavita</a>
+                        <a href="{{ url('/amavita') }}" class="btn btn-secondary hurmebold">Conoce Amavita Caucel</a>
                     </div>
                 </div>
                 <div class="col-md-6">
