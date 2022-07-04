@@ -20,6 +20,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Amavita Caucel</title>
     <meta name="author" content="https://agenciavandu.com" />
+    <meta name="facebook-domain-verification" content="frqwimxc20asehpdgmg5uw850ua39u" />
     <script src="{{ asset('js/scrollreveal.js') }}"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -72,7 +73,7 @@
     <noscript><img height="1" width="1" style="display:none"
             src="https://www.facebook.com/tr?id=2821273661220502&ev=PageView&noscript=1" /></noscript>
     <!-- End Facebook Pixel Code -->
-
+    <script> (function(h,o,t,j,a,r){ h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)}; h._hjSettings={hjid:3037474,hjsv:6}; a=o.getElementsByTagName('head')[0]; r=o.createElement('script');r.async=1; r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv; a.appendChild(r); })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv='); </script>
 </head>
 
 
