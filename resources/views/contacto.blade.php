@@ -12,14 +12,12 @@
                     <img src="{{ asset('img/pareja-3.png') }}" class="img-fluid" alt="Pareja mudandose">
                 </div>
                 <div class="col-md-6 col-sm-12">
-                    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
-                    <script>
-                    hbspt.forms.create({
+                    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+                    <script> hbspt.forms.create({
                     region: "na1",
                     portalId: "5510950",
-                    formId: "560d4ffa-856b-43e6-a182-d73be5aafea6"
-                    });
-                    </script>
+                    formId: "9cc8f620-1474-4650-a7a7-1fa8e225084c"
+                    }); </script>
                 </div>
             </div>
         </div>

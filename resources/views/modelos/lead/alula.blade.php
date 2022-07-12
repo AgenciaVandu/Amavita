@@ -28,13 +28,13 @@
                         <li class="hurmeregular" style="color: #fff">Recámara 1 con área para clóset</li>
                         <li class="hurmeregular" style="color: #fff">Recámara 2 con área para clóset</li>
                         <li class="hurmeregular" style="color: #fff">Patio</li> <br>
-                        <li
+                        <li>
                             <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
                             <script>
                             hbspt.forms.create({
                             region: "na1",
                             portalId: "5510950",
-                            formId: "bf16670f-f684-4475-99f8-8ccf0b545dff"
+                            formId: "ee13e82f-5f84-457d-9d43-2ec76efa7e19"
                             });
                             </script>
                         </li>

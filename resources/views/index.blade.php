@@ -1,32 +1,30 @@
 @extends('layouts.amavita')
 @section('content')
-    <main role="main">
-        <div class="modal fade" id="modal-brochure" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h4 class="modal-title" id="exampleModalLabel">Descarga nuestro Brochure</h4>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body" style="background-color: #0f3e67">
-                        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
-                        <script>
-                            hbspt.forms.create({
-                                region: "na1",
-                                portalId: "5510950",
-                                formId: "dc9cfba4-600b-4430-9bc3-cd95ff13c768"
-                            });
-                        </script>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-light" data-dismiss="modal">Cerrar</button>
-                    </div>
-                </div>
+<div class="modal fade" id="modal-brochure" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="exampleModalLabel">Descarga nuestro Brochure</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body" style="background-color: #0f3e67">
+                <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
+                <script>
+                    hbspt.forms.create({
+                        region: "na1",
+                        portalId: "5510950",
+                        formId: "dc9cfba4-600b-4430-9bc3-cd95ff13c768"
+                    });
+                </script>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-light" data-dismiss="modal">Cerrar</button>
             </div>
         </div>
-    </main>
+    </div>
+</div>
     <header class="slider-header">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             @isset($header->resources)
@@ -82,7 +80,7 @@
             <div class="container">
                 <div class="row bg-intro">
                     <div class="col-md-6 col-sm-12 text-center">
-                        <img src="{{ asset('img/index/desarrollo.png') }}" class="img-fluid" loading="lazy"
+                        <img src="{{ asset('img/index/amv-real.png') }}" class="img-fluid" loading="lazy"
                             alt="Desarrollo habitacional amavita caucel">
                     </div>
                     <div class="col-md-6 col-sm-12  text-center">
@@ -255,7 +253,7 @@
                                                     <li class="color-blue hurmeregular">1  1/2 baños</li>
                                                     <li class="color-blue hurmeregular">Pasillo lateral</li>
                                                     <li class="color-blue hurmeregular">Amplio patio de 39 m2</li>
-                                                    <a href="{{ url('/modelo-citala') }}"
+                                                    <a href="{{ url('/modelos-amavita/Citala') }}"
                                                         class="btn btn-secondary hurmebold mt-2">Cotiza tu casa</a>
                                                 </div>
                                             @endif

@@ -1,33 +1,31 @@
 @extends('layouts.amavita')
 @section('content')
-    <main role="main">
-        <div class="modal fade" id="modal-ficha" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h4 class="modal-title" id="exampleModalLabel">Descargar Ficha Técnica</h4>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body" style="background-color: #0f3e67">
-                        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
-                        <script>
-                            hbspt.forms.create({
-                                region: "na1",
-                                portalId: "5510950",
-                                formId: "dc9cfba4-600b-4430-9bc3-cd95ff13c768"
-                            });
-                        </script>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-light" data-dismiss="modal">Cerrar</button>
+    <div class="modal fade" id="modal-ficha-boreal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="exampleModalLabel">Descargar Ficha Técnica</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
+                    <script>
+                        hbspt.forms.create({
+                            region: "na1",
+                            portalId: "5510950",
+                            formId: "ee13e82f-5f84-457d-9d43-2ec76efa7e19"
+                        });
+                    </script>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-light" data-dismiss="modal">Cerrar</button>
 
-                    </div>
                 </div>
             </div>
         </div>
-    </main>
+    </div>
     <header>
         <div class="bg-modelos-4">
             <div class="container pb-5">
@@ -126,7 +124,7 @@
                     <div class="row pt-5">
                         <div class="col-md-6 col-sm-12 pt-2">
                             <a href="" class="hurmebold btn btn-secondary btn-block" data-toggle="modal"
-                                data-target="#modal-ficha">Ficha Técnica</a>
+                                data-target="#modal-ficha-boreal">Ficha Técnica</a>
                         </div>
                         <div class="col-md-6 col-sm-12 pt-2">
                             <a href="{{ route('models.leads',$model) }}" class="hurmebold btn btn-secondary btn-block">Cotiza tu

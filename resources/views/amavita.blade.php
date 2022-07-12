@@ -11,14 +11,12 @@
                         </button>
                     </div>
                     <div class="modal-body">
-                        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
-                        <script>
-                        hbspt.forms.create({
+                        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+                        <script> hbspt.forms.create({
                         region: "na1",
                         portalId: "5510950",
-                        formId: "c79d78cc-3fc8-4467-b6c5-3d562046a680"
-                        });
-                        </script>
+                        formId: "a48c36f8-eff2-4726-bf36-48ca5e633fb8"
+                        }); </script>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-light" data-dismiss="modal">Cerrar</button>
