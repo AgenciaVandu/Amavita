@@ -251,7 +251,7 @@
                                                     <li class="color-blue hurmeregular">1  1/2 baños</li>
                                                     <li class="color-blue hurmeregular">Pasillo lateral</li>
                                                     <li class="color-blue hurmeregular">Amplio patio de 39 m2</li>
-                                                    <a href="{{ url('/modelos-amavita/Citala') }}"
+                                                    <a href="{{ route('models.show', $model) }}"
                                                         class="btn btn-secondary hurmebold mt-2">Cotiza tu casa</a>
                                                 </div>
                                             @endif
