@@ -12,7 +12,7 @@
                     <img src="{{ asset('img/pareja-3.png') }}" class="img-fluid" alt="Pareja mudandose">
                 </div>
                 <div class="col-md-6 col-sm-12">
-                    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+                <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
                     <script> hbspt.forms.create({
                     region: "na1",
                     portalId: "5510950",

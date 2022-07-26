@@ -9,15 +9,13 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <div class="modal-body" style="background-color: #0f3e67">
-                <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/shell.js"></script>
-                <script>
-                    hbspt.forms.create({
-                        region: "na1",
-                        portalId: "5510950",
-                        formId: "dc9cfba4-600b-4430-9bc3-cd95ff13c768"
-                    });
-                </script>
+            <div class="modal-body" >
+            <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+                <script> hbspt.forms.create({
+                region: "na1",
+                portalId: "5510950",
+                formId: "a48c36f8-eff2-4726-bf36-48ca5e633fb8"
+                }); </script>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-light" data-dismiss="modal">Cerrar</button>
