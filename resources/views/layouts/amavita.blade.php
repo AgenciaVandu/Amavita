@@ -3,7 +3,6 @@
 
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-7Z17NR4HD9"></script>
     <script>
         window.dataLayer = window.dataLayer || [];

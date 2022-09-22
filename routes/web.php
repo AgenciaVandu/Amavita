@@ -28,6 +28,10 @@ Route::get('/modelos-amavita/{model}', [ModelController::class, 'show'])->name('
 Route::get('/lead/{model}', [ModelController::class, 'lead'])->name('models.leads');
 Route::get('/gracias-por-registrarte', [LandingController::class, 'tanks'])->name('tanks');
 
+Route::get('/aviso-de-privacidad', function () {
+    return view('aviso-de-privacidad');
+});
+
 Route::get('/storage', function () {
     Artisan::call('storage:link');
 });
