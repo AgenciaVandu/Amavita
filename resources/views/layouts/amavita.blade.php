@@ -162,11 +162,14 @@
                                 </a> <br>
                                 <a href="https://grupocasitas.com.mx" target="blanK_" style="color: #fff">www.grupocasitas.com.mx</a>
                             </p>
-
+                            <a href="https://amavitacaucel.mx/aviso-de-privacidad" style="color: #fff; font-weight:bold;">Aviso de privacidad</a>
                         </div>
 
                     </div>
 
+                </div>
+                <div class="col-12">
+                <p class="text-center pb-3" style="color:#fff;">Todos los derechos reservados Grupo Casitas® 2022.</p>
                 </div>
             </div>
         </div>
