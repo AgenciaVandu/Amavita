@@ -183,38 +183,45 @@
                                 <div class="carousel__elemento1">
                                     @foreach ($models as $model)
                                         @if ($model->id == 1)
-                                            <div class="col">
-                                                <img src="{{ asset('img/index/modelos/1.png') }}" class="img-fluid"
-                                                    loading="lazy" alt="">
-                                                <h5 class=" hurmebold pt-3" style="color: #fff">{{ $model->name }} <br>
-                                                    <span class="hurme-semibold">Desde: $000,000</span>
-                                                </h5>
-                                                <li class=" hurmeregular" style="color: #fff">2 recámaras</li>
-                                                <li class=" hurmeregular" style="color: #fff">Baño completo</li>
-                                                <li class=" hurmeregular" style="color: #fff">Pasillo lateral</li>
-                                                <li class=" hurmeregular" style="color: #fff">Patio</li>
-                                                <a href="{{ route('models.show', $model) }}"
-                                                    class="btn btn-secondary hurmebold mt-2">Cotiza tu casa</a>
-                                            </div>
+                                        <div class="col">
+                                            <img src="{{ asset('img/index/modelos/1.png') }}" class="img-fluid"
+                                                loading="lazy" alt="">
+                                            <h5 class=" hurmebold pt-3" style="color: #fff">{{ $model->name }} <br>
+                                                @if ($model->price_visible)
+                                                    <span class="hurme-semibold">Desde:
+                                                        ${{ number_format($model->price, 2) }}</span>
+                                                @endif
+                                            </h5>
+                                            <li class=" hurmeregular" style="color: #fff">2 recámaras</li>
+                                            <li class=" hurmeregular" style="color: #fff">Baño completo</li>
+                                            {{-- <li class=" hurmeregular" style="color: #fff">Pasillo lateral</li> --}}
+                                            <li class=" hurmeregular pb-4" style="color: #fff">Patio</li>
+                                            <a href="{{ route('models.show', $model) }}"
+                                                class="btn btn-secondary hurmebold mt-2">Cotiza tu casa</a>
+                                        </div>
                                         @endif
                                     @endforeach
                                 </div>
                                 <div class="carousel__elemento">
                                     @foreach ($models as $model)
-                                        @if ($model->id == 3)
-                                            <div class="col">
-                                                <img src="{{ asset('img/index/modelos/3.png') }}" class="img-fluid"
-                                                    loading="lazy" alt="">
-                                                <h5 class="hurmebold pt-3" style="color: #fff">CITALA <br>
-                                                    <span class="hurme-semibold">Desde: $000,000</span>
-                                                </h5>
-                                                <li class="hurmeregular" style="color: #fff">2 recámaras</li>
-                                                <li class="hurmeregular" style="color: #fff">Baño completo</li>
-                                                <li class="hurmeregular" style="color: #fff">Pasillo lateral</li>
-                                                <li class="hurmeregular" style="color: #fff">Patio</li>
-                                                <a href="{{ route('models.show', $model) }}" class="btn btn-secondary hurmebold mt-2">Cotiza tu casa</a>
-                                            </div>
-                                        @endif
+                                    @if ($model->id == 3)
+                                    <div class="col">
+                                        <img src="{{ asset('img/index/modelos/3.png') }}" class="img-fluid"
+                                            loading="lazy" alt="">
+                                        <h5 class="hurmebold pt-3" style="color: #fff">{{ $model->name }}<br>
+                                            @if ($model->price_visible)
+                                                <span class="hurme-semibold">Desde:
+                                                    ${{ number_format($model->price, 2) }}</span>
+                                            @endif
+                                        </h5>
+                                        <li class="hurmeregular" style="color: #fff">2 recámaras</li>
+                                        <li class="hurmeregular" style="color: #fff">1 1/2 Baños</li>
+                                        <li class="hurmeregular" style="color: #fff">Pasillo lateral</li>
+                                        <li class="hurmeregular" style="color: #fff">Patio</li>
+                                        <a href="{{ route('models.show', $model) }}"
+                                            class="btn btn-secondary hurmebold mt-2">Cotiza tu casa</a>
+                                    </div>
+                                @endif
                                     @endforeach
                                 </div>
                             </div>
@@ -232,23 +239,23 @@
     <section id="creditos">
         <div class="container text-center">
             <h4 class="hurmebold color-blue pt-5">Aceptamos todo tipo de crédito <br> ¡Precalifícate!</h4>
-            <div class="d-none d-md-block d-lg-block">
+            <div >
                 <div class="row espaciado-2">
-                    <div class="col-md-3 col-sm-6">
+                    <div class="col">
                         <img src="{{ asset('img/index/creditos/1.svg') }}" width="100" alt="">
                     </div>
-                    <div class="col-md-3 col-sm-6">
+                    <div class="col">
                         <img src="{{ asset('img/index/creditos/2.svg') }}" width="100" alt="">
                     </div>
-                    <div class="col-md-3 col-sm-6">
+                    {{-- <div class="col">
                         <img src="{{ asset('img/index/creditos/3.svg') }}" width="180" alt="">
-                    </div>
-                    <div class="col-md-3 col-sm-6">
+                    </div> --}}
+                    <div class="col">
                         <img src="{{ asset('img/index/creditos/4.svg') }}" width="100" alt="">
                     </div>
                 </div>
             </div>
-            <div class="d-block d-sm-block d-md-none d-lg-none">
+            {{-- <div class="d-block d-sm-block d-md-none d-lg-none">
                 <div class="row">
                     <div class="col-sm-6">
                         <img src="{{ asset('img/index/creditos/credito-1.svg') }}" width="290" alt="">
@@ -258,7 +265,7 @@
                     </div>
 
                 </div>
-            </div>
+            </div> --}}
         </div>
     </section>
 

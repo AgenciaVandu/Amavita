@@ -5,7 +5,8 @@
         <div class="container slider-header">
             <div class="text-center pb-5">
                 <h4 class="hurmebold pt-5 color-rose">Aceptamos todo tipo de crédito <br> ¡Precalifícate!</h4>
-                <img src="{{ asset('img/modelos/lead/creditos-2.svg') }}" class="img-fluid" alt="">
+                
+                <img src="{{ asset('img/modelos/lead/creditos-2.svg') }}" width="350" alt="">
             </div>
             <div class="row">
                 <div class="col-md-6 col-sm-12 text-center">

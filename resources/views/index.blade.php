@@ -276,23 +276,23 @@
             <a href="{{ route('contacto') }}" style="text-decoration: none">
                 <h4 class="hurmebold color-blue pt-5 arrows cta-index">Aceptamos todo tipo de crédito <br> ¡Precalifícate!</h4>
             </a>
-            <div class="d-none d-md-block d-lg-block">
+            <div >
                 <div class="row espaciado-2">
-                    <div class="col-md-3 col-sm-6">
+                    <div class="col">
                         <img src="{{ asset('img/index/creditos/1.svg') }}" width="100" alt="">
                     </div>
-                    <div class="col-md-3 col-sm-6">
+                    <div class="col">
                         <img src="{{ asset('img/index/creditos/2.svg') }}" width="100" alt="">
                     </div>
-                    <div class="col-md-3 col-sm-6">
+                   {{--  <div class="col">
                         <img src="{{ asset('img/index/creditos/3.svg') }}" width="180" alt="">
-                    </div>
-                    <div class="col-md-3 col-sm-6">
+                    </div> --}}
+                    <div class="col">
                         <img src="{{ asset('img/index/creditos/4.svg') }}" width="100" alt="">
                     </div>
                 </div>
             </div>
-            <div class="d-block d-sm-block d-md-none d-lg-none">
+           {{--  <div class="d-block d-sm-block d-md-none d-lg-none">
                 <div class="row">
                     <div class="col-sm-6">
                         <img src="{{ asset('img/index/creditos/credito-1.svg') }}" width="290" alt="">
@@ -301,7 +301,7 @@
                         <img src="{{ asset('img/index/creditos/credito-2.svg') }}" width="290" alt="">
                     </div>
                 </div>
-            </div>
+            </div> --}}
         </div>
     </section>
 
