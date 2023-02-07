@@ -99,7 +99,7 @@
                     <ul>
                         <h4 class="hurmebold" style="color: #fff">Modelo {{ $model->name }}</h4> <br>
                         <li class="hurmeregular">Construcción: 61.86 m2</li>
-                        <li class="hurmeregular">Terreno desde: 6 x 20 m</li> <br>
+                        <li class="hurmeregular">Terreno desde: 5.5 x 20 m</li> <br>
 
                         <li class="hurmebold"><b>Planta arquitectónica</b></li> <br>
                         <li class="hurmebold"><b>Planta baja</b></li>
@@ -189,8 +189,8 @@
                                     @foreach ($models as $model)
                                         @if ($model->id == 1)
                                             <div class="col">
-                                                <img src="{{ asset('img/index/modelos/1.png') }}" class="img-fluid"
-                                                    loading="lazy" alt="">
+                                                <img src="{{ asset('img/index/modelos/alula-1.png') }}"
+                                                class="img-fluid" loading="lazy" alt="">
                                                 <h5 class=" hurmebold pt-3" style="color: #fff">{{ $model->name }} <br>
                                                     @if ($model->price_visible)
                                                         <span class="hurme-semibold">Desde:
@@ -211,8 +211,8 @@
                                     @foreach ($models as $model)
                                         @if ($model->id == 2)
                                             <div class="col">
-                                                <img src="{{ asset('img/index/modelos/2.png') }}" class="img-fluid"
-                                                    loading="lazy" alt="">
+                                                <img src="{{ asset('img/index/modelos/boreal-1.png') }}"
+                                                class="img-fluid" loading="lazy" alt="">
                                                 <h5 class="hurmebold pt-3" style="color: #fff">{{ $model->name }} <br>
                                                     @if ($model->price_visible)
                                                         <span class="hurme-semibold">Desde:

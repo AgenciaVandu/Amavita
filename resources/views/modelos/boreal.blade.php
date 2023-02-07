@@ -184,8 +184,8 @@
                                     @foreach ($models as $model)
                                         @if ($model->id == 1)
                                         <div class="col">
-                                            <img src="{{ asset('img/index/modelos/1.png') }}" class="img-fluid"
-                                                loading="lazy" alt="">
+                                            <img src="{{ asset('img/index/modelos/alula-1.png') }}"
+                                                        class="img-fluid" loading="lazy" alt="">
                                             <h5 class=" hurmebold pt-3" style="color: #fff">{{ $model->name }} <br>
                                                 @if ($model->price_visible)
                                                     <span class="hurme-semibold">Desde:
@@ -206,8 +206,8 @@
                                     @foreach ($models as $model)
                                     @if ($model->id == 3)
                                     <div class="col">
-                                        <img src="{{ asset('img/index/modelos/3.png') }}" class="img-fluid"
-                                            loading="lazy" alt="">
+                                        <img src="{{ asset('img/index/modelos/citala-1.png') }}"
+                                        class="img-fluid" loading="lazy" alt="">
                                         <h5 class="hurmebold pt-3" style="color: #fff">{{ $model->name }}<br>
                                             @if ($model->price_visible)
                                                 <span class="hurme-semibold">Desde:
